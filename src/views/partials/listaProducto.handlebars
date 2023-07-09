@@ -1,0 +1,18 @@
+<!---formulario producto --->
+
+<h1 style ="color:blue">Lista de Productos</h1>
+
+<div id="Productos">
+        <div class="container">
+            <div class="row align-items-start">
+                <dt class="col">Id</dt><dt class="col">Codigo</dt>
+                <dt class="col">Descripcion</dt></div>
+                {{#each docs}}
+        <div class="row">
+            <div class="col">{{this.description}}</div>
+    <div class="col"> {{this.code}}</div>
+    <div class="col"> {{this.stock}}</div>
+    </div>
+    {{/each}}
+</div>
+   
