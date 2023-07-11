@@ -32,19 +32,15 @@ traeTodo = async (page,limit)=> {
 }
 
 
-addProducto = async(product)=>{
-        
+addProducto = async(data)=>{
+        //console.log(data)
   try{
-          //this.producto= await this.traeTodo(); 
-          //let id =  this.generaID(); 
-         // product['id']=id;
-          
-          const productos= new productModel(product)
-          const result= await productos.save(); 
-          //await productos.save()
-          console.log(result)
+         //console.log("grabando");
+          const productos= new productModel(data)
+          const result= await productos.save();        
           return result
-          }
+          
+    }
   catch(e){
     console.error(e);
   }
@@ -52,11 +48,11 @@ addProducto = async(product)=>{
  }
 
 
-traeProductsBy = async(id) =>
+traeProductsBy = async(_id) =>
  {
 
       try{
-          const producto =  await productModel.findById(id).lean().exec();
+          const producto =  await productModel.findById(_id).lean().exec();
          
           if(producto === null)
           { 

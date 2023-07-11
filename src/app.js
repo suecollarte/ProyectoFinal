@@ -20,6 +20,8 @@ app.use(express.json());
 //para poder recibir lo del cliente los json
 app.use(express.urlencoded({extended:true}))
 //para recibir formularios por donde llegan los datos
+// parse application/x-www-form-urlencoded
+// parse application/json
 
 // esto es por http
 app.get('/', (request,response) =>{
@@ -54,8 +56,9 @@ try{
     //await mongoose.connect(MONGOURI+MONGODB,{
       //  useUnifiedTopology:true})
       mongoose.connect('mongodb://0.0.0.0:27017', { dbName: 'ecommerce' })
-      const httpServer= app.listen(8080, () => console.log('Server Up!'))
-      const io = new Server(httpServer)
+      //const httpServer= 
+      app.listen(8080, () => console.log('Server Up!'))
+     /*  const io = new Server(httpServer)
       io.on('connection',(socket) =>{
         //console.log("conexion realizada",socket.id)
         socket.on('message-desde', data =>{
@@ -63,8 +66,12 @@ try{
             log.push({id: socket.id, message:data})
             socket.emit('history',log)
         })
+        socket.on('from-client-producto', (producto) => {
+          productos.addProducto(producto)
+          io.sockets.emit('from-server-producto', { DB_PRODUCTOS });
+        });
         socket.on("client-addProducto", (producto)=>{ //trae del cliente
-            productos.addProducto(producto)
+            
           //enviar listado a todos
           //console.log(productos)
             io.sockets.emit('listaProducto',productos)  //lista
@@ -84,7 +91,7 @@ try{
              socket.emit('history',log)
          })
        
-    })
+    }) */
     }
 catch(err){
     console.log(err.message)

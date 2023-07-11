@@ -32,15 +32,17 @@ router.get('/', async (req,res) =>{
     } 
   
 })
+
+
 router.get('/:pid', async (request, response) =>{
   const id= request.params.pid;
   try{
      const producto =  await productClass.traeProductsBy(id);
- 
-      if (!producto) return response.status(404).json({message: `${id} NO EXISTE `})
+     if (!producto) return response.status(404).json({message: `${id} NO EXISTE `})
   //response.json(producto)
-      response.send({producto})
-  }catch (err) {
+      //console.log(producto)
+      response.render('Producto',producto)
+  } catch (err) {
     //console.error(e)
     response.status(500).json({status:'error', error: err.message})
   }
@@ -48,20 +50,14 @@ router.get('/:pid', async (request, response) =>{
 
 router.post('/', async (req,res) =>
 {
- const productoNew= req.body
-  
+   const productoNew= req.body;
+   
 try{
- 
-    const result= await productClass.addProducto(productoNew);
-    if (result){
-      res.status(201).json({status:'success', payload:result})   
-    }
-    else{
-      res.status(201).json({status: 'Producto NO CREADO YA EXISTE',data: productoNew}) 
-        }
+   const result= await productClass.addProducto(productoNew);
+   //console.log(result)
   }catch (err) {
     
-    console.error(e)
+    console.error(err)
 
     res.status(500).json({status:'error', error: err.message})
   }  

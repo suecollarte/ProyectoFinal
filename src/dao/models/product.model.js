@@ -7,8 +7,8 @@ import mongoosePaginate from "mongoose-paginate-v2";
 const productCollection ='products'
 
 const productSchema = new mongoose.Schema({
-    id:Number,
-    idproduct:mongoose.ObjectId,
+   /*  id:Number,
+    idproduct:mongoose.ObjectId, */
     description: {type: String, required:true},
     code: {type: String, required:true,unique:true},
     title: {type: String, required:true},
