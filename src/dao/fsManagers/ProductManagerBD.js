@@ -5,10 +5,7 @@ export class ProductManager{
   //this.cuenta=0
   this.path=path 
   }
-  static producto=[]
-
-generaID = () =>(this.producto.length === 0) ? 1: this.producto[this.producto.length -1].id +1
-
+  
 traeTodo = async (page,limit)=> {
   try{
    // console.log("log");
