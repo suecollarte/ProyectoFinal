@@ -1,0 +1,14 @@
+<h2>Borrado</h2>
+    <a class ="btn btn-warning" href="{{this.id}}" onclick="delete({{this.id}})" >Delete</a>
+   <script>
+ function delete(id) {
+   const xhttp = new XMLHttpRequest();
+   xhttp.onreadystatechange = function() {
+     // some code
+   };
+   xhttp.open("DELETE", `http://localhost:8080/api/products/delete/${id}`, true);
+   xhttp.send();
+ 
+  }
+
+   </script>

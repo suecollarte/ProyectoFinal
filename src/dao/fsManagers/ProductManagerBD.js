@@ -6,23 +6,42 @@ export class ProductManager{
   this.path=path 
   }
   
-traeTodo = async (page,limit)=> {
+traeTodo = async (req, res)=> {
+  let page= parseInt(req.query.page) || 1
+  let limit = parseInt(req.query.limit) || 10
+    
+  const filtroOpciones ={}
+  if(req.query.stock) filtroOpciones.stock = req.query.stock
+  if (req.query.category) filtroOpciones.category= req.query.category
+
+  const paginacionOpciones= {lean:true,limit:limit,page:page}
+  //sort
+  if (req.query.sort == "asc") paginacionOpciones.sort ={ price:1}
+  if (req.query.sort == "desc") paginacionOpciones.sort ={ price: -1}
   try{
-   // console.log("log");
-   //const productos =await productModel.find()
-  const productos =await productModel.paginate({},{page,limit,lean:true})
-   productos.prevLink = productos.hasPrevPage
+   
+   //const productos =await productModel.find(
+ 
+  const productos =await productModel.paginate(filtroOpciones, paginacionOpciones)
+//console.log(productos)
+
+   /* productos.prevLink = productos.hasPrevPage
                         ? `/product?page=${productos.prevPage}`
                         :''
     productos.nextLink = productos.hasNextPage
     ? `/product?page=${productos.nextPage}`
-    :''  
-
-    //console.log(productos)
+    :'' */  
+//console.log('productos', productos.docs)
+  
+    //console.log('result',result)
     return productos
   }
-  catch (e) {
-    console.error(e)
+  catch (err) {
+    return{
+      statusCode:500,
+      response:{status:err, error:err.message}
+    }
+    
   }  
      
  
@@ -30,13 +49,11 @@ traeTodo = async (page,limit)=> {
 
 
 addProducto = async(data)=>{
-        //console.log(data)
   try{
-         //console.log("grabando");
-          const productos= new productModel(data)
-          const result= await productos.save();        
-          return result
-          
+         // console.log("grabando");
+          const Producto= new productModel(data)
+          const err= await Producto.save().catch(err=>err); 
+          return err               
     }
   catch(e){
     console.error(e);
@@ -49,15 +66,21 @@ traeProductsBy = async(_id) =>
  {
 
       try{
+        //await productModel.paginate
           const producto =  await productModel.findById(_id).lean().exec();
-         
+      
           if(producto === null)
           { 
             return false
           }
           else
           { 
-          return producto;
+            return {
+              statusCode:200,
+              response:{
+                status:'success',
+                payload: producto
+              }}
           }
     }
     catch(e){
@@ -65,10 +88,11 @@ traeProductsBy = async(_id) =>
     }
  }
 
- BorrarProducto = async(id) =>{
- 
+ BorrarProducto = async(_id) =>{
+  console.log("result")
     try{
-     const result = await productModel.findByIdAndDelete(id)
+     const result = await productModel.findByIdAndDelete(_id)
+    
      if(result== null){
       return false
      }
@@ -79,8 +103,6 @@ traeProductsBy = async(_id) =>
       console.error(e);;
     } 
     
-
-
  }
 
 ModificarProducto = async(id,data) =>{

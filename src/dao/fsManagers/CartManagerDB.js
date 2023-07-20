@@ -1,4 +1,4 @@
-import { cartModel } from '../models/cart.model.js';
+import  cartModel from '../models/cart.model.js';
 import  productModel  from '../models/product.model.js';
 
 
@@ -23,41 +23,29 @@ traeTodoCart = async () => {
   }
 
 }
+addCart = async (req,res) =>{
+  try{
+    // console.log("grabando");
+     const Carro= new cartModel()
+     const err= await Carro.save().catch(err=>err); 
+     console.log(err)
+     return err               
+}
+catch(e){
+console.error(e);
+}
 
-addCart = async(CarritoProd)=>{
+}
+addCartProd = async(cid,pid)=>{
         
   try{       
-        const cars = await productModel.aggregate(
-          //concatenas
-          [
-          {$match:{code:CarritoProd[0].code}},
-          {$group:{
-            product:'$code',
-            price:'$price',
-            quantity:CarritoProd[0].quantity
-          }
-          },
-          {
-            $group:{
-              _id:1,
-              products:{$push:"$$ROOT"}
-            }
-          },
-          //operaciones en otra collection
-          {
-            $project:{
-              _id:0,
-              cars:"$cars"
-            }
-          },
-          {
-            //reportes
-            $merge:{into:'reportescarts'}
-          }
-          ])
+        //let car = await cartModel.find(cid);
+       console.log("wwww")
+         let car= await cartModel.updateOne({_id:cid},
+          {$push:{"products":{product:pid, quantity:1}}})
           
-          
-        //const result = await cars.save();
+          return car
+         
           
   }
   catch(error){
@@ -72,16 +60,16 @@ traeCartBy = async(id) =>
 
  
   try{
-    const carts=  await cartModel.findById(id).lean().exec();
+    const result=  await cartModel.findById(id).populate('products.product').lean().exec();
    
-    if(cart === null)
+    if(result === null)
     { 
-      return false
+      return {
+        statusCode:404,
+        response:{status:'error', error:'no se encuenta'}
+      }
     }
-    else
-    { 
-    return cart;
-    }
+    return {statusCode:200,response:{status:'exito', payload:result}}
 }
 catch(e){
 console.error(e);;

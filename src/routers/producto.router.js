@@ -1,6 +1,7 @@
 import {Router} from 'express';
 import { ProductManager } from '../dao/fsManagers/ProductManagerBD.js';
 
+
 const router =Router();
 
 //endpoint crear producto
@@ -10,27 +11,62 @@ const router =Router();
 // borrar producto
 
 const productClass = new ProductManager;
-//productClass.path='./src/productos.json';
+
 // esta data onwire se renderiza json
 // para los onwire html se hace una vista ese es con res.render
 
-
-router.get('/', async (req,res) =>{
+export const getProducts = async (req,res) =>{
   try{
     let page= parseInt(req.query.page) || 1
-    let limit = parseInt(req.query.limit) || 5
-    const productos = await productClass.traeTodo(page,limit); 
-    //res.status(201).json({status:"success", productos:products});
-    //console.log(productos)
-    res.render('index',productos)
-  }
-    catch (err) {
+    let limit = parseInt(req.query.limit) || 10
     
-      //console.error(e)
+    const productos= await productClass.traeTodo(req, res)
+    
+    return productos
+    
+    } catch(err){
+      console.error(err)
+    }
   
-      res.status(500).json({status:'error', error: err.message})
-    } 
-  
+
+
+}
+
+
+router.get('/', async (req,res) =>{
+ 
+  const productos = await getProducts(req,res)
+  if (productos.statusCode === 200){
+    const totalPag=[]
+    let link
+    for (let index = 1; index <= productos.response.totalPages; index++){
+          if (!req.query.page){
+            link=`http:\\localhost:8080\api\products&page=${index}`
+          }
+          else{
+            link=`http:\\localhost:8080\api\products&page=${req.query.page}`
+          }
+          totalPag.push({page:index,link})
+     }
+     
+     
+    const parte2 ={
+        totalPag,
+        prevPage:productos.response.prevPage,
+        nextPage:productos.response.nextPage,
+        page:productos.response.page,
+        hasPrevPage:productos.response.hasPrevPage,
+        hasNextPage:productos.response.hasNextPage,      
+        prevLink:productos.response.prevLink,
+        
+        nextLink:productos.response.nextLink
+        } 
+        
+     res.render('index',{products:productos.response.payload, paginainf: parte2 }) 
+}else{
+  res.status(productos.statusCode).json({status:'error', error: productos.response.error})
+}
+    
 })
 
 
@@ -38,31 +74,45 @@ router.get('/:pid', async (request, response) =>{
   const id= request.params.pid;
   try{
      const producto =  await productClass.traeProductsBy(id);
+    if (producto.statusCode === 200){
+     // console.log(producto.response.payload)
+      response.render('indexprod',{producto: producto.response.payload} )
+    }
      if (!producto) return response.status(404).json({message: `${id} NO EXISTE `})
-  //response.json(producto)
-      //console.log(producto)
-      response.render('Producto',producto)
-  } catch (err) {
-    //console.error(e)
-    response.status(500).json({status:'error', error: err.message})
-  }
-})
+     // response.status(200).json({status: 'Producto',id})
+    // response.json(producto)
+  
+    }catch(err){
+      console.log(err)   //para tener el error en la consola
+    
+    }
+    })
+
 
 router.post('/', async (req,res) =>
 {
    const productoNew= req.body;
    
 try{
-   const result= await productClass.addProducto(productoNew);
-   //console.log(result)
-  }catch (err) {
+  const result= await productClass.addProducto(productoNew);
+ 
+    if (typeof result == 'string') {
+    const error = result.split(' ')
+    return res.status(parseInt(error[0].slice(1,4))).json({ error: result.slice(6) })
+    }
+    //
+   //console.log(productoNew)
+   res.redirect('/api/products/')
     
-    console.error(err)
+      
+   // res.status(201).json({ status: 'success', payload: result })
+  }catch(err){
+    console.log(err)   //para tener el error en la consola
+    throw new Error(err)
+  } 
+  }) 
 
-    res.status(500).json({status:'error', error: err.message})
-  }  
 
-  })  
 
     //actualizacion
 router.put('/:id', async (request,response) =>{
@@ -78,33 +128,30 @@ router.put('/:id', async (request,response) =>{
        
           }
                     //response.status(201).send({message: 'Producto Actualizado',id})
-      }catch (err) {
-    
-        //console.error(e)
-    
-        res.status(500).json({status:'error', error: err.message})
-      }  
-})
+                  }catch(err){
+                    console.log(err)   //para tener el error en la consola
+                    throw new Error(err)
+                  }   
+                  })
 
 //eliminacion
-router.delete('/:id', async (request,response) =>{
-  const id = request.params.id;
-  try{
-    const result= productClass.BorrarProducto(id);
+router.get('/borre/:id', async (request,response) =>{
+  const code = request.params.id;
+  
+    
+   try{
+    const result= productClass.BorrarProducto(code);
     if(result== null){
-      response.status(404).send({message: 'Producto No se encuentra',id})
+      response.status(404).send({message: 'Producto No se encuentra',code})
      }
-    response.status(200).json({status: 'Exito Producto Borrado',id})
+   // const productos = await productClass.traeTodo(1,25);
+   // response.render('index',productos)
+    response.status(200).json({status: 'Exito Producto Borrado',code})
+  }catch(err){
+    console.log(err)   //para tener el error en la consola
+    
   }
-  catch (err) {
-    //console.error(e)
-    response.status(500).json({status:'error', error: err.message})
-  }  
-
-  
-  //response.status(201).json({message: 'Producto Borrado',id})
-  
-})
+  })
 
 
 

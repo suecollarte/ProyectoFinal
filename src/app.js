@@ -5,7 +5,7 @@ import mongoose from 'mongoose'
 
 import productoRoute from './routers/producto.router.js'
 import cartRoute from './routers/cart.router.js'
-
+import viewRoute from './routers/view.router.js'
 import {Server} from 'socket.io'
 
 
@@ -45,6 +45,7 @@ app.set('view engine', 'handlebars')
 
 app.use('/api/products',productoRoute);
 app.use('/api/carts',cartRoute);
+app.use('/products',viewRoute);
 
 //app.use('productos',viewproduct)
 
@@ -56,21 +57,28 @@ try{
     //await mongoose.connect(MONGOURI+MONGODB,{
       //  useUnifiedTopology:true})
       mongoose.connect('mongodb://0.0.0.0:27017', { dbName: 'ecommerce' })
-      //const httpServer= 
-      app.listen(8080, () => console.log('Server Up!'))
-     /*  const io = new Server(httpServer)
-      io.on('connection',(socket) =>{
-        //console.log("conexion realizada",socket.id)
-        socket.on('message-desde', data =>{
-           // console.log(data)
-            log.push({id: socket.id, message:data})
-            socket.emit('history',log)
-        })
+     
+     const httpServer= app.listen(8080, () => console.log('Server Up!'))
+
+const io = new Server(httpServer)
+
+app.use((req,res,next)=>{
+  req.io=io
+  next()
+})
+
+io.on('connection',(socket) =>{
+  console.log("conexion realizada",socket.id)
+  
+  socket.on('message', data =>{
+    console.log(data)
+      })
+ 
         socket.on('from-client-producto', (producto) => {
           productos.addProducto(producto)
           io.sockets.emit('from-server-producto', { DB_PRODUCTOS });
         });
-        socket.on("client-addProducto", (producto)=>{ //trae del cliente
+        socket.on("Agregado", (producto)=>{ //trae del cliente
             
           //enviar listado a todos
           //console.log(productos)
@@ -91,8 +99,14 @@ try{
              socket.emit('history',log)
          })
        
-    }) */
+     
+
+})
+     
     }
 catch(err){
     console.log(err.message)
 }
+
+
+    

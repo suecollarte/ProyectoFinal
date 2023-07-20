@@ -1,57 +1,46 @@
 <!---formulario producto --->
 
 <h1 style ="color:blue">Ingrese Productos formulario</h1>
-{{#each errors}}
+
 <div class="alert alert-danger alert-dismissible fade show" role="alert">
-    {{text}}
+    {{texto}}
    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
-{{/each}}
+
 
 <form id="form1" name="form1" method="post" >
 
-    <div class="form-group">
+    <div class="table table-striped">
         <label for="code">Codigo</label>
         <input id="code" class="form-control" type="text" name="code">
     </div>
-     <div class="form-group">
+     <div class="table table-striped">
         <label for="title">title</label>
         <input id="title" class="form-control" type="text" name="title">
     </div>
-    <div class="form-group">
+    <div class="table table-striped">
         <label for="description">Descripcion</label>
         <input id="description" class="form-control" type="text" name="description">
     </div>
-    <div class="form-group">
+    <div class="table table-striped">
         <label for="price">price</label>
         <input id="price" class="form-control" type="text" name="price">
     </div>
-    <div class="form-group">
+    <div class="table table-striped">
         <label for="category">category</label>
         <input id="category" class="form-control" type="text" name="category">
     </div>
-   <div class="form-group">
+   <div class="table table-striped">
         <label for="stock">stock</label>
         <input id="stock" class="form-control" type="text" name="stock">
     </div>
-     <div class="form-group">
+     <div class="table table-striped">
         <label for="thumbnails">thumbnails</label>
         <input id="thumbnails" class="form-control" type="text" name="thumbnails">
     </div>
-    <div class="form-group">
-        <label for="status">status</label>
-        <input id="status" class="form-control" type="text" name="status">
+    <div class="table table-striped">
+        <label for="pstatus">status</label>
+        <input id="pstatus" type="checkbox" name="prstatus">
     </div>
-    <input type="submit" class="btn btn-warning" id="btn" >Crear</button>
-</form>
-
-
-<h2>Borrado</h2>
-<form id="form2">
-
-    <div class="form-group">
-        <label for="codigodel">Codigo</label>
-        <input id="codigodel" class="form-control" type="text" name="codigodel">
-    </div>
-    <button class="btn btn-warning" id="btn1" type="submit">Borrar</button>
+    <input type="submit" class="btn btn-warning" id="btn" value="Grabar">
 </form>

@@ -1,15 +1,83 @@
-<h1>Productos</h1>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Carrito Compra</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+    aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">   <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+       
+        </li>
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+<!---formulario producto --->
 
-
-
-<div class="container mt-3" id="listaProducto">
-    {{> listaProducto}}
+<h1 style ="color:blue">Selecciona productos para Carrito</h1>
+<div class="container">
+        {{this._idCarrito}}
+<div id="Productos">
+        <div class="table table-striped container table-success table-bordered">
+            <div class="row align-items-start">
+                <dt class="col">Id</dt>
+                <dt class="col">Producto</dt>
+                 <dt class="col">Descripcion</dt>
+                 <dt class="col">Precio</dt>
+                 <dt class="col">Codigo</dt>
+               <dt class="col">Stock</dt>
+                 <dt class="col">Categoria</dt>
+                <dt class="col">Seleccionar</dt>
+                </div>
+                {{#each products}}
+        <div class="row">
+     <div class="col" > <button class="btn btn-warning" 
+     onclick="addProductToCart('{{this._id}}')">Agrega Carrito</button>
+     </div>       
+    <div class="col"> {{this.title}}</div>
+    <div class="col">{{this.description}}</div>
+    <div class="col"> {{this.precio}}</div>
+    <div class="col"> {{this.code}}</div>
+    <div class="col"> {{this.stock}}</div>
+     <div class="col"> {{this.category}}</div>
+     
+    </div>
+    {{/each}}
+   
 </div>
-<div class="container mt-3" id="addCarrito">
-    {{> formCarrito}}
+
+      
+    
 </div>
+   
+<script>
 
+addProductToCart = (pid) => {
 
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        fetch('/api/carts',{method: 'post'})
+        .then (result => result.json() )
+        .then (result => {
+                if (result.status === 'error') throw new Error(result.error)
+                return result.payload._id
+        })
+        .then(cid => (fetch(`api/carts/${cid}/products/${pid}`,{method:'post'})))
+        .then(result => result.json())
+        .then(result => {
+                  if (result.status === 'error') throw new Error(result.error)
+                  alert('ok'+ result.payload._id)
+        
+        })
+        .catch(err => alert('Error'+err))
 
-<script src="/js/index.js"></script>
+}
+
+</script>
+

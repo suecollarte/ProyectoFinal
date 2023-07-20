@@ -1,7 +1,10 @@
 <!---formulario producto --->
 
-<h1 style ="color:blue">Lista de Productos</h1>
-
+<h1 style ="color:blue">Lista de Carrito</h1>
+<div class="container">
+  <h3>Carrito {{cart._id}}</h3>   
+  <hr>
+  <h3>Productos</h3>   
 <div id="Productos">
         <div class="table table-striped container table-success table-bordered">
             <div class="row align-items-start">
@@ -14,10 +17,10 @@
                  <dt class="col">Categoria</dt>
                 <dt class="col">Seleccionar</dt>
                 </div>
-                {{#each products}}
+                {{#each carts.products}}
         <div class="row">
-     <div class="col" > <button class="btn btn-warning" 
-     onclick="deleteproducto('{{this._id}}')">Elimina</button>
+     <div class="col" > <button id="pid" class="btn btn-warning" 
+     onclick="deleteproducto('{{this._id}}')">Agrega Carrito</button>
      </div>       
     <div class="col"> {{this.title}}</div>
     <div class="col">{{this.description}}</div>
@@ -25,21 +28,12 @@
     <div class="col"> {{this.code}}</div>
     <div class="col"> {{this.stock}}</div>
      <div class="col"> {{this.category}}</div>
-     <div class="col"><button class="btn btn-secondary" 
-     onclick="seleccionaproducto('{{this._id}}')">AddCart</button></div>
+     
     </div>
     {{/each}}
-    
+   
+</div>
 
-<hr>
-<p class="text-center">{{paginainf.page}}-{{paginainf.nextPage}}</p>
-<p class="text-center">  {{#if paginainf.hasPrevPage}}
-        <a href="{{paginainf.prevLink}}">Anterior</a>-
-        {{/if}}
-         {{#if paginainf.hasNextPage}}
-         <a href="{{paginainf.nextLink}}">Siguiente</a>
-        {{/if}}</p>
-<hr>
       
     
 </div>

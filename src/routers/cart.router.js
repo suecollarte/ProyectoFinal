@@ -1,8 +1,5 @@
 import {Router} from 'express';
-
 import { ProductManager } from '../dao/fsManagers/ProductManagerBD.js';
-
-
 import { CartManager } from '../dao/fsManagers/CartManagerDB.js';
 
 
@@ -10,38 +7,53 @@ const router =Router();
 
 
 const cartClass = new CartManager;
-cartClass.path='./src/cart.json';
+//cartClass.path='./src/cart.json';
 
+//productClass.path='./src/productos.json';
 const productClass = new ProductManager;
-productClass.path='./src/productos.json';
-
-
-router.get('/:cid', async (request, response) =>{
-  try{
-  const id= request.params.cid;
-  const cart =  await cartClass.traeCartBy(id);
- 
-  if (!cart) return response.status(404).json({message: `${id} NO EXISTE `})
-    response.status(201).send(cart)
-    response.render('carrito',cart)
-  }catch (e) {
-    console.error(e)
-  }
-})
-
-//agrega carts
-router.post('/', async (request,response) =>{
-    
-    const {idCliente, product}=request.body;
-    //product y quantity
-    const ProdCart={idCliente, product};
-    const producto= product[0].product;
-    const existe =  productClass.encuentraCodigo(producto);
-    let id="";
-    if(existe){
-     id = await cartClass.addCart(ProdCart);
+//controller
+export const getProductsFromCart = async (req,res) =>{
+try{
+  const id=req.params.cid
+  const result = await cartClass.traeCartBy(id)
+  if(result == null){
+    return {
+      statusCode:404, response: {status:'error', error:'No se encuentra carro'}
     }
-    response.status(201).send({message: 'Carro Creado',data: {id, ProdCart} })
+  }
+  return {
+      statusCode:200, response: {status:'success', payload:result}
+    }
+  } catch(err){
+    console.error(err)
+  }
+}
+
+
+
+//muestra productos para seleccionar carts
+/* router.get('/', async (request,response) =>{
+  const productos= await productClass.traeTodo(request, response)
+  if (productos.statusCode === 200){
+  console.log(productos.response.payload)
+   response.render('carrito',{products:productos.response.payload}) 
+}else{
+console.log("error")
+response.status(productos.statusCode).json({status:'error', error: productos.response.error})
+}
+}) */
+
+router.post('/', async (req,res) =>{
+    try{
+      
+        const result = await cartClass.addCart(req,res);
+        res.status(201).json({status:'success',payload:result})
+    }catch (err){
+
+      res.status(500).json({ status:'error', error:err.message})
+    }
+    
+     
    
   })  
     //agrega producto a un carro
@@ -51,12 +63,14 @@ router.post('/:cid/product/:pid', async (request,response) =>{
   const cid= request.params.cid;  
   const pid= request.params.pid;  
   const product=request.body;
-    //product y quantity
-    const existe=await cartClass.traeCartBy(cid);
-    if(existe){
-      await cartClass.modificarCart(cid, existe,product);
-    }
-   response.status(201).send({message: 'Producto Creado/Modificado',data: existe})
+console.log("ssss")
+  
+      const result= await cartClass.addCartProd(cid,pid)
+      if(result.statusCode===200)
+      { 
+        res.status(201).json({status:'success',payload:result})
+      }
+      
 
   }catch (e) {
     console.error(e)

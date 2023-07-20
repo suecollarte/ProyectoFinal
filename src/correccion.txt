@@ -1,0 +1,49 @@
+
+Razgos Generales
+Haz hecho un buen trabajo al pasar los modelos y las consultas a MongoDB. 
+Esa parte del sistema es completamente correcta y está bien implementado el uso de la ODM Mongoose. 
+Existen algunos cambios que deberías implementar para futuros proyectos donde comiences a aplicar buenas practicas, 
+como por ejemplo el Status al intentar crear un elemento y este falla 
+(el status tanto numerico como el mensaje). 
+Este ya no es una no creación porque el elemento existe. 
+Puede fallar desde el lado de que no estoy pasando los parametros necesarios para su creación, 
+por lo que no me deja crearlo (El validador que tiene Mongoose con los campos con un required:true) 
+Ten en cuenta esto que te nombro para proximas entregas. 
+ 
+--------------------------------------------------------------------------------------
+
+Pase a MongoDB
+Muy bien pasado e implementado los metodos. de mongoose reemplazando los "File System" para el manejo de la información, 
+correctamente con los "lean" y los "exec" par que funcionen un poco mas rápido.
+Mucho cuidado en el metodo a utilizar para la conexión con la base de datos. 
+No es lo mismo el metodo connect que el createConnection. 
+Con createConnection instancias una connección en una variable, 
+la cual luego debes ejecutar. Encambio, con connect directamente connecta 
+Las partes de MongoDB tambien están correctas Muy bien
+--------------------------------------------------------------------------------------
+
+Funcionamiento del proyecto
+Un requisito necesario de este proyecto es que todo funcione como lo venía haciendo, 
+siendo necesaria la parte de HandleBars, parte que veo que no has podido corregir y tampoco te ha funcionado. 
+por lo que, directamente, has comentado. 
+Esto no es lo correcto. Te sugeriría que replantees esta parte y la soluciones. 
+Termina siendo completamente necesaria para la aprobación de los desafíos/entregables posteriores.
+Como haz comenzado a utilizar una ODM, te recomiendo utilizar de forma correcta los try-catch, 
+no simplemente con un console.log. La forma correcta es la siguiente
+async function getUsers () {
+  try{
+       let users = //logica para traer los usuarios de la DB  y devolverlos en un return
+        return users
+  }catch(err){
+        console.log(err)   //para tener el error en la consola
+        throw new Error(err) //para que el metodo, si obtiene un error, devuelva el error y este pueda ser
+         capturado en donde lo están utilizando.
+  }}
+Fuera de lo que estoy nombrando (Handlebars y routing), el proyecto funciona.
+--------------------------------------------------------------------------------------
+
+Conclusión
+No porque no especifique que tiene que funcionar handlebars signifique que se pueda obviar como parte del funcionamiento
+correcto del desafío. 
+El desafío complementario está completo y aprobado apenas por pocos puntos, 
+porque pasar las cosas a MongoDB era lo principal. sin embargo, hay bastante correcciones para hacer aún
