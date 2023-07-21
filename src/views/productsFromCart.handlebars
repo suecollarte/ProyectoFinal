@@ -2,7 +2,7 @@
 
 <h1 style ="color:blue">Lista de Carrito</h1>
 <div class="container">
-  <h3>Carrito {{cart._id}}</h3>   
+  <h3>Carrito {{cart.response.payload._id}}</h3>   
   <hr>
   <h3>Productos</h3>   
 <div id="Productos">
@@ -17,7 +17,7 @@
                  <dt class="col">Categoria</dt>
                 <dt class="col">Seleccionar</dt>
                 </div>
-                {{#each carts.products}}
+                {{#each cart.payload.products}}
         <div class="row">
      <div class="col" > <button id="pid" class="btn btn-warning" 
      onclick="deleteproducto('{{this._id}}')">Agrega Carrito</button>

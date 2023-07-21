@@ -68,12 +68,11 @@ addProductToCart = (pid) => {
                 if (result.status === 'error') throw new Error(result.error)
                 return result.payload._id
         })
-        .then(cid => (fetch(`api/carts/${cid}/products/${pid}`,{method:'post'})))
-        .then(result => result.json())
+        .then(cid => (fetch(`api/carts/${cid}/product/${pid}`,{method:'post'})) )
+        .then(result => result.json() )
         .then(result => {
                   if (result.status === 'error') throw new Error(result.error)
-                  alert('ok'+ result.payload._id)
-        
+                  return result       
         })
         .catch(err => alert('Error'+err))
 

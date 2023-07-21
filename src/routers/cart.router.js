@@ -12,18 +12,18 @@ const cartClass = new CartManager;
 //productClass.path='./src/productos.json';
 const productClass = new ProductManager;
 //controller
+
 export const getProductsFromCart = async (req,res) =>{
 try{
   const id=req.params.cid
   const result = await cartClass.traeCartBy(id)
+ 
   if(result == null){
     return {
       statusCode:404, response: {status:'error', error:'No se encuentra carro'}
     }
   }
-  return {
-      statusCode:200, response: {status:'success', payload:result}
-    }
+  return {statusCode:200, response: {status:'success', payload:result}}
   } catch(err){
     console.error(err)
   }
@@ -63,8 +63,8 @@ router.post('/:cid/product/:pid', async (request,response) =>{
   const cid= request.params.cid;  
   const pid= request.params.pid;  
   const product=request.body;
-console.log("ssss")
-  
+ 
+
       const result= await cartClass.addCartProd(cid,pid)
       if(result.statusCode===200)
       { 

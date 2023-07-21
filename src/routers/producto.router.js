@@ -64,7 +64,7 @@ router.get('/', async (req,res) =>{
         
      res.render('index',{products:productos.response.payload, paginainf: parte2 }) 
 }else{
-  res.status(productos.statusCode).json({status:'error', error: productos.response.error})
+  res.status(productos.statusCode).json({status:'error', error: productos.statusCode})
 }
     
 })

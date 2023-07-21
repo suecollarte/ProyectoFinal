@@ -78,7 +78,7 @@ router.get('/', async (req, res) =>{
 router.get('/:cid', async (req , res ) =>{
     try{
      const result =  await getProductsFromCart(req,res);
-   
+   console.log(result)
    if (result.statusCode === 200){
      res.render('productsFromCart',{cart:result.response.payload})
    } else {
