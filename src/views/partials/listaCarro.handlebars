@@ -1,0 +1,93 @@
+<!---formulario carros --->
+
+<h1 style ="color:blue">Lista de Carritos</h1>
+
+<div id="Carros" >
+<table class="table" >
+                <thead>
+<tr>
+        
+        <th class="col">Id</th>
+        <th class="col">IdCliente</th>
+        <th class="col">Productos</th>
+        
+        
+</tr>
+</thead>
+<tbody>
+{{#each carros.docs}}
+       <tr>
+                        <th scope="row">
+                        <input type="txt" read-only value="{{this._id}}" id="cid" > </th>       
+                        <td> {{this.idCliente}}</td>
+       <td>Productos:
+
+ <table class="table">
+        <thead>
+        <tr>
+        <th>Id Producto</th>
+        <th>Cantidad</th>
+        <th>Accion</th>
+        </tr>
+        </thead>
+        <tbody>
+                 {{#each this.products}} {{#if this.product }}
+                <tr>
+                        <th scope="row"> {{this.product}}</th> 
+                        {{else}}
+                         <th scope="row"> -</th>   
+                         {{/if}}
+                         <td>{{this.quantity}}</td>
+                          <td> <button class="btn btn-warning" 
+     onclick="deleteproducto('{{this.product}}')">Elimina</button></td>
+                </tr>
+                {{/each}}
+        </tbody>
+   </table>
+        
+
+       </td>
+       
+               
+         </tr>
+        </tbody> 
+
+    {{/each}}
+    
+        </table>
+<hr>
+<p class="text-center">{{paginainf.page}}-{{paginainf.nextPage}}</p>
+<p class="text-center">  {{#if paginainf.hasPrevPage}}
+        <a href="{{paginainf.prevLink}}">Anterior</a>-
+        {{/if}}
+         {{#if paginainf.hasNextPage}}
+         <a href="{{paginainf.nextLink}}">Siguiente</a>
+        {{/if}}</p>
+<hr>
+      
+    
+</div>
+   
+<script>
+
+deleteproducto = (pid) => {
+  var cid = document.getElementById("cid").value;
+ 
+        fetch(`/api/carts/borra/${cid}/product/${pid}`,{method: 'post'})
+        .then (result => result.json() )
+        .then (result => {
+                if (result.status === 'error') throw new Error(result.error)
+                console.log(result)
+                return result
+        })
+        .then(result => (fetch(`api/carts/`,{method:'get'})) )
+        .then(result => result.json() )
+        .then(result => {
+                  if (result.status === 'error') throw new Error(result.error)
+                  return result       
+        })
+        .catch(err => alert('Error'+err))
+
+}
+
+</script>

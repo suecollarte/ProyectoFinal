@@ -12,6 +12,26 @@ const cartClass = new CartManager;
 //productClass.path='./src/productos.json';
 const productClass = new ProductManager;
 //controller
+export const getCarros = async (req,res) =>{
+  try{
+    //limit ok
+    //page ok
+    //query
+
+    let page= parseInt(req.query.page) || 1
+    let limit = parseInt(req.query.limit) || 10
+    
+    const carts= await cartClass.traeTodo(req, res)
+    
+    return carts
+    
+    } catch(err){
+      console.error(err)
+    }
+  
+
+
+}
 
 export const getProductsFromCart = async (req,res) =>{
 try{
@@ -31,17 +51,44 @@ try{
 
 
 
-//muestra productos para seleccionar carts
-/* router.get('/', async (request,response) =>{
-  const productos= await productClass.traeTodo(request, response)
-  if (productos.statusCode === 200){
-  console.log(productos.response.payload)
-   response.render('carrito',{products:productos.response.payload}) 
+//muestra productos de los carts
+router.get('/', async (req,res) =>{
+  const carts = await getCarros(req,res)
+ 
+
+
+  if (carts.statusCode === 200){
+    const totalPag=[]
+    let link
+    for (let index = 1; index <= carts.response.totalPages; index++){
+          if (!req.query.page){
+            link=`http:\\localhost:8080\api\carts&page=${index}`
+          }
+          else{
+            link=`http:\\localhost:8080\api\carts&page=${req.query.page}`
+          }
+          totalPag.push({page:index,link})
+     }
+     
+     
+    let parte2 ={
+        totalPag,
+        prevPage:carts.response.prevPage,
+        nextPage:carts.response.nextPage,
+        page:carts.response.page,
+        hasPrevPage:carts.response.hasPrevPage,
+        hasNextPage:carts.response.hasNextPage,      
+        prevLink:carts.response.prevLink,
+        
+        nextLink:carts.response.nextLink
+        } 
+     //ojo con el nombre carros: debe ir en el handlebars   
+     res.render('index_carro',{carros:carts.response.payload, paginainf: parte2 }) 
 }else{
-console.log("error")
-response.status(productos.statusCode).json({status:'error', error: productos.response.error})
+  res.status(carts.statusCode).json({status:'error', error: carts.statusCode})
 }
-}) */
+    
+})
 
 router.post('/', async (req,res) =>{
     try{
@@ -92,15 +139,17 @@ router.put('/:cid', async (request,response) =>{
 
 
 //eliminacion
-router.delete('/:cid/product/:pid', async (request,response) =>{
+router.post('/borra/:cid/product/:pid', async (request,response) =>{
   const cid= request.params.cid;  
   const pid= request.params.pid;  
+
   try{
-    const result= cartClass.BorrarCartProducto(cid,pid);
+   const result= cartClass.BorrarCartProducto(cid,pid);
     if(result== null){
-      response.status(404).send({message: 'Carro Producto No se encuentra',id})
-     }
-    response.status(200).json({status: 'Exito Carro Producto Borrado',id})
+      response.status(404).send({message: 'Carro Producto No se encuentra',cid})
+    }
+    response.status(200).json({status: 'Exito Carro Producto Borrado',cid})  
+   
   }
   catch (err) {
     //console.error(e)

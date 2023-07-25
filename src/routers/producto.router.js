@@ -17,6 +17,10 @@ const productClass = new ProductManager;
 
 export const getProducts = async (req,res) =>{
   try{
+    //limit ok
+    //page ok
+    //query
+
     let page= parseInt(req.query.page) || 1
     let limit = parseInt(req.query.limit) || 10
     
@@ -36,6 +40,7 @@ export const getProducts = async (req,res) =>{
 router.get('/', async (req,res) =>{
  
   const productos = await getProducts(req,res)
+  console.log(productos)
   if (productos.statusCode === 200){
     const totalPag=[]
     let link
@@ -50,7 +55,7 @@ router.get('/', async (req,res) =>{
      }
      
      
-    const parte2 ={
+    let parte2 ={
         totalPag,
         prevPage:productos.response.prevPage,
         nextPage:productos.response.nextPage,

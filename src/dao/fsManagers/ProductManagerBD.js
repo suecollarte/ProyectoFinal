@@ -23,18 +23,11 @@ traeTodo = async (req, res)=> {
    //const productos =await productModel.find(
  
   const productos =await productModel.paginate(filtroOpciones, paginacionOpciones)
-//console.log(productos)
-
-   /* productos.prevLink = productos.hasPrevPage
-                        ? `/product?page=${productos.prevPage}`
-                        :''
-    productos.nextLink = productos.hasNextPage
-    ? `/product?page=${productos.nextPage}`
-    :'' */  
-//console.log('productos', productos.docs)
-  
-    //console.log('result',result)
-    return productos
+ 
+    return{
+      statusCode:200,
+      response:{payload:productos}
+    }
   }
   catch (err) {
     return{
@@ -89,7 +82,7 @@ traeProductsBy = async(_id) =>
  }
 
  BorrarProducto = async(_id) =>{
-  console.log("result")
+ 
     try{
      const result = await productModel.findByIdAndDelete(_id)
     

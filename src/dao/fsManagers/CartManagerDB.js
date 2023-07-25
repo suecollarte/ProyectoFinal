@@ -12,35 +12,45 @@ export class CartManager{
   static cart=[];
   
 
-traeTodoCart = async () => {
-  try{  
+  traeTodo = async (req, res)=> {
+    let page= parseInt(req.query.page) || 1
+    let limit = parseInt(req.query.limit) || 10
+      
+    const filtroOpciones ={}
+    if(req.query._id) filtroOpciones._id = req.query._id
+    if (req.query.idCliente) filtroOpciones.idCliente= req.query.idCliente
+  
+    const paginacionOpciones= {lean:true,limit:limit,page:page}
+    //sort
+    if (req.query.sort == "asc") paginacionOpciones.sort ={  idCliente:1}
+    if (req.query.sort == "desc") paginacionOpciones.sort ={  idCliente: -1}
+    try{
      
-      this.cart= await cartModel.find()
-      return this.cart; 
+     //const productos =await productModel.find(
+   
+    const carts =await cartModel.paginate(filtroOpciones, paginacionOpciones)
+   
+      return{
+        statusCode:200,
+        response:{payload:carts}
+      }
+    }
+    catch (err) {
+      return{
+        statusCode:500,
+        response:{status:err, error:err.message}
+      }
+      
+    }  
+       
+   
   }
-  catch (error){
-    console.error(error);
-  }
-
-}
-addCart = async (req,res) =>{
-  try{
-    // console.log("grabando");
-     const Carro= new cartModel()
-     const err= await Carro.save().catch(err=>err); 
-     console.log(err)
-     return err               
-}
-catch(e){
-console.error(e);
-}
-
-}
+  
 addCartProd = async(cid,pid)=>{
         
   try{       
         //let car = await cartModel.find(cid);
-       console.log("wwww")
+      // console.log("wwww")
          let car= await cartModel.updateOne({_id:cid},
           {$push:{"products":{product:pid, quantity:1}}})
           
@@ -76,11 +86,11 @@ console.error(e);;
 }
 
    
- }
+}
 
- BorrarCartProducto = async(id,pid) =>{
+ BorrarCartProducto = async(_id,pid) =>{
       try{
-        const result = await cartModel.findByIdAndDelete(id)
+        const result = await cartModel.findByIdAndDelete(_id)
      if(result== null){
       return false
      }
