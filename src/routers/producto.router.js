@@ -3,12 +3,14 @@ import { ProductManager } from '../dao/fsManagers/ProductManagerBD.js';
 
 
 const router =Router();
-
-//endpoint crear producto
-//endpoint leer producto id
-//endpoint actualizar productos :id
-// agregar producto
-// borrar producto
+const auth = (req,res,next) =>{
+  if(req.session?.user && req.session.user.username === 'admin@coderhouse.cl'){
+    return next()
+  }
+  //falta agregar rol
+  //si el correo es admin@tt.cl se puede acceder
+  return res.status(401).json({status:'fallo', message:'error autorizacion'})
+}
 
 const productClass = new ProductManager;
 
@@ -37,7 +39,7 @@ export const getProducts = async (req,res) =>{
 }
 
 
-router.get('/', async (req,res) =>{
+router.get('/', auth, async (req,res) =>{
  
   const productos = await getProducts(req,res)
   console.log(productos)

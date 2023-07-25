@@ -1,0 +1,30 @@
+<h1 style ="color:blue">Ingrese Login</h1>
+
+
+
+<form id="form1" name="form1" method="post">
+
+    <div class="table table-striped">
+        <label for="login">Login</label>
+        <input id="login" class="form-control" type="text" name="login">
+    </div>
+     <div class="table table-striped">
+        <label for="password">Password</label>
+        <input id="password" class="form-control" type="password" name="password">
+    </div>
+    
+    <input type="submit" class="btn btn-primary" id="btn" value="Login" onclick="loginUser()>
+</form>
+<form><input type="submit" class="btn btn-primary" id="btn" value="Logout"></form>
+
+<script>
+
+loginUser = () => {
+
+        fetch(`api/products`,{method:'post'})
+        .then (result => result.json() )
+        .catch(err => alert('Error'+err))
+
+}
+
+</script>

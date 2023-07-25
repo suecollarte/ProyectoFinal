@@ -1,21 +1,50 @@
 import express from 'express'
 import handlebars from 'express-handlebars'
 import mongoose from 'mongoose'
+import MongoStore from "connect-mongo"
+//import cookieParser from 'cookie-parser'
+import session from 'express-session'
+//import FileStore from 'session-file-store'
+
 
 
 import productoRoute from './routers/producto.router.js'
 import cartRoute from './routers/cart.router.js'
 import viewRoute from './routers/view.router.js'
+import profile from './routers/profile.router.js'
 import {Server} from 'socket.io'
 
 
 
 
 //const MONGOURI = 'mongodb+srv://admin:admin@cluster0.hjgxmmk.mongodb.net/?retryWrites=true&w=majority';
-const MONGOURI='mongodb://localhost:27017'
+const MONGOURI='mongodb://0.0.0.0:27017'
+//'mongodb://localhost:27017'
+
 const MONGODB = 'ecommerce';
-//const MONGODB='';
+
 const app= express();
+
+//app.use(cookieParser('hola'))
+//const fileStore = FileStore(session)
+
+app.use(session({
+  store: MongoStore.create({ 
+    mongoUrl: MONGOURI, 
+    dbName: 'ecommerce',
+    mongoOptions:{
+      //useNewUrlParse:true,
+      useUnifiedTopology:true
+      }
+    }),
+    secret:'hola',
+    resave: true,
+    saveUninitialized:true
+  
+ /*  store: new fileStore({
+    path:"./sessions"}) */
+}))
+
 app.use(express.json());
 //para poder recibir lo del cliente los json
 app.use(express.urlencoded({extended:true}))
@@ -43,9 +72,11 @@ app.set('view engine', 'handlebars')
 
 
 
+
 app.use('/api/products',productoRoute);
 app.use('/api/carts',cartRoute);
 app.use('/products',viewRoute);
+app.use('/user',profile)
 
 //app.use('productos',viewproduct)
 
