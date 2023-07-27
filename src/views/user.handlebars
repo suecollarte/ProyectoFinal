@@ -2,28 +2,36 @@
 
 
 
-<form id="form1" name="form1" method="post">
+<form id="form1" name="form1" method="POST" action="javascript:loginUser()">
 
     <div class="table table-striped">
         <label for="login">Login</label>
-        <input id="login" class="form-control" type="text" name="login">
+        <input id="login" class="form-control" type="text" name="login" value="admin@coderhouse.com">
     </div>
      <div class="table table-striped">
         <label for="password">Password</label>
         <input id="password" class="form-control" type="password" name="password">
     </div>
     
-    <input type="submit" class="btn btn-primary" id="btn" value="Login" onclick="loginUser()>
+    <input type="submit" class="btn btn-primary" id="btn" value="Login"  >
 </form>
-<form><input type="submit" class="btn btn-primary" id="btn" value="Logout"></form>
+
+<form><input type="submit" class="btn btn-primary" id="logout" value="Logout"></form>
 
 <script>
 
 loginUser = () => {
 
-        fetch(`api/products`,{method:'post'})
-        .then (result => result.json() )
-        .catch(err => alert('Error'+err))
+ let login= document.getElementById('login').value;
+//alert(login)
+        fetch(`profile/${login}`,{method:'get'})
+         .then (result => result.json() )
+        .then (result => {
+                if (result.status === 'error') throw new Error(result.error)
+                console.log(result)
+                return result
+        })
+         .catch(err => alert('Error'+err))
 
 }
 

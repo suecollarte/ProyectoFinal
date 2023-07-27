@@ -9,22 +9,29 @@ const sessionClass = new ProfileManager;
 //controller
 router.get('/', async (req,res) =>{
   //res.json({status:'success',message:'Cookies'})
+  res.render("user",{status:'success'})
  
 })
 
-router.get('/profile',(req,res)=>{
-  let username= parseInt(req.query.username) 
-   
+router.get('/profile/:cid',(req,res)=>{
+  let nombreUser= req.params.cid;
+
   const user={
-        username: username,
+        username: nombreUser,
         ui_preference: 'azul',
         language:'es',
         location:'ch'
-    }
+    } 
+    console.log('usuario',user)
    // res.cookie('preference', JSON.stringify(user), {signed:true}).json({status:'success',message:'cookie creada2'})
     req.session.user =user
-    //res.json({status:'success',message:'sesion creada2'}) 
-    res.render("user")
+   //return user
+   res.json({status:'success',message:'sesion creada2'}) 
+   console.log('termino')
+   //res.status(200).json(nombreUser); //envio de regreso los datos recibidos
+    //res.redirect('/api/products/')
+    
+    
     })
 
 router.get('/getpreference', (req,res) =>{
