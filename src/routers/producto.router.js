@@ -4,9 +4,10 @@ import { ProductManager } from '../dao/fsManagers/ProductManagerBD.js';
 
 const router =Router();
 const auth = (req,res,next) =>{
-  if(req.session?.user && req.session.user.username === 'admin@coderhouse.cl'){
+  if(req.session?.user && req.session.user.username === 'admin@coderhouse.com'){
     return next()
   }
+ 
   //falta agregar rol
   //si el correo es admin@tt.cl se puede acceder
   return res.status(401).json({status:'fallo', message:'error autorizacion'})
@@ -42,7 +43,7 @@ export const getProducts = async (req,res) =>{
 router.get('/', auth, async (req,res) =>{
  
   const productos = await getProducts(req,res)
-  console.log(productos)
+ // console.log(productos)
   if (productos.statusCode === 200){
     const totalPag=[]
     let link

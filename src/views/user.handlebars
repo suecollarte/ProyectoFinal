@@ -2,7 +2,7 @@
 
 
 
-<form id="form1" name="form1" method="POST" action="javascript:loginUser()">
+<form method="POST" action="/user/registra">
 
     <div class="table table-striped">
         <label for="login">Login</label>
@@ -13,26 +13,38 @@
         <input id="password" class="form-control" type="password" name="password">
     </div>
     
-    <input type="submit" class="btn btn-primary" id="btn" value="Login"  >
+    <button class="btn btn-primary" id="btn" >Login</button>
 </form>
 
-<form><input type="submit" class="btn btn-primary" id="logout" value="Logout"></form>
+<button  class="btn btn-primary" id="logout" value="Logout">Logout</button>
 
 <script>
 
-loginUser = () => {
+/*
+ document.getElementById('btn').onclick = async e=>{
+    
+ const login= document.getElementById('login').value
 
- let login= document.getElementById('login').value;
-//alert(login)
-        fetch(`profile/${login}`,{method:'get'})
-         .then (result => result.json() )
+ 
+console.log(login)
+ /*const result =  await fetch(`./registra/?login=${login}`) 
+ const response= await result.json()
+ console.log(response)*/
+ /* fetch(`./registra/?login=${login}`,{method:'get'})
         .then (result => {
-                if (result.status === 'error') throw new Error(result.error)
-                console.log(result)
-                return result
+               return result
         })
-         .catch(err => alert('Error'+err))
+        .then(result => (fetch(`api/products/`,{method:'post'})) )
+        
+       
+ };
+ */
+ 
+document.getElementById('logout').onclick =async e=>{
 
-}
+ const result = await fetch('/logout')
+ const response= await result.json()
+ console.log(response)
+ };
 
 </script>
