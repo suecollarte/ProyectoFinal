@@ -31,6 +31,7 @@ router.post('/registra', async(req,res)=>{
   
   //res.status(200).json(nombreUser); //envio de regreso los datos recibidos
   res.redirect('/api/products/')
+
   
     
     })
@@ -52,9 +53,9 @@ router.get('/deletepreference',async (req,res) =>{
 
     
 //eliminacion
-router.post('/logout', async (request,response) =>{
+router.get('/logout', async (req,res) =>{
   req.session.destroy((err) => {
-    res.redirect('/') // will always fire after session is destroyed
+    res.redirect('/user') // will always fire after session is destroyed
   })
 })
 export default router
