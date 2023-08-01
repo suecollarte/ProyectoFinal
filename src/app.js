@@ -6,13 +6,18 @@ import MongoStore from "connect-mongo"
 import session from 'express-session'
 //import FileStore from 'session-file-store'
 
+import inializePassport from './config/passport.config.js'
+
 
 
 import productoRoute from './routers/producto.router.js'
 import cartRoute from './routers/cart.router.js'
 import viewRoute from './routers/view.router.js'
 import profile from './routers/profile.router.js'
-import {Server} from 'socket.io'
+import jwtRouter from './routers/jwt.router.js'
+import passport from 'passport'
+import cookieParser from 'cookie-parser'
+
 
 
 
@@ -38,12 +43,13 @@ app.use(session({
       }
     }),
     secret:'hola',
-    resave: true,
-    saveUninitialized:true
+    resave: false,
+    saveUninitialized:false
   
  /*  store: new fileStore({
     path:"./sessions"}) */
 }))
+
 
 app.use(express.json());
 //para poder recibir lo del cliente los json
@@ -51,6 +57,12 @@ app.use(express.urlencoded({extended:true}))
 //para recibir formularios por donde llegan los datos
 // parse application/x-www-form-urlencoded
 // parse application/json
+
+app.use(cookieParser('secret'))
+inializePassport()
+app.use(passport.initialize())
+
+
 
 // esto es por http
 app.get('/', (request,response) =>{
@@ -77,6 +89,10 @@ app.use('/api/products',productoRoute);
 app.use('/api/carts',cartRoute);
 app.use('/products',viewRoute);
 app.use('/user',profile)
+app.use('/jwt',jwtRouter)
+app.get('/login', (req, res) => {
+  res.render('indexuser')
+})
 
 //app.use('productos',viewproduct)
 
@@ -91,49 +107,7 @@ try{
      
      const httpServer= app.listen(8080, () => console.log('Server Up!'))
 
-const io = new Server(httpServer)
-
-app.use((req,res,next)=>{
-  req.io=io
-  next()
-})
-
-io.on('connection',(socket) =>{
-  console.log("conexion realizada",socket.id)
-  
-  socket.on('message', data =>{
-    console.log(data)
-      })
- 
-        socket.on('from-client-producto', (producto) => {
-          productos.addProducto(producto)
-          io.sockets.emit('from-server-producto', { DB_PRODUCTOS });
-        });
-        socket.on("Agregado", (producto)=>{ //trae del cliente
-            
-          //enviar listado a todos
-          //console.log(productos)
-            io.sockets.emit('listaProducto',productos)  //lista
-        })
-        socket.on("client-borraProducto", (codigo)=>{ //trae codigo del cliente
-            
-          //enviar listado a todos
-            console.log(codigo)
-            productos.BorrarProducto(codigo)
-            io.sockets.emit('listaProducto',productos)  //lista
-        })  
-       // socket.emit('listaProducto',todo) //lista todo
-        //recibo 
-        socket.on('message-desde', data =>{
-            // console.log(data)
-             log.push({id: socket.id, message:data})
-             socket.emit('history',log)
-         })
-       
-     
-
-})
-     
+   
     }
 catch(err){
     console.log(err.message)
