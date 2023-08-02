@@ -1,5 +1,5 @@
 import passport from "passport";
-import GitHubStrartegy from 'passport-github2'
+import GitHubStrategy from 'passport-github2'
 import userService from '../dao/models/user.model.js'
 
 
@@ -16,10 +16,10 @@ import userService from '../dao/models/user.model.js'
 } */
 
 const inializePassport = () =>{
-    passport.use('github', new GitHubStrartegy({
-        clienteId:'Iv1.e75875cce2ba773c',
+    passport.use('github', new GitHubStrategy({
+        clientID:'Iv1.e75875cce2ba773c',
         clientSecret:'40e410caf8757019168909c0527ea6612047f99a',
-        callbackURL:'http://localhost:8080/api/sessions/gothubcallback'
+        callbackURL:'http://localhost:8080/api/sessions/githubcallback'
     }, async (accessToken,refreshToken, profile, done) =>{
         try{
             console.log(profile)
