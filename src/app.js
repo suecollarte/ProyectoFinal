@@ -14,9 +14,10 @@ import productoRoute from './routers/producto.router.js'
 import cartRoute from './routers/cart.router.js'
 import viewRoute from './routers/view.router.js'
 import profile from './routers/profile.router.js'
-import jwtRouter from './routers/jwt.router.js'
+//import jwtRouter from './routers/jwt.router.js'
 import passport from 'passport'
 import cookieParser from 'cookie-parser'
+import sessionRoute from './routers/session.router.js'
 
 
 
@@ -58,10 +59,6 @@ app.use(express.urlencoded({extended:true}))
 // parse application/x-www-form-urlencoded
 // parse application/json
 
-app.use(cookieParser('secret'))
-inializePassport()
-app.use(passport.initialize())
-
 
 
 // esto es por http
@@ -82,6 +79,13 @@ app.engine('handlebars', handlebars.engine({
 app.set('views', './src/views')
 app.set('view engine', 'handlebars')
 
+inializePassport();
+
+app.use(session({
+  secret:'Codersecret'
+}))
+
+app.use(passport.initialize())
 
 
 
@@ -89,10 +93,11 @@ app.use('/api/products',productoRoute);
 app.use('/api/carts',cartRoute);
 app.use('/products',viewRoute);
 app.use('/user',profile)
-app.use('/jwt',jwtRouter)
-app.get('/login', (req, res) => {
+app.use('/api/sessions', sessionRoute)
+/*app.use('/jwt',jwtRouter)
+ app.get('/login', (req, res) => {
   res.render('indexuser')
-})
+}) */
 
 //app.use('productos',viewproduct)
 
