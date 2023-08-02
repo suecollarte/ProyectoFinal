@@ -18,7 +18,7 @@ import profile from './routers/profile.router.js'
 import passport from 'passport'
 import cookieParser from 'cookie-parser'
 import sessionRoute from './routers/session.router.js'
-
+import loginRoute from './routers/login.router.js'
 
 
 
@@ -34,22 +34,7 @@ const app= express();
 //app.use(cookieParser('hola'))
 //const fileStore = FileStore(session)
 
-app.use(session({
-  store: MongoStore.create({ 
-    mongoUrl: MONGOURI, 
-    dbName: 'ecommerce',
-    mongoOptions:{
-      //useNewUrlParse:true,
-      useUnifiedTopology:true
-      }
-    }),
-    secret:'hola',
-    resave: false,
-    saveUninitialized:false
-  
- /*  store: new fileStore({
-    path:"./sessions"}) */
-}))
+
 
 
 app.use(express.json());
@@ -82,17 +67,33 @@ app.set('view engine', 'handlebars')
 inializePassport();
 
 app.use(session({
-  secret:'Codersecret'
+  store: MongoStore.create({ 
+    mongoUrl: MONGOURI, 
+    dbName: 'ecommerce',
+    mongoOptions:{
+      //useNewUrlParse:true,
+      useUnifiedTopology:true
+      }
+    }),
+    secret:'hola',
+    resave: false,
+    saveUninitialized:false
+  
+ /*  store: new fileStore({
+    path:"./sessions"}) */
 }))
 
-app.use(passport.initialize())
 
+
+app.use(passport.initialize())
+app.use(passport.session())
 
 
 app.use('/api/products',productoRoute);
 app.use('/api/carts',cartRoute);
 app.use('/products',viewRoute);
 app.use('/user',profile)
+app.use('/login',loginRoute)
 app.use('/api/sessions', sessionRoute)
 /*app.use('/jwt',jwtRouter)
  app.get('/login', (req, res) => {
