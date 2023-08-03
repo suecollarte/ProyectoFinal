@@ -19,9 +19,7 @@ router.get('/register', (req, res) => {
 })
 
 // API para crear usuarios en la DB
-router.post('/register', 
-passport.authenticate('register', { failureRedirect: '/session/failregister' })
-                                , async (req, res) => {
+router.post('/register', passport.authenticate('register', { failureRedirect: '/session/failregister' }), async (req, res) => {
     res.redirect('/session/login')
 })
 
@@ -32,7 +30,7 @@ router.get('/failregister', (req, res) => {
 
 // Vista de Login
 router.get('/login', (req, res) => {
-    res.render('sessions/login')
+    res.render('session/login')
 })
 
 // API para login
@@ -49,11 +47,13 @@ router.post('/login', passport.authenticate('login',
         password: req.user.password,
         role: req.user.role
     }
-    console.log(req.session.user)
-    res.cookie(JWT_COOKIE_NAME, req.user.token).redirect('/products')
+   // console.log(req.session.user)
+   console.log(req.user.token)
+    res.cookie(JWT_COOKIE_NAME, req.user.token)
+    res.redirect('/products')
 })
 router.get('/faillogin', (req, res) => {
-    res.send({error: "Fail Login"})
+    res.send({error: "Fallo Login"})
 })
 
 router.get('/profile', (req, res) => {

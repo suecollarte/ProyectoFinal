@@ -9,7 +9,7 @@ router.get('/', async (req, res) =>{
     let page= parseInt(req.query.page) || 1
     let limit = parseInt(req.query.limit) || 10
     const productos = await getProducts(req,res)
-    
+
     let prevLink
    if(!req.query.page && page==1){
      prevLink=`http://localhost:8080/api/products?page=${page}`
@@ -53,8 +53,8 @@ router.get('/', async (req, res) =>{
               }
               totalPag.push({page:index,link})
          }
-         
-         
+       
+        
         const parte2 ={
             totalPag,
             prevPage:result.response.prevPage,
@@ -66,7 +66,7 @@ router.get('/', async (req, res) =>{
             
             nextLink:result.response.nextLink
             } 
-            
+          console.log(productos.response.payload)
          res.render('carrito',{products:result.response.payload, paginainf: parte2 }) 
     }else{
       res.status(result.statusCode).json({status:'error', error: result.response.error})

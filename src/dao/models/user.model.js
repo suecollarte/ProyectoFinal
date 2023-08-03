@@ -7,11 +7,11 @@ const messageCollection ='users'
 
 const userSchema = new mongoose.Schema({
     
-    first_name:{type:String, required:true},
-    last_name:{type:String, required:true},
-    age:{type:String, required:true},
-    email:{type:String, required:true},
-    password: {type:String, required:true},
+    first_name:{type:String},
+    last_name:{type:String},
+    age:{type:String},
+    email:{type:String},
+    password: {type:String},
     cart: {
         type:[{
         _id:false,
@@ -20,8 +20,8 @@ const userSchema = new mongoose.Schema({
             ref:"carts"
             }
         }]},
-    role:{type:String, required:true}
+    role:{type:String}
 })
-
+mongoose.set("strictQuery",false)
 const userModel =mongoose.model(messageCollection,userSchema)
 export default userModel

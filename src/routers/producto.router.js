@@ -4,7 +4,9 @@ import { ProductManager } from '../dao/fsManagers/ProductManagerBD.js';
 
 const router =Router();
 const auth = (req,res,next) =>{
-  if(req.session?.user && req.session.user.username === 'admin@coderhouse.com'){
+  
+  if(req.session?.user ){
+  //if(req.session?.user && req.session.user.username === 'admin@coderhouse.com'){
     return next()
   }
  
@@ -40,10 +42,10 @@ export const getProducts = async (req,res) =>{
 }
 
 
-router.get('/', auth, async (req,res) =>{
+router.get('/', async (req,res) =>{
  
   const productos = await getProducts(req,res)
- // console.log(productos)
+ 
   if (productos.statusCode === 200){
     const totalPag=[]
     let link

@@ -8,7 +8,7 @@ import session from 'express-session'
 //import FileStore from 'session-file-store'
 
 import inializePassport from './config/passport.config.js'
-
+import __dirname from "./utils.js"
 
 
 import productoRoute from './routers/producto.router.js'
@@ -54,7 +54,7 @@ response.json('Despliegue con /');
 
 })
 //para la interfaz
-app.use(express.static('./src/public'))
+app.use(express.static(__dirname+'/public'))
 
 app.engine('handlebars', handlebars.engine({
     defaultLayout:'main',
@@ -62,10 +62,10 @@ app.engine('handlebars', handlebars.engine({
     partialsDir:'./src/views/partials'
 })
 )
-app.set('views', './src/views')
+app.set('views',__dirname+'/views')
 app.set('view engine', 'handlebars')
 
-inializePassport();
+
 
 app.use(session({
   store: MongoStore.create({ 
@@ -77,15 +77,15 @@ app.use(session({
       }
     }),
     secret:'hola',
-    resave: false,
-    saveUninitialized:false
+    resave: true,
+    saveUninitialized:true
   
  /*  store: new fileStore({
     path:"./sessions"}) */
 }))
 
 
-
+inializePassport();
 app.use(passport.initialize())
 app.use(passport.session())
 

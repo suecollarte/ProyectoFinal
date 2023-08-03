@@ -17,6 +17,7 @@ const inializePassport = () =>{
             async (req,username,password,done) =>{
             const {first_name, last_name, email,age} =req.body
             try{
+                console.log("passport")
                 let user=await userService.findOne({email:username})
                 if(user){
                     console.log('existe usuario')
@@ -34,6 +35,7 @@ const inializePassport = () =>{
             }
         }
     ))
+
 
     passport.use('login', new LocalStrategy({
         usernameField: 'email'
