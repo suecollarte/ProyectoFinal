@@ -1,46 +1,75 @@
 import passport from "passport";
-import GitHubStrategy from 'passport-github2'
+import local from 'passport-local';
+import passport_jwt from "passport-jwt";
 import userService from '../dao/models/user.model.js'
+import {createHash, extractCookie, generateToken, isValidPassword, JWT_PRIVATE_KEY} from '../utils.js'
 
-
-
-/* const inializePassport = () => {
-
-       passport.serializeUser((user,done) =>{
-        done(null,user._id)
-       })
-       passport.deserializeUser(async (id, done) =>{
-        let user =await userService.findById(id)
-        done(null,user);
-       })
-} */
+const LocalStrategy = local.Strategy;
+const JWTStrategy = passport_jwt.Strategy
+const ExtractJWT = passport_jwt.ExtractJwt
 
 const inializePassport = () =>{
-    passport.use('github', new GitHubStrategy({
-        clientID:'Iv1.e75875cce2ba773c',
-        clientSecret:'40e410caf8757019168909c0527ea6612047f99a',
-        callbackURL:'http://localhost:8080/api/sessions/githubcallback'
-    }, async (accessToken,refreshToken, profile, done) =>{
-        try{
-            console.log(profile)
-            let user= await userService.findOne({mail:profile._json.email})
-            if (!user) {
-                let newUser ={
-                    first_name:profile._json.name,
-                    last_name:'',
-                    age:30,
-                    email:profile._json.email,
-                    password:''
+
+
+    passport.use('register', new LocalStrategy(
+
+        {passReqToCallback:true, usernameField:'email'}, 
+            async (req,username,password,done) =>{
+            const {first_name, last_name, email,age} =req.body
+            try{
+                let user=await userService.findOne({email:username})
+                if(user){
+                    console.log('existe usuario')
+                    return done(null,false)
+
                 }
-                let result =await userService.create(newUser)
-                done(null,result)
+                const newUser ={
+                    first_name,last_name,email,age,password:createHash(password)
+                }
+                let result = await userService.create(newUser)
+                return done(null,result)
+
+            }catch (error){
+                return done("error al obtener usuario:"+error)
             }
-            else{
-                done(null,result)
+        }
+    ))
+
+    passport.use('login', new LocalStrategy({
+        usernameField: 'email'
+    }, async (username, password, done) => {
+        try {
+            const user = await userService.findOne({email: username})
+            if(!user) {
+                console.log("User dont exist");
+                return done(null, user)
             }
-        }catch(error){
-            return done(error)
+
+            if(!isValidPassword(user, password)) return done(null, false)
+            const token =generateToken(user)
+            user.token = token
+
+            return done(null, user)
+        } catch (error) {
+            
         }
     }))
+
+    passport.use("jwt", new JWTStrategy({
+        jwtFromRequest: ExtractJWT.fromExtractors([extractCookie]),
+        secretOrKey:   JWT_PRIVATE_KEY
+    }, async(jwt_payload, done) =>{
+        done(null,jwt_payload)
+    }))
+
+    passport.serializeUser((user, done) => {
+        done(null, user._id)
+    })
+
+    passport.deserializeUser(async (id, done) => {
+        const user = await userService.findById(id)
+        done(null, user)
+    })
+
 }
 export default inializePassport

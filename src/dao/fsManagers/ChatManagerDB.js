@@ -1,4 +1,4 @@
-import { chatModel } from '../models/message.model.js';
+import messageModel from '../models/message.model.js';
 
 
 export class ChatManager{
@@ -15,7 +15,7 @@ traeTodoChat = async () => {
  
      
     try{
-      const message =  await chatModel.findById(id).lean().exec();
+      const message =  await messageModel.findById(id).lean().exec();
      
       if(message === null)
       { 
@@ -35,7 +35,7 @@ traeTodoChat = async () => {
 addChat = async(message)=>{
         
   try{
-    const message= new chatModel(product)
+    const message= new messageModel(product)
     const result= await message.save(); 
     
     return result 
@@ -52,7 +52,7 @@ traeChatBy = async(id) =>
  {
 
  
-  const result =  await chatModel.findById(id).lean().exec();
+  const result =  await messageModel.findById(id).lean().exec();
          
   if(result === null)
   { 

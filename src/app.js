@@ -2,6 +2,7 @@ import express from 'express'
 import handlebars from 'express-handlebars'
 import mongoose from 'mongoose'
 import MongoStore from "connect-mongo"
+import { Server } from "socket.io";
 //import cookieParser from 'cookie-parser'
 import session from 'express-session'
 //import FileStore from 'session-file-store'
@@ -19,7 +20,7 @@ import passport from 'passport'
 import cookieParser from 'cookie-parser'
 import sessionRoute from './routers/session.router.js'
 import loginRoute from './routers/login.router.js'
-
+import {run} from "./run.js"
 
 
 
@@ -94,7 +95,7 @@ app.use('/api/carts',cartRoute);
 app.use('/products',viewRoute);
 app.use('/user',profile)
 app.use('/login',loginRoute)
-app.use('/api/sessions', sessionRoute)
+app.use('/session', sessionRoute)
 /*app.use('/jwt',jwtRouter)
  app.get('/login', (req, res) => {
   res.render('indexuser')
@@ -112,7 +113,10 @@ try{
       mongoose.connect('mongodb://0.0.0.0:27017', { dbName: 'ecommerce' })
      
      const httpServer= app.listen(8080, () => console.log('Server Up!'))
-
+     const socketServer = new Server(httpServer)
+     httpServer.on("error", (e) => console.log("ERROR: " + e))
+ 
+     run(socketServer, app)
    
     }
 catch(err){

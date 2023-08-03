@@ -1,14 +1,14 @@
 import {Router} from 'express';
-import { ChatManager } from '../dao/fsManagers/ChatManagerBD.js';
-import { chatModel } from '../dao/models/Chat.model.js';
+import { ChatManager } from '../dao/fsManagers/ChatManagerDB.js';
+import messageModel  from '../dao/models/message.model.js';
 
 const router =Router();
 
-const ChatClass = new ChatManager;
+const chatRouter = new ChatManager;
 
 router.get('/', async (req,res) =>{
   try{
-    const Chats = await ChatClass.traeTodo(); 
+    const Chats = await ChatManager.traeTodo(); 
     res.status(201).json({status:"success", Chats:Chats});
   }
     catch (err) {
@@ -26,7 +26,7 @@ router.post('/', async (req,res) =>
    const ChatNew= req.body
 try{
  
-    const result= await ChatClass.addChat(ChatNew);
+    const result= await ChatManager.addChat(ChatNew);
     if (result){
       res.status(201).json({status:'success', payload:result})
        
