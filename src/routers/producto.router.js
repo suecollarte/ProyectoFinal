@@ -30,8 +30,27 @@ export const getProducts = async (req,res) =>{
     let limit = parseInt(req.query.limit) || 10
     
     const productos= await productClass.traeTodo(req, res)
-    
-    return productos
+
+    console.log(productos)
+    let prevLink
+    if(!req.query.page && page==1){
+      prevLink=`http://localhost:8080/api/products?page=${page}`
+    }else{
+      prevLink =`http://localhost:8080/api/products?page=${productos.prevPage}`
+      
+    }
+    let nextLink
+    if(!req.query.page){
+      nextLink =`http://localhost:8080/api/products?page=${productos.nextPage}`
+    }else{
+      nextLink=`http://localhost:8080/api/products?page=${page}`
+    }
+ 
+    const totalPag=[]
+
+  if(productos.statusCode===200){
+     return productos
+     }    
     
     } catch(err){
       console.error(err)
@@ -44,35 +63,10 @@ export const getProducts = async (req,res) =>{
 
 router.get('/', async (req,res) =>{
  
-  const productos = await getProducts(req,res)
+  const productos= await getProducts(req,res)
  
   if (productos.statusCode === 200){
-    const totalPag=[]
-    let link
-    for (let index = 1; index <= productos.response.totalPages; index++){
-          if (!req.query.page){
-            link=`http:\\localhost:8080\api\products&page=${index}`
-          }
-          else{
-            link=`http:\\localhost:8080\api\products&page=${req.query.page}`
-          }
-          totalPag.push({page:index,link})
-     }
-     
-     
-    let parte2 ={
-        totalPag,
-        prevPage:productos.response.prevPage,
-        nextPage:productos.response.nextPage,
-        page:productos.response.page,
-        hasPrevPage:productos.response.hasPrevPage,
-        hasNextPage:productos.response.hasNextPage,      
-        prevLink:productos.response.prevLink,
-        
-        nextLink:productos.response.nextLink
-        } 
-        
-     res.render('index',{products:productos.response.payload, paginainf: parte2 }) 
+     res.render('index',{products:productos.response.docs}) 
 }else{
   res.status(productos.statusCode).json({status:'error', error: productos.statusCode})
 }

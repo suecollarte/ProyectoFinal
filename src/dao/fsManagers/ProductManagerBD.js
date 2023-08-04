@@ -23,10 +23,12 @@ traeTodo = async (req, res)=> {
    //const productos =await productModel.find(
  
   const productos =await productModel.paginate(filtroOpciones, paginacionOpciones)
- 
-    return{
+ //console.log("PRODUCTOS")
+ // console.log(productos)
+
+    return {
       statusCode:200,
-      response:{payload:productos}
+      response:productos
     }
   }
   catch (err) {

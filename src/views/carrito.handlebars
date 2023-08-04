@@ -37,7 +37,7 @@
                  <dt class="col">Categoria</dt>
                 <dt class="col">Seleccionar</dt>
                 </div>
-                {{#each products}}
+                {{#each products.docs}}
         <div class="row">
      <div class="col" > <button class="btn btn-warning" 
      onclick="addProductToCart('{{this._id}}')">Agrega Carrito</button>
@@ -59,9 +59,7 @@
 </div>
    
 <script>
-
 addProductToCart = (pid) => {
-
         fetch('/api/carts',{method: 'post'})
         .then (result => result.json() )
         .then (result => {
