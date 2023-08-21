@@ -1,5 +1,5 @@
 import {Router} from 'express';
-import { ChatManager } from '../dao/fsManagers/ChatManagerDB.js';
+import { ChatManager } from '../fsManagers/ChatManagerDB.js';
 import messageModel  from '../models/message.model.js';
 
 const router =Router();

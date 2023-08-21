@@ -1,4 +1,4 @@
-import profileModel from '../../models/profile.model.js';
+import profileModel from '../models/profile.model.js';
 
 export class ProfileManager{
   constructor(path,sesion){

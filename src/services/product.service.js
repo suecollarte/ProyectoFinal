@@ -6,4 +6,4 @@ import ProductRepositorio from '../repositorio/product.repositorio.js'
 //app-routers-controllers-service-repositorio-dao-model
 //tb podria ser la vista app-routes-view*controllers
 
-export const ProductService = new ProductRepositorio(new Product())
+export const ProductService = new ProductRepositorio(Product)

@@ -1,5 +1,5 @@
 import {Router} from 'express';
-import { getProducts } from './producto.router.js';
+import { getAllProductController } from '../controllers/productController.js';
 import { getProductsFromCart } from './cart.router.js';
 
 
@@ -8,7 +8,7 @@ const router = Router()
 router.get('/', async (req, res) =>{
     let page= parseInt(req.query.page) || 1
     let limit = parseInt(req.query.limit) || 10
-    const result = await getProducts(req,res)
+    const result = await getAllProductController(req,res)
     const user = req.session.user
 console.log(result)
      if (result.statusCode === 200){
