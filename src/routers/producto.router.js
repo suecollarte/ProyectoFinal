@@ -1,5 +1,5 @@
 import {Router} from 'express';
-import { ProductManager } from '../dao/fsManagers/ProductManagerBD.js';
+import { ProductManager } from '../controllers/productController.js';
 
 
 const router =Router();
@@ -31,7 +31,7 @@ export const getProducts = async (req,res) =>{
     
     const productos= await productClass.traeTodo(req, res)
 
-    console.log(productos)
+    //console.log(productos)
     let prevLink
     if(!req.query.page && page==1){
       prevLink=`http://localhost:8080/api/products?page=${page}`
