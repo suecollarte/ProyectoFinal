@@ -1,7 +1,8 @@
 import { ProductService } from '../services/product.service.js';
+import productModel from '../models/product.model.js'
 
  
-export const traeTodo = async (req, res)=> {
+export const traeTodoController = async (req, res)=> {
   const result = await ProductService.getAll(req,res)  
   res.json(result) 
  
@@ -14,26 +15,26 @@ export const getAllProductController = async (req, res)=> {
 }
 export const  addProductoController = async(data)=>{
 //productrepositorio
-const result= await ProductService.addProductoController(data)
+const result= await ProductService.addProducto(data)
 res.json(result) 
 }
 
 
-export const  traeProductsBy = async(_id) => {
+export const  traeProductsByController = async(_id) => {
   const result = await ProductService.traeProductsBy(_id)
   res.json(result) 
  }
 
- export const  BorrarProducto = async(_id) =>{
- 
+ export const  BorrarProductoController = async(_id) =>{
+  const result= await ProductService.BorrarProducto(_id)
     
     
  }
 
- export const ModificarProducto = async(id,data) =>{
+ export const ModificarProductoController = async(id,data) =>{
 
 try{
-  const result= await productModel.findByIdAndUpdate({_id:id},{
+  const result= await ProductService.ModificarProducto({_id:id},{
     $set:data})
 }
 catch(e){

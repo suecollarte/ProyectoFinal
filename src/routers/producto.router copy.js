@@ -1,9 +1,7 @@
 import {Router} from 'express';
-import { getAllProductController } from '../controllers/productController.js';
-import { traeProductsByController } from '../controllers/productController.js';
-import { ModificarProductoController } from '../controllers/productController.js';
-import { addProductoController } from '../controllers/productController.js';
-import { BorrarProductoController } from '../controllers/productController.js';
+import { ProductManager } from '../dao/fsManagers/ProductManagerBD.js';
+
+
 const router =Router();
 const auth = (req,res,next) =>{
   
@@ -17,16 +15,55 @@ const auth = (req,res,next) =>{
   return res.status(401).json({status:'fallo', message:'error autorizacion'})
 }
 
+const productClass = new ProductManager;
 
 // esta data onwire se renderiza json
 // para los onwire html se hace una vista ese es con res.render
 
+export const getProducts = async (req,res) =>{
+  try{
+    //limit ok
+    //page ok
+    //query
 
+    let page= parseInt(req.query.page) || 1
+    let limit = parseInt(req.query.limit) || 10
+    
+    const productos= await productClass.traeTodo(req, res)
+
+    //console.log(productos)
+    let prevLink
+    if(!req.query.page && page==1){
+      prevLink=`http://localhost:8080/api/products?page=${page}`
+    }else{
+      prevLink =`http://localhost:8080/api/products?page=${productos.prevPage}`
+      
+    }
+    let nextLink
+    if(!req.query.page){
+      nextLink =`http://localhost:8080/api/products?page=${productos.nextPage}`
+    }else{
+      nextLink=`http://localhost:8080/api/products?page=${page}`
+    }
+ 
+    const totalPag=[]
+
+  if(productos.statusCode===200){
+     return productos
+     }    
+    
+    } catch(err){
+      console.error(err)
+    }
+  
+
+
+}
 
 
 router.get('/', async (req,res) =>{
  
-  const productos= await getAllProductController(req,res)
+  const productos= await getProducts(req,res)
  
   if (productos.statusCode === 200){
      res.render('index',{products:productos.response.docs}) 
@@ -40,7 +77,7 @@ router.get('/', async (req,res) =>{
 router.get('/:pid', async (request, response) =>{
   const id= request.params.pid;
   try{
-     const producto =  await traeProductsByController(id);
+     const producto =  await productClass.traeProductsBy(id);
     if (producto.statusCode === 200){
      // console.log(producto.response.payload)
       response.render('indexprod',{producto: producto.response.payload} )
@@ -61,7 +98,7 @@ router.post('/', async (req,res) =>
    const productoNew= req.body;
    
 try{
-  const result= await addProductoController(productoNew);
+  const result= await productClass.addProducto(productoNew);
  
     if (typeof result == 'string') {
     const error = result.split(' ')
@@ -86,7 +123,7 @@ router.put('/:id', async (request,response) =>{
       try{
           const id = request.params.id;
           const data= request.body;
-          const result = await ModificarProductoController(id, data)
+          const result = await productClass.ModificarProducto(id, data)
           if (result){
                response.status(201).json({status: 'Producto no se encuentra Actualizado',payload:id})
           
@@ -107,7 +144,7 @@ router.get('/borre/:id', async (request,response) =>{
   
     
    try{
-    const result= BorrarProductoController(code);
+    const result= productClass.BorrarProducto(code);
     if(result== null){
       response.status(404).send({message: 'Producto No se encuentra',code})
      }

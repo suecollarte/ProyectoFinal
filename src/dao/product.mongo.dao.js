@@ -1,5 +1,6 @@
 import productModel from '../models/product.model.js'
 
+
 export default class ProductMongoDAO{
     traeTodo = async() => await productModel.find().lean().exec()
     
@@ -24,7 +25,23 @@ export default class ProductMongoDAO{
         const productos =await productModel.paginate(filtroOpciones, paginacionOpciones)
        //console.log("PRODUCTOS")
        // console.log(productos)
+       //console.log(productos)
+    let prevLink
+    if(!req.query.page && page==1){
+      prevLink=`http://localhost:8080/api/products?page=${page}`
+    }else{
+      prevLink =`http://localhost:8080/api/products?page=${productos.prevPage}`
       
+    }
+    let nextLink
+    if(!req.query.page){
+      nextLink =`http://localhost:8080/api/products?page=${productos.nextPage}`
+    }else{
+      nextLink=`http://localhost:8080/api/products?page=${page}`
+    }
+ 
+    const totalPag=[]
+
           return {
             statusCode:200,
             response:productos
