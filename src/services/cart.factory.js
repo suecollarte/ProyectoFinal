@@ -1,15 +1,15 @@
 import config from "../config/config.js"
 
-export let Product
+export let Cart
 
 switch (config.persistence){
     case 'MONGO':
-        const {default:ProductMongoDAO}= await import("./product.mongo.dao.js")
+        const {default:ProductMongoDAO}= await import("../dao/product.mongo.dao.js")
         //importacion dinamica
         Product = ProductMongoDAO
         break;
         case 'FILE':
-            const {default:ProductFileDAO} = await import('./product.file.dao.js')
+            const {default:ProductFileDAO} = await import('../dao/product.file.dao.js')
             Product = ProductFileDAO
         break;
     default:

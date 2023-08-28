@@ -25,11 +25,15 @@ import {run} from "./run.js"
 
 
 //const MONGOURI = 'mongodb+srv://admin:admin@cluster0.hjgxmmk.mongodb.net/?retryWrites=true&w=majority';
-const MONGOURI='mongodb://0.0.0.0:27017'
+//const MONGOURI='mongodb://0.0.0.0:27017'
+
+export const PORT = process.env.PORT
 //'mongodb://localhost:27017'
 
-const MONGODB = 'ecommerce';
-
+//const MONGODB = 'ecommerce';
+export const MONGODB=process.env.MONGODB
+export const MONGOURI=process.env.MONGO_URI
+ 
 const app= express();
 
 //app.use(cookieParser('hola'))
@@ -47,12 +51,7 @@ app.use(express.urlencoded({extended:true}))
 
 
 
-// esto es por http
-app.get('/', (request,response) =>{
-console.log('despliegues')
-response.json('Despliegue con /');
 
-})
 //para la interfaz
 app.use(express.static(__dirname+'/public'))
 
@@ -65,12 +64,17 @@ app.engine('handlebars', handlebars.engine({
 app.set('views',__dirname+'/views')
 app.set('view engine', 'handlebars')
 
+// esto es por http
+app.get('/', (request,response) =>{
 
+  //response.json('Bienvenido');
+  response.render('main')
+  })
 
 app.use(session({
   store: MongoStore.create({ 
     mongoUrl: MONGOURI, 
-    dbName: 'ecommerce',
+    dbName: MONGODB,
     mongoOptions:{
       //useNewUrlParse:true,
       useUnifiedTopology:true

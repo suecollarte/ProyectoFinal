@@ -1,6 +1,9 @@
 import {Router} from 'express';
-import ProductController  from '../controllers/productController.js';
-
+import { getAllProductController } from '../controllers/productController.js';
+import { traeProductsByController } from '../controllers/productController.js';
+import { ModificarProductoController } from '../controllers/productController.js';
+import { addProductoController } from '../controllers/productController.js';
+import { BorrarProductoController } from '../controllers/productController.js';
 const router =Router();
 const auth = (req,res,next) =>{
   
@@ -21,23 +24,23 @@ const auth = (req,res,next) =>{
 
 
 
-/* router.get('/', async (req,res) =>{
+router.get('/', async (req,res) =>{
  
-  const productos= await ProductController.getAllProductController(req,res)
- console.log(productos)
+  const productos= await getAllProductController(req,res)
+ 
   if (productos.statusCode === 200){
      res.render('index',{products:productos.response.docs}) 
 }else{
   res.status(productos.statusCode).json({status:'error', error: productos.statusCode})
 }
     
-}) */
-router.get('/', ProductController.getAllProductController)
+})
+
 
 router.get('/:pid', async (request, response) =>{
   const id= request.params.pid;
   try{
-     const producto =  await ProductController.traeProductsByController(id);
+     const producto =  await traeProductsByController(id);
     if (producto.statusCode === 200){
      // console.log(producto.response.payload)
       response.render('indexprod',{producto: producto.response.payload} )
@@ -58,7 +61,7 @@ router.post('/', async (req,res) =>
    const productoNew= req.body;
    
 try{
-  const result= await ProductController.addProductoController(productoNew);
+  const result= await addProductoController(productoNew);
  
     if (typeof result == 'string') {
     const error = result.split(' ')
@@ -83,7 +86,7 @@ router.put('/:id', async (request,response) =>{
       try{
           const id = request.params.id;
           const data= request.body;
-          const result = await ProductController.ModificarProductoController(id, data)
+          const result = await ModificarProductoController(id, data)
           if (result){
                response.status(201).json({status: 'Producto no se encuentra Actualizado',payload:id})
           
@@ -104,7 +107,7 @@ router.get('/borre/:id', async (request,response) =>{
   
     
    try{
-    const result= ProductController.BorrarProductoController(code);
+    const result= BorrarProductoController(code);
     if(result== null){
       response.status(404).send({message: 'Producto No se encuentra',code})
      }

@@ -1,11 +1,11 @@
-import productModel from '../models/product.model.js'
+import cartModel from '../models/cart.model.js'
 
 
-export default class ProductMongoDAO{
-    traeTodo = async() => await productModel.find().lean().exec()
+export default class CartMongoDAO{
+    traeTodo = async() => await cartModel.find().lean().exec()
     
-    traeProductsId = async(_id) => await productModel.findById(_id).lean().exec();
-    getAllPaginacion = async(req)=> {
+    traeCartBy = async(id) => await cartModel.findById(id).lean().exec();
+    getAllPaginacion = async(req,PORT)=>{
 
         let page= parseInt(req.query.page) || 1
         let limit = parseInt(req.query.limit) || 10
@@ -20,22 +20,18 @@ export default class ProductMongoDAO{
         if (req.query.sort == "desc") paginacionOpciones.sort ={ price: -1}
         try{
          
-         //const productos =await productModel.find(
-       
-        const productos =await productModel.paginate(filtroOpciones, paginacionOpciones)
-       //console.log("PRODUCTOS")
-       // console.log(productos)
-       //console.log(productos)
+           
+        const carros =await cartModel.paginate(filtroOpciones, paginacionOpciones)
     let prevLink
     if(!req.query.page && page==1){
       prevLink=`http://localhost:8080/api/products?page=${page}`
     }else{
-      prevLink =`http://localhost:8080/api/products?page=${productos.prevPage}`
+      prevLink =`http://localhost:8080/api/products?page=${carros.prevPage}`
       
     }
     let nextLink
     if(!req.query.page){
-      nextLink =`http://localhost:8080/api/products?page=${productos.nextPage}`
+      nextLink =`http://localhost:8080/api/products?page=${carros.nextPage}`
     }else{
       nextLink=`http://localhost:8080/api/products?page=${page}`
     }
@@ -55,11 +51,20 @@ export default class ProductMongoDAO{
           
         }  
     }
-    addProducto = async(data) => await productModel.save(data)
+    addCartProd = async(cid,pid) => {       
+      //let car = await cartModel.find(cid);
+    // console.log("wwww")
+       let car= await cartModel.updateOne({_id:cid},
+        {$push:{"products":{product:pid, quantity:1}}})
+        
+        return car
+       
+        
+}
     // actualiza pero devuelve el producto con lo anterior
-    //update = async(id,data) => productModel.findByIdAndUpdate(id,data)
+    //update = async(id,data) => cartModel.findByIdAndUpdate(id,data)
     //este te lo devuelve actualizado
-    ModificarProducto = async(id,data) => productModel.findByIdAndUpdate(id,data,{returnDocument:'after'})
-    BorrarProducto = async(id) =>await productModel.findByIdAndDelete(id)
+    modificarCart = async(id,data) => cartModel.findByIdAndUpdate(id,data,{returnDocument:'after'})
+    BorrarCartProducto = async(_id,pid) =>await cartModel.findByIdAndDelete(_id)
 
   }

@@ -1,12 +1,15 @@
-export default class ProductRepositorio{
+export default class ProductoRepositorio{
     constructor (dao){
         this.dao = dao
+    
+       
     }
-    traeTodo = async(req) => this.dao.traeTodo()
+    traeTodo = async(req) => this.dao.traeTodo(req)
 
-    getAllPaginacion = async(req) => await this.dao.getAllPaginacion()
+    getAllPaginacion = async(params) => {
+        return this.dao.getAllPaginacion(params,this.model)
+    }
     traeProductsBy = async(_id) => await this.dao.traeProductsBy(_id)
-    getllPaginate = async(req,PORT) => await this.dao.getllPaginate(req,PORT)
     addProducto = async(data) => await this.dao.addProducto(data)
     // actualiza pero devuelve el producto con lo anterior
     //update = async(id,data) => this.dao.findByIdAndUpdate(id,data)

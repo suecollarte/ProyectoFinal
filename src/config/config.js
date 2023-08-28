@@ -1,4 +1,5 @@
 import dotenv from 'dotenv'
+
 dotenv.config()
 
 export default{
@@ -7,7 +8,7 @@ export default{
     },
     persistence: process.env.PERSISTENCE,
     mongo:{
-        uri: process.env.MONGO_UTI,
-        dbname: process.env.MONGO_DB_NAME   
+        uri: process.env.MONGO_URI,
+        dbname: process.env.MONGODB   
     }
 }
