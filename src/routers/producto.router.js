@@ -12,6 +12,7 @@ const auth = (req,res,next) =>{
   
   if(req.session?.user ){
   //if(req.session?.user && req.session.user.username === 'admin@coderhouse.com'){
+    //console.log("aca session")
     return next()
   }
  
@@ -24,7 +25,7 @@ const auth = (req,res,next) =>{
 router.get('/', async (request, response) =>{
   
   const productos= await productController.getAllProducto(request,response)
-  //console.log(productos)
+  //console.log(productos.response.docs)
   response.render('index',{products: productos.response.docs }) 
  })
 
@@ -34,7 +35,7 @@ router.get('/:pid', async (request, response) =>{
      const producto =  await productController.traeProductsBy(id);
     if (producto.statusCode === 200){
      // console.log(producto.response.payload)
-      response.render('indexprod',{producto: producto.response.payload} )
+      response.render('indexprod',{products: producto.response.payload} )
     }
      if (!producto) return response.status(404).json({message: `${id} NO EXISTE `})
      // response.status(200).json({status: 'Producto',id})

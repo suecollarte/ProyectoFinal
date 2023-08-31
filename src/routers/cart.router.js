@@ -92,8 +92,8 @@ router.get('/', async (req,res) =>{
 
 router.post('/', async (req,res) =>{
     try{
-      
-        const result = await cartClass.addCart(req,res);
+       const data = req.body
+        const result = await cartClass.addCart(data);
         res.status(201).json({status:'success',payload:result})
     }catch (err){
 

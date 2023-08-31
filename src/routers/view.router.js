@@ -8,9 +8,9 @@ const router = Router()
 router.get('/', async (req, res) =>{
     let page= parseInt(req.query.page) || 1
     let limit = parseInt(req.query.limit) || 10
-    const result = await ProductController.getAllProductController(req,res)
+    const result = await ProductController.getAllProducto(req,res)
     const user = req.session.user
-console.log(result)
+//console.log(result)
      if (result.statusCode === 200){
         res.render('carrito',{products:result.response, user }) 
     }else{

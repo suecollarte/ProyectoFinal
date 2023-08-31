@@ -15,7 +15,7 @@ import productoRoute from './routers/producto.router.js'
 import cartRoute from './routers/cart.router.js'
 import viewRoute from './routers/view.router.js'
 import profile from './routers/profile.router.js'
-//import jwtRouter from './routers/jwt.router.js'
+
 import passport from 'passport'
 
 import sessionRoute from './routers/session.router.js'
@@ -69,7 +69,7 @@ app.set('view engine', 'handlebars')
 app.get('/', (request,response) =>{
 
   //response.json('Bienvenido');
-  response.render('main')
+  response.render('session/login')
   })
 
   app.use(session({
@@ -114,7 +114,7 @@ try{
      const httpServer= app.listen(8080, () => console.log('Server Up!'))
      const socketServer = new Server(httpServer)
      httpServer.on("error", (e) => console.log("ERROR: " + e))
- 
+     const io = socketServer
      run(socketServer, app)
    
     }

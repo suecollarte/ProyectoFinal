@@ -12,7 +12,7 @@ const traeTodo = async (req, res)=> {
 const getAllProducto = async (req,res)=> {
    
   const productos = await ProductServiceInst.getAllProducto(req,res)  
-  console.log(productos)
+  //console.log(productos)
   if (productos.statusCode === 200){
    return productos
 }else{

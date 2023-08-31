@@ -1,5 +1,5 @@
 const table = document.getElementById('productsTable')
-const socket =socketServer();
+const socket =io();
 
 socket.on('updatedProducts', data => {
     table.innerHTML = 

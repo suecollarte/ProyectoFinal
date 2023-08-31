@@ -20,7 +20,6 @@ export default class ProductoRepositorio{
 
     getAllProducto = async(request,response) => {
         const results=await this.dao.getAllProducto(request,response)
-       //console.log("sss", this.dao)
         return results
     }
     traeProductsBy = async(_id) => await this.dao.traeProductsBy(_id)
