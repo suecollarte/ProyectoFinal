@@ -1,42 +1,51 @@
 import  ProductService  from '../services/product.service.js';
+const ProductServiceInst = new ProductService()
 
-console.log("productservice",ProductService)
  
-const traeTodoController = async (req, res)=> {
+const traeTodo = async (req, res)=> {
   
- const  result = await ProductService.getAll(req,res)  
+ const  result = await ProductServiceInst.traeTodo(req,res)  
   res.json(result) 
  
 }
 
-const getAllProductController = async (req)=> {
-  console.log("aca")
-  const result = await ProductService.getAllPaginacion(req)  
-  res.json(result) 
+const getAllProducto = async (req,res)=> {
+   
+  const productos = await ProductServiceInst.getAllProducto(req,res)  
+  console.log(productos)
+  if (productos.statusCode === 200){
+   return productos
+}else{
+  res.status(productos.statusCode).json({status:'error', error: productos.statusCode})
+}
+  
+  //console.log("result",result)
+  //return result
+  //res.json(result) 
  
 }
-const  addProductoController = async(data)=>{
+const  addProducto = async(data)=>{
 //productrepositorio
-const result= await ProductService.addProducto(data)
+const result= await ProductServiceInst.addProducto(data)
 res.json(result) 
 }
 
 
- const  traeProductsByController = async(_id) => {
-  const result = await ProductService.traeProductsBy(_id)
+ const  traeProductsBy = async(_id) => {
+  const result = await ProductServiceInst.traeProductsBy(_id)
   res.json(result) 
  }
 
- const  BorrarProductoController = async(_id) =>{
-  const result= await ProductService.BorrarProducto(_id)
+ const  BorrarProducto = async(_id) =>{
+  const result= await ProductServiceInst.BorrarProducto(_id)
     
     
  }
 
- const ModificarProductoController = async(id,data) =>{
+ const ModificarProducto = async(id,data) =>{
 
 try{
-  const result= await ProductService.ModificarProducto({_id:id},{
+  const result= await ProductServiceInst.ModificarProducto({_id:id},{
     $set:data})
 }
 catch(e){
@@ -47,8 +56,8 @@ catch(e){
  }
  
  export default {
-  ModificarProductoController,BorrarProductoController,traeProductsByController,
-  addProductoController,getAllProductController,traeTodoController
+  ModificarProducto,BorrarProducto,traeProductsBy,
+  addProducto,getAllProducto,traeTodo
  }
 
 

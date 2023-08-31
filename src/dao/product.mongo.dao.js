@@ -1,11 +1,10 @@
-import productModel from '../models/product.model.js'
-
+import productModel from '../dao/models/product.model.js'
 
 export default class ProductMongoDAO{
     traeTodo = async() => await productModel.find().lean().exec()
     
     traeProductsId = async(_id) => await productModel.findById(_id).lean().exec();
-    getAllPaginacion = async(req)=> {
+    getAllProducto = async(req,res)=> {
 
         let page= parseInt(req.query.page) || 1
         let limit = parseInt(req.query.limit) || 10

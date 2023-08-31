@@ -1,20 +1,35 @@
-//import ProductDAO from '../dao/product.mongo.dao.js'
-import  ProductDao  from './product.factory.js'
-//import productModel from '../models/product.model.js'
+//import ProductDao from "./product.factory.js"
+import ProductMongoDAO from "../dao/product.mongo.dao.js"
+import productModel from "../dao/models/product.model.js"
 // aca esta si trabajo con mongo o filesystem
-import ProductoRepositorio from './product.repositorio.js'
+//import ProductoRepositorio from './product.repositorio.js';
 // si esta sin llaves esta por default
-//import ProductRepositorio from './product.repositorio.js'
-
 //app-routers-controllers-service-repositorio-dao-model
 //tb podria ser la vista app-routes-view*controllers
 
-export default class ProductService extends ProductoRepositorio {
-    constructor(ProductDao){
-        super(ProductDao)
+//console.log("producto-repositorio",ProductoRepositorio)
+
+
+export default class ProductoRepositorio{
+    constructor (){
+        this.dao = new ProductMongoDAO(productModel)
+          
     }
+    
+   traeTodo = async(req) => this.dao.traeTodo(req)
+
+    getAllProducto = async(request,response) => {
+        const results=await this.dao.getAllProducto(request,response)
+       //console.log("sss", this.dao)
+        return results
+    }
+    traeProductsBy = async(_id) => await this.dao.traeProductsBy(_id)
+    addProducto = async(data) => await this.dao.addProducto(data)
+     ModificarProducto = async(id,data) => this.dao.ModificarProducto(id,data,{returnDocument:'after'})
+    //BorrarProducto = async(id) =>await this.dao.findByIdAndDelete(id)
+    BorrarProducto = async(id) =>await this.dao.BorrarProducto(id)
 }
-//console.log("producto",ProductDao)
-//const ProductService = new ProductRepositorio(Product)
-//console.log("service",ProductService)
-//export default ProductService
+/* const ProductService = new ProductoRepositorio(ProductMongoDAO)
+const xx= ProductService.getAllProducto()
+console.log("servicio-",xx)
+export default ProductService */

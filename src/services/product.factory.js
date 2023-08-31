@@ -15,4 +15,5 @@ switch (config.persistence){
     default:
             break;
 }
+
 export default ProductDao

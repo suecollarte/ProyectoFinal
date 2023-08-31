@@ -1,7 +1,13 @@
 import {Router} from 'express';
-import ProductController  from '../controllers/productController.js';
-
-const router =Router();
+/* import ModificarProducto from "../controllers/productController.js"
+import BorrarProducto  from "../controllers/productController.js"
+import traeProductsBy from "../controllers/productController.js"
+import addProducto from "../controllers/productController.js"
+import getAllProducto from "../controllers/productController.js"
+import traeTodo from "../controllers/productController.js"
+ */
+import productController from "../controllers/productController.js"
+const router =Router(); 
 const auth = (req,res,next) =>{
   
   if(req.session?.user ){
@@ -15,29 +21,17 @@ const auth = (req,res,next) =>{
 }
 
 
-// esta data onwire se renderiza json
-// para los onwire html se hace una vista ese es con res.render
-
-
-
-
-/* router.get('/', async (req,res) =>{
- 
-  const productos= await ProductController.getAllProductController(req,res)
- console.log(productos)
-  if (productos.statusCode === 200){
-     res.render('index',{products:productos.response.docs}) 
-}else{
-  res.status(productos.statusCode).json({status:'error', error: productos.statusCode})
-}
-    
-}) */
-router.get('/', ProductController.getAllProductController)
+router.get('/', async (request, response) =>{
+  
+  const productos= await productController.getAllProducto(request,response)
+  //console.log(productos)
+  response.render('index',{products: productos.response.docs }) 
+ })
 
 router.get('/:pid', async (request, response) =>{
   const id= request.params.pid;
   try{
-     const producto =  await ProductController.traeProductsByController(id);
+     const producto =  await productController.traeProductsBy(id);
     if (producto.statusCode === 200){
      // console.log(producto.response.payload)
       response.render('indexprod',{producto: producto.response.payload} )
@@ -58,7 +52,7 @@ router.post('/', async (req,res) =>
    const productoNew= req.body;
    
 try{
-  const result= await ProductController.addProductoController(productoNew);
+  const result= await productController.addProducto(productoNew);
  
     if (typeof result == 'string') {
     const error = result.split(' ')
@@ -83,7 +77,7 @@ router.put('/:id', async (request,response) =>{
       try{
           const id = request.params.id;
           const data= request.body;
-          const result = await ProductController.ModificarProductoController(id, data)
+          const result = await productController.ModificarProducto(id, data)
           if (result){
                response.status(201).json({status: 'Producto no se encuentra Actualizado',payload:id})
           
@@ -104,7 +98,7 @@ router.get('/borre/:id', async (request,response) =>{
   
     
    try{
-    const result= ProductController.BorrarProductoController(code);
+    const result= productController.BorrarProducto(code);
     if(result== null){
       response.status(404).send({message: 'Producto No se encuentra',code})
      }
@@ -116,7 +110,5 @@ router.get('/borre/:id', async (request,response) =>{
     
   }
   })
-
-
 
 export default router

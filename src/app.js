@@ -17,7 +17,7 @@ import viewRoute from './routers/view.router.js'
 import profile from './routers/profile.router.js'
 //import jwtRouter from './routers/jwt.router.js'
 import passport from 'passport'
-import cookieParser from 'cookie-parser'
+
 import sessionRoute from './routers/session.router.js'
 import loginRoute from './routers/login.router.js'
 import {run} from "./run.js"
@@ -27,13 +27,14 @@ import {run} from "./run.js"
 //const MONGOURI = 'mongodb+srv://admin:admin@cluster0.hjgxmmk.mongodb.net/?retryWrites=true&w=majority';
 //const MONGOURI='mongodb://0.0.0.0:27017'
 
-export const PORT = process.env.PORT
+//export const PORT = process.env.PORT
+const MONGOURI='mongodb://0.0.0.0:27017'
 //'mongodb://localhost:27017'
 
-//const MONGODB = 'ecommerce';
-export const MONGODB=process.env.MONGODB
-export const MONGOURI=process.env.MONGO_URI
- 
+const MONGODB = 'ecommerce';
+//export const MONGODB=process.env.MONGODB
+//export const MONGOURI=process.env.MONGO_URI
+ console.log("BD",MONGODB)
 const app= express();
 
 //app.use(cookieParser('hola'))
@@ -71,23 +72,22 @@ app.get('/', (request,response) =>{
   response.render('main')
   })
 
-app.use(session({
-  store: MongoStore.create({ 
-    mongoUrl: MONGOURI, 
-    dbName: MONGODB,
-    mongoOptions:{
-      //useNewUrlParse:true,
-      useUnifiedTopology:true
-      }
-    }),
-    secret:'hola',
-    resave: true,
-    saveUninitialized:true
-  
- /*  store: new fileStore({
-    path:"./sessions"}) */
-}))
-
+  app.use(session({
+    store: MongoStore.create({ 
+      mongoUrl: MONGOURI, 
+      dbName: MONGODB,
+      mongoOptions:{
+        //useNewUrlParse:true,
+        useUnifiedTopology:true
+        }
+      }),
+      secret:'hola',
+      resave: true,
+      saveUninitialized:true
+    
+   /*  store: new fileStore({
+      path:"./sessions"}) */
+  }))
 
 inializePassport();
 app.use(passport.initialize())
@@ -100,22 +100,17 @@ app.use('/products',viewRoute);
 app.use('/user',profile)
 app.use('/login',loginRoute)
 app.use('/session', sessionRoute)
-/*app.use('/jwt',jwtRouter)
- app.get('/login', (req, res) => {
-  res.render('indexuser')
-}) */
 
-//app.use('productos',viewproduct)
 
-//esta es una promesa
-// por eso se trabaja asi...
+//app.listen(PORT, () => console.log(`Server Up on port ${PORT}`))
 mongoose.set('strictQuery',false);
 
 try{
     //await mongoose.connect(MONGOURI+MONGODB,{
       //  useUnifiedTopology:true})
       mongoose.connect('mongodb://0.0.0.0:27017', { dbName: 'ecommerce' })
-     
+  
+
      const httpServer= app.listen(8080, () => console.log('Server Up!'))
      const socketServer = new Server(httpServer)
      httpServer.on("error", (e) => console.log("ERROR: " + e))
@@ -126,6 +121,4 @@ try{
 catch(err){
     console.log(err.message)
 }
-
-
     
