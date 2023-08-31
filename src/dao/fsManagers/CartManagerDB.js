@@ -67,9 +67,11 @@ addCartProd = async(cid,pid)=>{
         
   try{       
         //let car = await cartModel.find(cid);
-      // console.log("wwww")
+      
       const Carro= new cartModel(data)
+      
       const err= await Carro.save().catch(err=>err); 
+      
       return err          
           
   }
