@@ -94,7 +94,7 @@ router.post('/', async (req,res) =>{
     try{
        const data = req.body
         const result = await cartClass.addCart(data);
-        console.log(result)
+        //console.log(result)
         res.status(201).json({status:'success',payload:result})
     }catch (err){
 
@@ -149,8 +149,9 @@ router.post('/borra/:cid/product/:pid', async (request,response) =>{
     if(result== null){
       response.status(404).send({message: 'Carro Producto No se encuentra',cid})
     }
-    response.status(200).json({status: 'Exito Carro Producto Borrado',cid})  
-   
+    //response.status(200).json({status: 'Exito Carro Producto Borrado',cid})  
+    res.redirect('/api/products/')
+    
   }
   catch (err) {
     //console.error(e)

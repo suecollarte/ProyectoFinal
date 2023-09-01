@@ -38,7 +38,7 @@
                          <th scope="row"> -</th>   
                          {{/if}}
                          <td>{{this.quantity}}</td>
-                          <td> <button class="btn btn-warning" 
+                          <td> {{this.product}} <button class="btn btn-warning" 
      onclick="deleteproducto('{{this.product}}')">Elimina</button></td>
                 </tr>
                 {{/each}}
@@ -74,15 +74,7 @@ deleteproducto = (pid) => {
   var cid = document.getElementById("cid").value;
  
         fetch(`/api/carts/borra/${cid}/product/${pid}`,{method: 'post'})
-        .then (result => result.json() )
-        .then (result => {
-                if (result.status === 'error') throw new Error(result.error)
-                console.log(result)
-                return result
-        })
-        .then(result => (fetch(`api/carts/`,{method:'get'})) )
-        .then(result => result.json() )
-        .then(result => {
+           .then(result => {
                   if (result.status === 'error') throw new Error(result.error)
                   return result       
         })

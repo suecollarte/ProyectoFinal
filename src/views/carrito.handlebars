@@ -39,8 +39,8 @@
                 </div>
                 {{#each products.docs}}
         <div class="row">
-     <div class="col" > <button class="btn btn-warning" 
-     onclick="addProductToCart('{{this._id}}')">Agrega Carrito</button>
+     <div class="col" >{{this._id}} <button class="btn btn-warning" 
+     onclick="addProductToCart('{{this._id}}')">Agrega al Carrito</button>
      </div>       
     <div class="col"> {{this.title}}</div>
     <div class="col">{{this.description}}</div>

@@ -50,7 +50,7 @@ addCartProd = async(cid,pid)=>{
         
   try{       
         //let car = await cartModel.find(cid);
-      // console.log("wwww")
+      
          let car= await cartModel.updateOne({_id:cid},
           {$push:{"products":{product:pid, quantity:1}}})
           
@@ -106,7 +106,9 @@ console.error(e);;
 
  BorrarCartProducto = async(_id,pid) =>{
       try{
+        console.log(_id)
         const result = await cartModel.findByIdAndDelete(_id)
+        
      if(result== null){
       return false
      }
