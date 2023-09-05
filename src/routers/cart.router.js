@@ -93,7 +93,14 @@ router.get('/', async (req,res) =>{
 router.post('/', async (req,res) =>{
     try{
        const data = req.body
-        const result = await cartClass.addCart(data);
+       const timestamp = {
+        timestamps: {
+            createdAt: 'created_at',
+            updatedAt: 'updated_at'
+        }
+    }
+    d
+        const result = await cartClass.addCart(data, timestamp);
         //console.log(result)
         res.status(201).json({status:'success',payload:result})
     }catch (err){

@@ -44,3 +44,19 @@ export const passportCall = strategy =>{
         })(req, res, next)
     }
 }
+
+//funcion con handlePolicies
+
+export const handlePolicies =policies=> (req, res, next) => {
+
+    const user =req.user.user || null
+    if (policies.include('ADMIN')){
+       // if(!user){
+        if(user.role !== 'admin')
+            return res.status(403).render('error/base',{
+                error:'Necesita permiso ADMIN'
+            })
+        }
+    }
+    return next()
+}

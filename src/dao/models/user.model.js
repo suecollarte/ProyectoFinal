@@ -20,7 +20,7 @@ const userSchema = new mongoose.Schema({
             ref:"carts"
             }
         }]},
-    role:{type:String}
+    role:{type:String, default:'user'}
 })
 mongoose.set("strictQuery",false)
 const userModel =mongoose.model(messageCollection,userSchema)

@@ -21,7 +21,7 @@ import passport from 'passport'
 import sessionRoute from './routers/session.router.js'
 import loginRoute from './routers/login.router.js'
 import {run} from "./run.js"
-
+import {Sockets} from ""
 
 
 //const MONGOURI = 'mongodb+srv://admin:admin@cluster0.hjgxmmk.mongodb.net/?retryWrites=true&w=majority';
@@ -115,6 +115,7 @@ try{
      const socketServer = new Server(httpServer)
      httpServer.on("error", (e) => console.log("ERROR: " + e))
      const io = socketServer
+     
      run(socketServer, app)
    
     }

@@ -2,6 +2,8 @@ import cartModel from '../models/cart.model.js'
 
 
 export default class CartMongoDAO{
+  addCart = async(data) => await Carro.save().catch(err=>err); 
+  
     traeTodo = async() => await cartModel.find().lean().exec()
     
     traeCartBy = async(id) => await cartModel.findById(id).lean().exec();

@@ -4,25 +4,30 @@ import chatRouter from "./routers/chat.router.js"
 import messagesModel from "./dao/models/message.model.js";
 import productViewsRouter from './routers/view.router.js'
 import sessionRouter from './routers/session.router.js'
-import {passportCall} from "./utils.js"
+import {passportCall, handlePolicies} from "./utils.js"
 
 export const run = (socketServer, app) => {
     app.use((req, res, next) => {
         req.io = socketServer
         next()
     })
-
-    app.use("/products", passportCall('jwt'),productViewsRouter)
+//se usa esta estrategia jwt hace referencia contenido jwt
+    app.use("/products", passportCall('jwt'), handlePolicies(['ADMIN','USER']),productViewsRouter)
     app.use("/session", sessionRouter)
 
 
-    app.use("/api/products", productRouter)
-    app.use("/api/carts", cartRouter)
-    app.use("/api/chat", chatRouter)
+    app.use("/api/products", passportCall('jwt'),productRouter)
+    app.use("/api/carts", passportCall('jwt'),cartRouter)
+    app.use("/api/chat", passportCall('jwt'),chatRouter)
 
 
     socketServer.on("connection", socket => {
         console.log("New client connected")
+        socket.on('productLista', data =>{
+            io.emit('updateProducts',data)
+        
+          })
+        socket.broadcast.emit('alerta')
         socket.on("message", async data => {
         await messagesModel.create(data)
         let messages = await messagesModel.find().lean().exec()
@@ -30,7 +35,7 @@ export const run = (socketServer, app) => {
         })
     })
 
-   // app.use("/", (req, res) => res.send())
+   app.use("/", (req, res) => res.send("INICIO"))
 
 }
 

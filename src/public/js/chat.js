@@ -14,6 +14,7 @@ allowOutsideClick:false
 }).then(result =>{
     user = result.value
     document.getElementById('username').innerHTML =user
+    socket=io()
 })
 
 chatBox.addEventListener("keyup", event =>{

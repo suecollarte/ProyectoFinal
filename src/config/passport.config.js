@@ -2,6 +2,7 @@ import passport from "passport";
 import local from 'passport-local';
 import passport_jwt from "passport-jwt";
 import userService from '../dao/models/user.model.js'
+import CartModel from '../dao/models/cart.model.js'
 import {createHash, extractCookie, generateToken, isValidPassword, JWT_PRIVATE_KEY} from '../utils.js'
 
 const LocalStrategy = local.Strategy;
@@ -11,9 +12,9 @@ const ExtractJWT = passport_jwt.ExtractJwt
 const inializePassport = () =>{
 
 
-    passport.use('register', new LocalStrategy(
-
-        {passReqToCallback:true, usernameField:'email'}, 
+    passport.use('register', new LocalStrategy({
+            passReqToCallback:true, 
+            usernameField:'email' }, 
             async (req,username,password,done) =>{
             const {first_name, last_name, email,age} =req.body
             try{
@@ -24,9 +25,12 @@ const inializePassport = () =>{
                     return done(null,false)
 
                 }
+                const cartForNewUser =await CartModel.create({})
                 const newUser ={
-                    first_name,last_name,email,age,password:createHash(password)
+                    first_name,last_name,email,age,password:createHash(password), cart:cartForNewUser._id,
+                    role: (email === 'adminCoder@coder.com') ? 'admin':'user'
                 }
+                //solo para el mail de admin
                 let result = await userService.create(newUser)
                 return done(null,result)
 
@@ -43,7 +47,7 @@ const inializePassport = () =>{
         try {
             const user = await userService.findOne({email: username})
             if(!user) {
-                console.log("User dont exist");
+                console.log("Usuario no existe");
                 return done(null, user)
             }
 
@@ -58,6 +62,7 @@ const inializePassport = () =>{
     }))
 
     passport.use("jwt", new JWTStrategy({
+        //es una funcion el extractCookie faltaba ([])
         jwtFromRequest: ExtractJWT.fromExtractors([extractCookie]),
         secretOrKey:   JWT_PRIVATE_KEY
     }, async(jwt_payload, done) =>{

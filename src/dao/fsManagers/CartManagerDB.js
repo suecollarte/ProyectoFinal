@@ -63,12 +63,12 @@ addCartProd = async(cid,pid)=>{
   }
 
  }
- addCart = async(data)=>{
+ addCart = async(data, timestamp)=>{
         
   try{       
         //let car = await cartModel.find(cid);
       
-      const Carro= new cartModel(data)
+      const Carro= new cartModel({data, timestamp})
       
       const err= await Carro.save().catch(err=>err); 
       
@@ -108,7 +108,7 @@ console.error(e);;
       try{
         console.log(_id)
         const result = await cartModel.findByIdAndDelete(_id)
-        
+        console.log("result",result)
      if(result== null){
       return false
      }

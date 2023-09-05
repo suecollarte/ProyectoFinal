@@ -12,6 +12,10 @@ router.get('/githubcallback', passport.authenticate('github', {failureRedirect:'
     req.session.user=req.userres.redirect('/')
 })
 
+router.get('/current', (req,res) =>{
+    if(!req.session.user) return res.status(401).json({status:'error', error:'sin session detectada!'})
+    res.status(200).json({status: 'success',payload: req.session.user})
+})
 
 //Vista para registrar usuarios
 router.get('/register', (req, res) => {
@@ -49,8 +53,9 @@ router.post('/login', passport.authenticate('login',
     }
    // console.log(req.session.user)
    console.log(req.user.token)
-    res.cookie(JWT_COOKIE_NAME, req.user.token)
-    res.redirect('/products')
+    //res.cookie(JWT_COOKIE_NAME, req.user.token)
+    //res.redirect('/products')
+    res.cookie(JWT_COOKIE_NAME, req.user.token).redirect('/products')
 })
 router.get('/faillogin', (req, res) => {
     res.send({error: "Fallo Login"})
