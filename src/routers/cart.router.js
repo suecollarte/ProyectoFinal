@@ -137,6 +137,7 @@ router.put('/:cid', async (request,response) =>{
   try{
           const id = request.params.cid;
           const data= request.body;
+          const productos= 
           await cartClass.modificarCart(id, data)
           response.status(201).json({message: 'Carro Actualizado',id})
       }catch (e) {
@@ -145,7 +146,27 @@ router.put('/:cid', async (request,response) =>{
     
 })
 
-
+router.put('/:cid/purchase', async (request,response) =>{
+  try{
+          const id = request.params.cid;
+          const data= request.body;
+          const result = await cartClass.traeCartBy(id)
+          const productid= result.product[0].pid
+          const cantidadProd= result.product[0].quantity
+          const cantidad = await productClass.traeProductsBy(productid)
+          if(cantidad > cantidadProd){
+             await cartClass.modificarCart(id, data)
+          response.status(201).json({message: 'Carro Actualizado',id})
+          }else{
+            await cartClass.BorrarCartProducto(id,productid)
+            response.status(400).json({message: 'No hay suficiente para realizar compra',id})
+          }
+         
+      }catch (e) {
+        console.error(e)
+      }   
+    
+})
 //eliminacion
 router.post('/borra/:cid/product/:pid', async (request,response) =>{
   const cid= request.params.cid;  

@@ -1,5 +1,6 @@
 import  cartModel from '../models/cart.model.js';
 import  productModel  from '../models/product.model.js';
+import userModel from '../models/user.model.js'
 
 
 export class CartManager{
@@ -67,8 +68,12 @@ addCartProd = async(cid,pid)=>{
         
   try{       
         //let car = await cartModel.find(cid);
+      const amount = data.product.quantity;
+      const idcliente = data.idCliente
+      const correoCliente = userModel.findById({idCliente:idcliente}).lean().exec()
+      const newdata= { data,"purchase_datetime": timestamp, "amount":amount,"purchaser":correoCliente}
       
-      const Carro= new cartModel({data, timestamp})
+      const Carro= new cartModel(newdata)
       
       const err= await Carro.save().catch(err=>err); 
       
