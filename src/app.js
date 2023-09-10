@@ -1,6 +1,7 @@
 import express from 'express'
 import handlebars from 'express-handlebars'
 import mongoose from 'mongoose'
+import mockRouter from './routers/prodmock.router.js'
 import MongoStore from "connect-mongo"
 import { Server } from "socket.io";
 //import cookieParser from 'cookie-parser'
@@ -93,7 +94,7 @@ inializePassport();
 app.use(passport.initialize())
 app.use(passport.session())
 
-
+app.use('/mockingproducts', mockRouter)
 app.use('/api/products',productoRoute);
 app.use('/api/carts',cartRoute);
 app.use('/products',viewRoute);
