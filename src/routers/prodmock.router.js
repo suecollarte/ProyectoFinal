@@ -74,43 +74,5 @@ try{
 
 
 
-    //actualizacion
-router.put('/:id', async (request,response) =>{
-      try{
-          const id = request.params.id;
-          const data= request.body;
-          const result = await productController.ModificarProducto(id, data)
-          if (result){
-               response.status(201).json({status: 'Producto no se encuentra Actualizado',payload:id})
-          
-          }else{
-             response.status(201).json({status: 'Producto Actualizado',payload:id})
-       
-          }
-                    //response.status(201).send({message: 'Producto Actualizado',id})
-                  }catch(err){
-                    console.log(err)   //para tener el error en la consola
-                    throw new Error(err)
-                  }   
-                  })
-
-//eliminacion
-router.get('/borre/:id', async (request,response) =>{
-  const code = request.params.id;
-  
-    
-   try{
-    const result= productController.BorrarProducto(code);
-    if(result== null){
-      response.status(404).send({message: 'Producto No se encuentra',code})
-     }
-   // const productos = await productClass.traeTodo(1,25);
-   // response.render('index',productos)
-    response.status(200).json({status: 'Exito Producto Borrado',code})
-  }catch(err){
-    console.log(err)   //para tener el error en la consola
-    
-  }
-  })
 
 export default router
