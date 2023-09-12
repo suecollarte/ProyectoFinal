@@ -1,5 +1,5 @@
 {
-  "name": "proyectocurso3",
+  "name": "proyectomock",
   "version": "1.0.0",
   "description": "",
   "main": "src/app.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "ProyectoCursoNew"
+    "url": "PROYECTO4MOCK"
   },
   "author": "Scollarte",
   "license": "ISC",
@@ -22,7 +22,7 @@
     "express": "^4.18.2",
     "express-handlebars": "^7.1.2",
     "express-session": "^1.17.3",
-    "mongoose": "^7.5.0",
+    "mongoose": "^7.5.1",
     "mongoose-paginate-v2": "^1.7.31",
     "passport": "^0.6.0",
     "passport-jwt": "^4.0.1",

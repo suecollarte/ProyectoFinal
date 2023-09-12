@@ -57,6 +57,6 @@ export const handlePolicies =policies=> (req, res, next) => {
                 error:'Necesita permiso ADMIN'
             })
         }
+        return next()
     }
-    return next()
-}
+    

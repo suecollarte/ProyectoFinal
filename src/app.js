@@ -22,7 +22,7 @@ import passport from 'passport'
 import sessionRoute from './routers/session.router.js'
 import loginRoute from './routers/login.router.js'
 import {run} from "./run.js"
-import {Sockets} from ""
+ 
 
 
 //const MONGOURI = 'mongodb+srv://admin:admin@cluster0.hjgxmmk.mongodb.net/?retryWrites=true&w=majority';
@@ -94,14 +94,14 @@ inializePassport();
 app.use(passport.initialize())
 app.use(passport.session())
 
-app.use('/mockingproducts', mockRouter)
+
 app.use('/api/products',productoRoute);
 app.use('/api/carts',cartRoute);
 app.use('/products',viewRoute);
 app.use('/user',profile)
 app.use('/login',loginRoute)
 app.use('/session', sessionRoute)
-
+app.use('/mockingproducts', mockRouter)
 
 //app.listen(PORT, () => console.log(`Server Up on port ${PORT}`))
 mongoose.set('strictQuery',false);
