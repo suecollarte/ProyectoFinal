@@ -26,10 +26,17 @@ const getAllProducto = async (req,res)=> {
 }
 const  addProducto = async(data)=>{
 //productrepositorio
+console.log(data)
 const result= await ProductServiceInst.addProducto(data)
 res.json(result) 
 }
 
+const  addManyProducto = async(data)=>{
+  //productrepositorio
+  const result= await ProductServiceInst.addManyProducto(data)
+  //res.json(result) 
+  return result
+  }
 
  const  traeProductsBy = async(_id) => {
   const result = await ProductServiceInst.traeProductsBy(_id)
@@ -57,7 +64,7 @@ catch(e){
  
  export default {
   ModificarProducto,BorrarProducto,traeProductsBy,
-  addProducto,getAllProducto,traeTodo
+  addProducto,getAllProducto,traeTodo, addManyProducto
  }
 
 

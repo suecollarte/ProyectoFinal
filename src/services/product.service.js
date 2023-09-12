@@ -24,6 +24,7 @@ export default class ProductoRepositorio{
     }
     traeProductsBy = async(_id) => await this.dao.traeProductsBy(_id)
     addProducto = async(data) => await this.dao.addProducto(data)
+    addManyProducto = async(data) => await this.dao.addManyProducto(data)
      ModificarProducto = async(id,data) => this.dao.ModificarProducto(id,data,{returnDocument:'after'})
     //BorrarProducto = async(id) =>await this.dao.findByIdAndDelete(id)
     BorrarProducto = async(id) =>await this.dao.BorrarProducto(id)
