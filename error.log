@@ -1,0 +1,35 @@
+{"level":"debug","message":"consulta ruta /"}
+{"level":"http","message":"consulta ruta /"}
+{"level":"debug","message":"consulta ruta /"}
+{"level":"http","message":"consulta ruta /"}
+{"level":"info","message":"consulta ruta /"}
+{"level":"debug","message":"consulta ruta /"}
+{"level":"http","message":"consulta ruta /"}
+{"level":"info","message":"consulta ruta /"}
+{"level":"debug","message":"mockProd /"}
+{"level":"http","message":"mockProd /"}
+{"level":"info","message":"mockProd /"}
+{"level":"debug","message":"mockProd /"}
+{"level":"http","message":"mockProd /"}
+{"level":"info","message":"mockProd /"}
+{"level":"debug","message":"mockProd /"}
+{"level":"http","message":"mockProd /"}
+{"level":"info","message":"mockProd /"}
+{"level":"debug","message":"mockProd /"}
+{"level":"http","message":"mockProd /"}
+{"level":"info","message":"mockProd /"}
+{"level":"debug","message":"consulta ruta /"}
+{"level":"http","message":"consulta ruta /"}
+{"level":"info","message":"consulta ruta /"}
+{"level":"debug","message":"Server Up!"}
+{"level":"error","message":"Server Up!"}
+{"level":"error","message":"Server Up!"}
+{"level":"warn","message":"Server Up!"}
+{"level":"http","message":"Server Up!"}
+{"level":"info","message":"Server Up!"}
+debug: Server Up! {"timestamp":"2023-09-14T21:53:06.450Z"}
+error: Server Up! {"timestamp":"2023-09-14T21:53:06.452Z"}
+error: Server Up! {"timestamp":"2023-09-14T21:53:06.452Z"}
+warn: Server Up! {"timestamp":"2023-09-14T21:53:06.453Z"}
+http: Server Up! {"timestamp":"2023-09-14T21:53:06.453Z"}
+info: Server Up! {"timestamp":"2023-09-14T21:53:06.453Z"}

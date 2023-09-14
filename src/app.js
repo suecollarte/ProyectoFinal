@@ -10,7 +10,7 @@ import session from 'express-session'
 
 import inializePassport from './config/passport.config.js'
 import __dirname from "./utils.js"
-
+import {logger} from '../src/utils/logger.js'
 
 import productoRoute from './routers/producto.router.js'
 import cartRoute from './routers/cart.router.js'
@@ -67,9 +67,11 @@ app.set('views',__dirname+'/views')
 app.set('view engine', 'handlebars')
 
 // esto es por http
-app.get('/', (request,response) =>{
-
-  //response.json('Bienvenido');
+app.get('/logger', (request,response) =>{
+  logger.debug("consulta ruta /")
+  logger.http("consulta ruta /")
+  logger.info("consulta ruta /")
+  //response.json({status:"success"});
   response.render('session/login')
   })
 
@@ -112,7 +114,13 @@ try{
       mongoose.connect('mongodb://0.0.0.0:27017', { dbName: 'ecommerce' })
   
 
-     const httpServer= app.listen(8080, () => console.log('Server Up!'))
+     const httpServer= app.listen(8080, () => {
+      logger.debug("Server Up!")
+      logger.error("Server Up!")
+      logger.warn("Server Up!")
+  logger.http("Server Up!")
+  logger.info("Server Up!")
+      console.log('Server Up!')})
      const socketServer = new Server(httpServer)
      httpServer.on("error", (e) => console.log("ERROR: " + e))
      const io = socketServer
