@@ -10,7 +10,7 @@ import session from 'express-session'
 
 import inializePassport from './config/passport.config.js'
 import __dirname from "./utils.js"
-import {logger} from '../src/utils/logger.js'
+import logger from '../src/utils/logger.js'
 
 import productoRoute from './routers/producto.router.js'
 import cartRoute from './routers/cart.router.js'
@@ -67,14 +67,16 @@ app.set('views',__dirname+'/views')
 app.set('view engine', 'handlebars')
 
 // esto es por http
-app.get('/logger', (request,response) =>{
+app.get('/loggerTest ', (request,response) =>{
   logger.debug("consulta ruta /")
   logger.http("consulta ruta /")
   logger.info("consulta ruta /")
-  //response.json({status:"success"});
-  response.render('session/login')
+  response.json({status:"success"});
+ 
   })
-
+  app.get('/ ', (request,response) =>{
+    response.render('session/login')
+    })
   app.use(session({
     store: MongoStore.create({ 
       mongoUrl: MONGOURI, 
@@ -117,10 +119,11 @@ try{
      const httpServer= app.listen(8080, () => {
       logger.debug("Server Up!")
       logger.error("Server Up!")
-      logger.warn("Server Up!")
-  logger.http("Server Up!")
-  logger.info("Server Up!")
-      console.log('Server Up!')})
+      logger.warning("Server Up!")
+      logger.http("Server Up!")
+      logger.info("Server Up!")
+      
+    })
      const socketServer = new Server(httpServer)
      httpServer.on("error", (e) => console.log("ERROR: " + e))
      const io = socketServer
@@ -129,6 +132,7 @@ try{
    
     }
 catch(err){
-    console.log(err.message)
+  
+    logger.fatal(err.message)
 }
     

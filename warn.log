@@ -1,4 +1,12 @@
-error: Server Up!
-warn: Server Up!
-error: Server Up! {"timestamp":"2023-09-14T21:53:06.452Z"}
-warn: Server Up! {"timestamp":"2023-09-14T21:53:06.453Z"}
+debug: Server Up! {"timestamp":"2023-09-14T23:30:24.201Z"}
+warning: Server Up! {"timestamp":"2023-09-14T23:30:24.202Z"}
+http: Server Up! {"timestamp":"2023-09-14T23:30:24.203Z"}
+info: Server Up! {"timestamp":"2023-09-14T23:30:24.204Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-09-14T23:46:22.528Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-09-14T23:46:22.529Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-09-14T23:46:22.530Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-09-14T23:46:22.530Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-09-14T23:49:20.149Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-09-14T23:49:20.149Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-09-14T23:49:20.152Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-09-14T23:49:20.152Z"}
