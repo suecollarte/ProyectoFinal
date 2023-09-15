@@ -31,7 +31,7 @@ const logger= winston.createLogger({
         //debug, http, info, warning, error, fatal
 //silly debug verbose http info wam error
         , new winston.transports.File({
-            filename:'./logs/debug.log',
+            filename:'./debug.log',
             level:'debug',
             format: winston.format.combine(
                 winston.format.timestamp(),
@@ -40,7 +40,7 @@ const logger= winston.createLogger({
             )
         })
         ,new winston.transports.File({
-            filename:'./logs/fatal.log',
+            filename:'./fatal.log',
             level:'fatal',
             format: winston.format.combine(
                 winston.format.timestamp(),
@@ -49,7 +49,7 @@ const logger= winston.createLogger({
             )
         })
         ,new winston.transports.File({
-            filename:'./logs/info.log',
+            filename:'./info.log',
             level:'info',
             format: winston.format.combine(
                 winston.format.timestamp(),
@@ -58,7 +58,7 @@ const logger= winston.createLogger({
             )
         })
         ,new winston.transports.File({
-            filename:'./logs/warn.log',
+            filename:'./warn.log',
             level:'warning',
             format: winston.format.combine(
                 winston.format.timestamp(),
@@ -67,7 +67,7 @@ const logger= winston.createLogger({
             )
         })
         ,new winston.transports.File({
-            filename:'./logs/error.log',
+            filename:'./error.log',
             level:'error',
             format: winston.format.combine(
                 winston.format.timestamp(),
