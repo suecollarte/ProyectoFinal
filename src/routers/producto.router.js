@@ -7,6 +7,8 @@ import getAllProducto from "../controllers/productController.js"
 import traeTodo from "../controllers/productController.js"
  */
 import productController from "../controllers/productController.js"
+import logger from '../utils/logger.js'
+
 const router =Router(); 
 const auth = (req,res,next) =>{
   

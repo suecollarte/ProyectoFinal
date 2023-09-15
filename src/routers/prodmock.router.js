@@ -46,7 +46,7 @@ try{
       
    // res.status(201).json({ status: 'success', payload: result })
   }catch(err){
-    console.log(err)   //para tener el error en la consola
+    logger.error(err)   //para tener el error en la consola
     
   } 
   }) 

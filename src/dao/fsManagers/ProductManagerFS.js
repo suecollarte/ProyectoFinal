@@ -1,6 +1,6 @@
 //import  fs from 'fs';
 import fs from 'fs'
-
+import logger from '../../utils/logger.js'
 
 export class ProductManager{
   constructor(path,producto){
@@ -50,7 +50,7 @@ addProducto = async(product)=>{
           if (this.encuentraCodigo(Codigo,id))
           {
           product['id']=id;
-          console.log(product);
+         
           this.producto.push(product);
           await fs.promises.writeFile(this.path, JSON.stringify(this.producto), (error) => {
               if (error)

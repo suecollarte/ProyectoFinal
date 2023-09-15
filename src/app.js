@@ -10,7 +10,7 @@ import session from 'express-session'
 
 import inializePassport from './config/passport.config.js'
 import __dirname from "./utils.js"
-import logger from '../src/utils/logger.js'
+import logger from './utils/logger.js'
 
 import productoRoute from './routers/producto.router.js'
 import cartRoute from './routers/cart.router.js'
@@ -35,7 +35,7 @@ const MONGOURI='mongodb://0.0.0.0:27017'
 const MONGODB = 'ecommerce';
 //export const MONGODB=process.env.MONGODB
 //export const MONGOURI=process.env.MONGO_URI
- console.log("BD",MONGODB)
+ logger.info("BD",MONGODB)
 const app= express();
 
 //app.use(cookieParser('hola'))

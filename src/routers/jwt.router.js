@@ -1,7 +1,7 @@
 import { Router } from 'express'
 import { generateToken, authToken } from '../utils.js'
 import passport from 'passport'
-
+import logger from '../utils/logger.js'
 const router = Router()
 
 const users = [
@@ -29,7 +29,7 @@ router.post('/login', (req, res) => {
 })
 
 router.get('/private', passport.authenticate('jwt', { session: false }), (req, res) => {
-    console.log(req.user)
+    logger.info(req.user)
     if (req.user.user.rol === 'admin') return res.json({ status: 'success', payload: req.user.user })
     return res.json({ status: 'error', error: 'No tienes los permisos para ver esta sección' })
 })

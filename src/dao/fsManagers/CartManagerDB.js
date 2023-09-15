@@ -1,7 +1,7 @@
 import  cartModel from '../models/cart.model.js';
 import  productModel  from '../models/product.model.js';
 import userModel from '../models/user.model.js'
-
+import logger from './utils/logger.js'
 
 export class CartManager{
   constructor(path,cart){
@@ -111,9 +111,9 @@ console.error(e);;
 
  BorrarCartProducto = async(_id,pid) =>{
       try{
-        console.log(_id)
+        logger.info(_id)
         const result = await cartModel.findByIdAndDelete(_id)
-        console.log("result",result)
+         
      if(result== null){
       return false
      }
