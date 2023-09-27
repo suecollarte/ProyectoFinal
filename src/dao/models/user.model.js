@@ -12,6 +12,13 @@ const userSchema = new mongoose.Schema({
     age:{type:String},
     email:{type:String},
     password: {type:String},
+    tickets:{
+        type:[
+            {
+            type:mongoose.Schema.Types.ObjectId,
+        ref:'tickets'
+            }]
+    },
     cart: {
         type:[{
         _id:false,

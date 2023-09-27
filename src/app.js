@@ -16,6 +16,8 @@ import productoRoute from './routers/producto.router.js'
 import cartRoute from './routers/cart.router.js'
 import viewRoute from './routers/view.router.js'
 import profile from './routers/profile.router.js'
+import ticketRouter from './routers/ticket.router.js'
+import userRouter from './routers/user.router.js'
 
 import passport from 'passport'
 
@@ -106,6 +108,8 @@ app.use('/user',profile)
 app.use('/login',loginRoute)
 app.use('/session', sessionRoute)
 app.use('/mockingproducts', mockRouter)
+app.use('/api/users', userRouter)
+app.use('/api/ticket',ticketRouter)
 
 //app.listen(PORT, () => console.log(`Server Up on port ${PORT}`))
 mongoose.set('strictQuery',false);
