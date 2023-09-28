@@ -1,6 +1,6 @@
 import {Router} from 'express';
-import { ProductManager } from '../dao/fsManagers/ProductManagerBD.js';
-import { CartManager } from '../dao/fsManagers/CartManagerDB.js';
+import { ProductManager } from '../dao/Managers/ProductManagerBD.js';
+import { CartManager } from '../dao/Managers/CartManagerDB.js';
 
 
 const router =Router();
@@ -10,7 +10,7 @@ const cartClass = new CartManager;
 //cartClass.path='./src/cart.json';
 
 //productClass.path='./src/productos.json';
-const productClass = new ProductManager;
+ const productClass = new ProductManager;
 //controller
 export const getCarros = async (req,res) =>{
   try{

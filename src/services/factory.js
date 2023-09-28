@@ -9,7 +9,7 @@ export let TicketDao
 //console.log(config.persistence)
 switch (config.persistence){
     case 'MONGO':
-        mongoose.connect(config.mongoURI,{
+        mongoose.connect(config.mongo.uri,{
             dbname: config.mongoDBname
         })
         const {default:TicketMongoDAO}= await import("../dao/ticket.dao.mongo.js")
@@ -29,4 +29,4 @@ switch (config.persistence){
             break;
 }
 
-export default ProductDao
+export default {TicketDao,UserDao}

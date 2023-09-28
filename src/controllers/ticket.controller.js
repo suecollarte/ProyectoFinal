@@ -1,6 +1,6 @@
 import { TicketService } from "../repositories/index.js";
 
-export const get =async(req,ticket) =>{
+export const get = async(req,res) =>{
     const tickets =await TicketService.get()
     res.json({tickets})
 

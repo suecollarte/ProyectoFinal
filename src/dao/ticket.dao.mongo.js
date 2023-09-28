@@ -5,4 +5,6 @@ export default class Ticket{
     get = async() => await ticketModel.find()
     create = async(data) => await ticketModel.create(data)
     getById = async(id) => await ticketModel.findById(id)
-    updata = async(id,data)=> await ticketModel.ipdateOne({_id:id}, data)
+    updata = async(id,data)=> await ticketModel.updateOne({_id:id}, data)
+
+}

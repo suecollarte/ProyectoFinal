@@ -1,5 +1,5 @@
 import {Router} from 'express';
-import { ProfileManager } from '../dao/fsManagers/ProfileManagerBD.js';
+import { ProfileManager } from '../dao/Managers/ProfileManagerBD.js';
 import passport from 'passport'
 const router =Router();
 
