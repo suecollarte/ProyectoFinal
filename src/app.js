@@ -20,11 +20,15 @@ import ticketRouter from './routers/ticket.router.js'
 import userRouter from './routers/user.router.js'
 
 import passport from 'passport'
+import swaggerJSDoc from 'swagger-jsdoc'
+import swaggerUiExpress from "swagger-ui-express"
 
 import sessionRoute from './routers/session.router.js'
 import loginRoute from './routers/login.router.js'
 import {run} from "./run.js"
  
+
+
 
 
 //const MONGOURI = 'mongodb+srv://admin:admin@cluster0.hjgxmmk.mongodb.net/?retryWrites=true&w=majority';
@@ -67,6 +71,21 @@ app.engine('handlebars', handlebars.engine({
 )
 app.set('views',__dirname+'/views')
 app.set('view engine', 'handlebars')
+
+const swaggerOptions={
+  definition:{
+    openapi:'3.0.1',
+    info:{
+      title:"documentacion API ecommerce",
+      description: "ecommerce proyecto"
+    }
+  },
+  apis: ['./docs/**/*.yaml']
+}
+
+const specs = swaggerJSDoc(swaggerOptions)
+
+app.use('/docs', swaggerUiExpress.serve, swaggerUiExpress.setup(specs))
 
 // esto es por http
 app.get('/loggerTest ', (request,response) =>{
