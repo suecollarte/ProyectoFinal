@@ -1,0 +1,30 @@
+ paths:
+ /api/carts:
+    get:
+        summary: Despliega los productos para carro de compra
+        tags:
+          - Carts
+        responses:
+          "200":
+            description: Productos para carros obtenidos satisfactoriamente
+
+
+components:
+  schemas:    
+    Cart:
+      type: object
+      properties:
+        _id:
+          type: ObjectId
+          description: Id generado de BBDD Mongo
+        idCliente:
+          type: Number
+          description: codigo del cliente
+        products:
+          type: object
+          description: array con los productos del carro
+        quantity:
+          type: Number
+          description: cantidad
+        
+        

@@ -55,7 +55,7 @@ try{
 router.get('/', async (req,res) =>{
   const carts = await getCarros(req,res)
  
-
+console.log(carts)
 
   if (carts.statusCode === 200){
     const totalPag=[]

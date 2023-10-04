@@ -1,9 +1,29 @@
 paths:
   /api/products:
     get:
-        summary: Obtiene los productos
+        summary: Obtiene los productos  y puedes ingresar otros
         tags:
           - Products
         responses:
           "200":
             description: Usuarios obtenidos satisfactoriamente
+
+
+components:
+  schemas:    
+    Product:
+      type: object
+      properties:
+        _id:
+          type: ObjectId
+          description: Id generado de BBDD Mongo
+        title:
+          type: String
+          description: titulo del producto
+        price:
+          type: Number
+          description: precio producto
+        category:
+          type: String
+          description: categoria del producto
+      
