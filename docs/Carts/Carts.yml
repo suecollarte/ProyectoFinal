@@ -8,7 +8,6 @@
           "200":
             description: Productos para carros obtenidos satisfactoriamente
 
-
 components:
   schemas:    
     Cart:
@@ -18,13 +17,18 @@ components:
           type: ObjectId
           description: Id generado de BBDD Mongo
         idCliente:
-          type: Number
+          type: integer
           description: codigo del cliente
-        products:
-          type: object
-          description: array con los productos del carro
-        quantity:
-          type: Number
-          description: cantidad
+        ArrayOfProducts:
+          type: array
+          items:
+            type: object
+            properties:
+              product:
+                type: ObjectId
+              quantity:
+                type: integer
+            
+
         
         
