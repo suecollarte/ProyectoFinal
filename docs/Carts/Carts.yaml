@@ -1,0 +1,31 @@
+paths:
+  /api/carts:
+    get:
+        summary: Obtiene los productos  y puedes ingresar otros
+        tags:
+          - Products
+        responses:
+          "200":
+            description: Usuarios obtenidos satisfactoriamente
+
+
+components:
+  schemas:    
+    Cart:
+      type: object
+      properties:
+        _id:
+          type: ObjectId
+          description: Id generado de BBDD Mongo
+        idCliente:
+          type: String
+          description: IdCliente 
+        quantity:
+          type: Number
+          description: cantidad producto
+        price:
+          type: Number
+          description: precio del producto
+    
+    
+         

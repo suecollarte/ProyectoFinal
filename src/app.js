@@ -78,7 +78,7 @@ const swaggerOptions={
     info:{
       title:"documentacion API ecommerce",
       description: "ecommerce proyecto",
-      version: "1.0.0"
+      version: "1.0.0rs"
     }
   },
   apis: ['./docs/**/*.yaml']
