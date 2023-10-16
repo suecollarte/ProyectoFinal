@@ -1,8 +1,6 @@
 import mongoose from "mongoose";
 import Product from '../src/dao/product.mongo.dao.js'
-
-import Assert from 'assert'
-import {faker} from '@faker-js/faker'
+import chai from   "chai"
 // usas uno o chai es para comparar los resultados
 
 mongoose.connect('mongodb://0.0.0.0:27017')
@@ -11,13 +9,13 @@ const assert= Assert.strict
 describe('testear product DAO',() =>{
     before(async function () {
         this.productDao= new Product()
-        //await mongoose.connection.db.dropCollection(products)
+        await mongoose.connection.db.dropCollection(products)
 
     })
     it('get debe devolver un arreglo',async function() {
         
         const result = await this.productDao.traeTodo()
-        assert.strictEqual(Array.isArray(result), true)
+       expect(result).to.be.deep.equal([])
         
     })
     it('Dao debe crear productos', async function() {
