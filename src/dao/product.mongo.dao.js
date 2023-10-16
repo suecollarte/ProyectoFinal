@@ -1,4 +1,4 @@
-import productModel from '../dao/models/product.model.js'
+import productModel from './models/product.model.js'
 
 export default class ProductMongoDAO{
     traeTodo = async() => await productModel.find().lean().exec()
@@ -54,7 +54,7 @@ export default class ProductMongoDAO{
           
         }  
     }
-    addProducto = async(data) => await productModel.save(data)
+    addProducto = async(datos) => await productModel.save(datos) 
     addManyProducto = async(data) => await productModel.insertMany(data)
     // actualiza pero devuelve el producto con lo anterior
     //update = async(id,data) => productModel.findByIdAndUpdate(id,data)
