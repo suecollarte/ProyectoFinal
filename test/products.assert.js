@@ -1,25 +1,53 @@
 import mongoose from "mongoose";
-import Product from '../src/dao/product.mongo.dao.js'
-
+//import Product from '../src/dao/product.mongo.dao.js'
+import ProductMongoDAO from "../src/dao/product.mongo.dao.js";
 import Assert from 'assert'
 // usas uno o chai es para comparar los resultados
 
-mongoose.connect('mongodb://0.0.0.0:27017')
+mongoose.connect('mongodb://0.0.0.0:27017/ecommerce')
 const assert= Assert.strict
 
-describe('testear product DAO',() =>{
+describe('testear product DAO con ASSERT',() =>{
     before(async function() {
-        this.productDao= new Product()
-      //  await mongoose.connection.collections.Product.drop()
+        try{
+            
+            await mongoose.connection.collections.Product.drop()
+        } catch (err) {}
+        this.productDao= new ProductMongoDAO()
+      //  
+
+    })
+    beforeEach(async function() {
+       try{
+            await mongoose.connection.collections.products.drop()
+
+       } catch(err) {}
 
     })
     it('get debe devolver un arreglo',async function() {
         
         const result = await this.productDao.traeTodo()
+         
         assert.strictEqual(Array.isArray(result), true)
         
     })
-    xit('Dao debe crear productos', async function() {
+    it('get debe devolver un arreglo',async function() {
+        
+        const result = await this.productDao.traeTodo()
+         
+        assert.strictEqual(result.lenght, 0)
+        
+    })
+})
+describe("testeo SAVE metodo producto addProducto", ()=>{
+    before(async function() {
+        try{
+            await mongoose.connection.collections.products.drop()
+
+       } catch(err) {}
+
+    })
+    it('Dao debe crear productos', async function() {
         
         const result = await this.productDao.addProducto({
             code:"AAA1234",
