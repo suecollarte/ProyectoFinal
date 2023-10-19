@@ -23,7 +23,10 @@ export default class ProductoRepositorio{
         return results
     }
     traeProductsBy = async(_id) => await this.dao.traeProductsBy(_id)
-    addProducto = async(data) => await this.dao.addProducto(data)
+    addProducto = async(data) => {console.log(this.dao); 
+        const result= await this.dao.addProducto(data)
+        return result
+    } 
     addManyProducto = async(data) => await this.dao.addManyProducto(data)
      ModificarProducto = async(id,data) => this.dao.ModificarProducto(id,data,{returnDocument:'after'})
     //BorrarProducto = async(id) =>await this.dao.findByIdAndDelete(id)

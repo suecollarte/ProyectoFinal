@@ -53,10 +53,10 @@ router.get('/:pid', async (request, response) =>{
 router.post('/', async (req,res) =>
 {
    const productoNew= req.body;
-   
+   console.log("req", productoNew)
 try{
   const result= await productController.addProducto(productoNew);
- 
+ console.log(result)
     if (typeof result == 'string') {
     const error = result.split(' ')
     return res.status(parseInt(error[0].slice(1,4))).json({ error: result.slice(6) })

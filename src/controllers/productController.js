@@ -26,9 +26,10 @@ const getAllProducto = async (req,res)=> {
 }
 const  addProducto = async(data)=>{
 //productrepositorio
-console.log(data)
+//console.log("data-controller",data)
 const result= await ProductServiceInst.addProducto(data)
-res.json(result) 
+//res.json(result) 
+return result
 }
 
 const  addManyProducto = async(data)=>{
@@ -40,7 +41,8 @@ const  addManyProducto = async(data)=>{
 
  const  traeProductsBy = async(_id) => {
   const result = await ProductServiceInst.traeProductsBy(_id)
-  res.json(result) 
+  //res.json(result) 
+  return result
  }
 
  const  BorrarProducto = async(_id) =>{

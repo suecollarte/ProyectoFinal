@@ -1,6 +1,7 @@
 import productModel from './models/product.model.js'
 
 export default class ProductMongoDAO{
+
     traeTodo = async() => await productModel.find().lean().exec()
     
     traeProductsId = async(_id) => await productModel.findById(_id).lean().exec();
@@ -54,7 +55,10 @@ export default class ProductMongoDAO{
           
         }  
     }
-    addProducto = async(datos) => await productModel.save(datos) 
+    addProducto = async(datos) => {console.log(datos); 
+      //await productModel.save(datos) 
+      await productModel.create(datos)
+    }
     addManyProducto = async(data) => await productModel.insertMany(data)
     // actualiza pero devuelve el producto con lo anterior
     //update = async(id,data) => productModel.findByIdAndUpdate(id,data)
