@@ -1,9 +1,16 @@
 import userModel from "./models/user.model.js"
 
-export default class User{
+export default class User {
 
     get = async() => await userModel.find()
-    create = async(data) => await userModel.create(data)
+    create = async(data) => {
+        try {await userModel.create(data)
+        }catch(err){
+            return {}
+        }
+
+     }
     getById = async(id) => await userModel.findById(id)
-    updata = async(id,data)=> await userModel.ipdateOne({_id:id}, data)
+    update = async(id,data)=> await userModel.updateOne({_id:id}, {$set: data})
+    delete = async(id) => await userModel.deleteOne({ id: id})
 }

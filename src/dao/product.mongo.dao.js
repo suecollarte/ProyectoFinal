@@ -57,7 +57,9 @@ export default class ProductMongoDAO{
     }
     addProducto = async(datos) => {console.log(datos); 
       //await productModel.save(datos) 
-      await productModel.create(datos)
+      let result= await productModel.create(datos)
+      return result
+      
     }
     addManyProducto = async(data) => await productModel.insertMany(data)
     // actualiza pero devuelve el producto con lo anterior

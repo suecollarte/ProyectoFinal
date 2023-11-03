@@ -11,4 +11,5 @@ export default class UserRepository {
         await this.dao.create(dataToInsert)
     }
     getById = async(id) => await this.dao.getById(id)
+    
 }

@@ -5,5 +5,6 @@ const router = Router()
 
 router.get('/',get)
 router.post('/',create)
+router.get('/premium',)
 
 export default router

@@ -10,7 +10,7 @@ describe('testing supertest', () =>{
 
   const product={
     title:"hola",
-    code:"qqq12",
+    code:"qqq12345er",
     description:"blabla",
     price:1000,
     stock:200,
@@ -21,7 +21,16 @@ describe('testing supertest', () =>{
   const {status,ok, _body} =response
   expect(_body.payload).to.have.property('_id')
         })
-    })
+  
 
+    it("endpoint post no vacio",async () =>{
 
+        const product={}
+        const response = await requester.post('/api/products').send(product)
+        const {status,ok, _body} =response
+        expect(ok).to.be.eq(false)
+              })
+          })
 })
+
+

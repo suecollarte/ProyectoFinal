@@ -3,6 +3,6 @@ export default class UserDTO {
         this.id= user.id || user.id||null
         this.name=user.name
         this.email=user.email
-        this.tickect=user.tieckets||[]
+        this.ticket=user.tickets||[]
     }
 }

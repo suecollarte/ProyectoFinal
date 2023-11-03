@@ -445,3 +445,93 @@ info: Server Up! {"timestamp":"2023-09-14T23:30:24.204Z"}
 [32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:34:56.843Z"}
 [34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:34:56.844Z"}
 [34minfo[39m: New client connected {"timestamp":"2023-10-19T00:34:57.046Z"}
+[34minfo[39m: BD {"timestamp":"2023-10-19T00:42:27.062Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T00:42:27.106Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T00:42:27.107Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:42:27.108Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:42:27.109Z"}
+[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:42:27.172Z"}
+[34minfo[39m: BD {"timestamp":"2023-10-19T00:42:53.077Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T00:42:53.113Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T00:42:53.114Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:42:53.114Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:42:53.115Z"}
+[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:42:57.276Z"}
+[34minfo[39m: BD {"timestamp":"2023-10-19T00:47:04.853Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T00:47:04.885Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T00:47:04.886Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:47:04.886Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:47:04.887Z"}
+[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:47:05.903Z"}
+[34minfo[39m: BD {"timestamp":"2023-10-19T00:47:28.548Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T00:47:28.582Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T00:47:28.583Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:47:28.584Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:47:28.584Z"}
+[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:47:28.634Z"}
+[34minfo[39m: BD {"timestamp":"2023-10-19T00:52:00.669Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T00:52:00.704Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T00:52:00.705Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:52:00.705Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:52:00.706Z"}
+[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:52:03.918Z"}
+[34minfo[39m: BD {"timestamp":"2023-10-19T00:52:52.232Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T00:52:52.266Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T00:52:52.267Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:52:52.267Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:52:52.268Z"}
+[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:52:53.056Z"}
+[34minfo[39m: BD {"timestamp":"2023-10-19T00:54:56.696Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T00:54:56.730Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T00:54:56.730Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:54:56.731Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:54:56.731Z"}
+[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:54:56.935Z"}
+[34minfo[39m: BD {"timestamp":"2023-10-19T00:55:08.723Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T00:55:08.757Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T00:55:08.758Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:55:08.759Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:55:08.759Z"}
+[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:55:08.905Z"}
+[34minfo[39m: BD {"timestamp":"2023-10-19T00:56:37.042Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T00:56:37.074Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T00:56:37.075Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:56:37.076Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:56:37.076Z"}
+[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:56:38.232Z"}
+[34minfo[39m: BD {"timestamp":"2023-10-19T00:56:58.315Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T00:56:58.346Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T00:56:58.347Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:56:58.348Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:56:58.349Z"}
+[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:56:58.449Z"}
+[34minfo[39m: BD {"timestamp":"2023-10-19T00:57:05.447Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T00:57:05.488Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T00:57:05.489Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:57:05.489Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:57:05.490Z"}
+[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:57:05.538Z"}
+[34minfo[39m: BD {"timestamp":"2023-10-19T23:21:32.366Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T23:21:32.411Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T23:21:32.412Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T23:21:32.413Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-10-19T23:21:32.413Z"}
+[34minfo[39m: New client connected {"timestamp":"2023-10-19T23:21:37.269Z"}
+[34minfo[39m: BD {"timestamp":"2023-10-19T23:22:21.694Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T23:22:21.727Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T23:22:21.728Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T23:22:21.729Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-10-19T23:22:21.729Z"}
+[34minfo[39m: New client connected {"timestamp":"2023-10-19T23:22:21.770Z"}
+[34minfo[39m: BD {"timestamp":"2023-10-19T23:23:04.785Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T23:23:04.816Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T23:23:04.817Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T23:23:04.818Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-10-19T23:23:04.818Z"}
+[34minfo[39m: New client connected {"timestamp":"2023-10-19T23:23:05.260Z"}
+[34minfo[39m: BD {"timestamp":"2023-10-19T23:23:38.513Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T23:23:38.544Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T23:23:38.544Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T23:23:38.545Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-10-19T23:23:38.545Z"}
+[34minfo[39m: New client connected {"timestamp":"2023-10-19T23:23:38.562Z"}

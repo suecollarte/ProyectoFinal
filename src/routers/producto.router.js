@@ -56,19 +56,20 @@ router.post('/', async (req,res) =>
    console.log("req", productoNew)
 try{
   const result= await productController.addProducto(productoNew);
- console.log(result)
-    if (typeof result == 'string') {
+ console.log("resulta",result)
+   /*  if (typeof result == 'string') {
     const error = result.split(' ')
     return res.status(parseInt(error[0].slice(1,4))).json({ error: result.slice(6) })
-    }
+    } */
     //
    //console.log(productoNew)
-   res.redirect('/api/products/')
+   res.send({status:"success", payload:result})
+   //res.redirect('/api/products/')
     
       
    // res.status(201).json({ status: 'success', payload: result })
   }catch(err){
-    console.log(err)   //para tener el error en la consola
+    //console.log(err)   //para tener el error en la consola
     throw new Error(err)
   } 
   }) 
