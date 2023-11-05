@@ -27,9 +27,7 @@ import sessionRoute from './routers/session.router.js'
 import loginRoute from './routers/login.router.js'
 import {run} from "./run.js"
  
-
-
-
+import multer from "multer"
 
 //const MONGOURI = 'mongodb+srv://admin:admin@cluster0.hjgxmmk.mongodb.net/?retryWrites=true&w=majority';
 //const MONGOURI='mongodb://0.0.0.0:27017'
@@ -130,6 +128,9 @@ app.use('/session', sessionRoute)
 app.use('/mockingproducts', mockRouter)
 app.use('/api/users', userRouter)
 app.use('/api/ticket',ticketRouter)
+//single solo un archivo
+// en el form debe llamarse file
+
 
 //app.listen(PORT, () => console.log(`Server Up on port ${PORT}`))
 mongoose.set('strictQuery',false);

@@ -1,0 +1,32 @@
+paths:
+  /api/users:
+    get:
+        summary: Obtiene los usuarios  y puedes ingresar otros
+        tags:
+          - Users
+        responses:
+          "200":
+            description: Usuarios obtenidos satisfactoriamente
+
+
+components:
+  schemas:    
+    User:
+      type: object
+      properties:
+        _id:
+          type: ObjectId
+          description: Id generado de BBDD Mongo
+        name:
+          type: String
+          description: nombre usuario
+        email:
+          type: String
+          description: email
+        tickets:
+          type: Array
+          description: ticket relacionados
+        documents:
+          type: Array
+          description: ticket relacionados
+      

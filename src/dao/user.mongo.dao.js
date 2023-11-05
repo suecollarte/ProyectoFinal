@@ -13,4 +13,5 @@ export default class User {
     getById = async(id) => await userModel.findById(id)
     update = async(id,data)=> await userModel.updateOne({_id:id}, {$set: data})
     delete = async(id) => await userModel.deleteOne({ id: id})
+    
 }

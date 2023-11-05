@@ -12,4 +12,5 @@ export default class UserRepository {
     }
     getById = async(id) => await this.dao.getById(id)
     
+    ModificarUser = async(id,data) => await this.dao.findByIdAndUpdate(id,data,{returnDocument:'after'})
 }

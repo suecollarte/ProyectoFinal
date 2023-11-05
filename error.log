@@ -627,3 +627,252 @@
 [32mhttp[39m: Server Up! {"timestamp":"2023-10-19T23:23:38.545Z"}
 [34minfo[39m: Server Up! {"timestamp":"2023-10-19T23:23:38.545Z"}
 [34minfo[39m: New client connected {"timestamp":"2023-10-19T23:23:38.562Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T17:15:46.449Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T17:15:46.484Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T17:15:46.484Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T17:15:46.485Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T17:15:46.486Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T17:15:46.486Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T17:20:41.439Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T17:20:41.477Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T17:20:41.478Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T17:20:41.478Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T17:20:41.479Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T17:20:41.479Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T17:21:23.048Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T17:21:23.084Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T17:21:23.085Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T17:21:23.085Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T17:21:23.086Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T17:21:23.086Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T17:22:36.103Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T17:22:36.137Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T17:22:36.138Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T17:22:36.138Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T17:22:36.139Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T17:22:36.139Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T17:23:36.344Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T17:23:55.545Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T17:24:16.578Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T17:25:09.278Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T17:25:09.314Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T17:25:09.314Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T17:25:09.314Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T17:25:09.315Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T17:25:09.315Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T17:25:46.334Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T17:25:46.367Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T17:25:46.368Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T17:25:46.368Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T17:25:46.368Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T17:25:46.369Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T17:26:54.198Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T17:26:54.231Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T17:26:54.231Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T17:26:54.232Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T17:26:54.233Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T17:26:54.233Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T17:29:03.018Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T17:29:03.054Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T17:29:03.055Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T17:29:03.055Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T17:29:03.056Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T17:29:03.056Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T17:30:07.241Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T17:30:07.274Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T17:30:07.274Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T17:30:07.275Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T17:30:07.276Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T17:30:07.276Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T17:30:43.473Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T17:30:43.507Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T17:30:43.508Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T17:30:43.508Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T17:30:43.508Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T17:30:43.509Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T17:32:57.389Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T17:32:57.421Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T17:32:57.422Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T17:32:57.422Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T17:32:57.423Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T17:32:57.423Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T17:33:16.640Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T17:33:16.675Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T17:33:16.676Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T17:33:16.676Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T17:33:16.677Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T17:33:16.677Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T17:34:00.379Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T17:34:00.414Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T17:34:00.414Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T17:34:00.414Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T17:34:00.415Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T17:34:00.415Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T17:34:34.424Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T17:34:34.465Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T17:34:34.465Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T17:34:34.465Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T17:34:34.466Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T17:34:34.466Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T17:35:39.730Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T17:35:39.766Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T17:35:39.767Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T17:35:39.767Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T17:35:39.768Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T17:35:39.768Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T17:36:45.949Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T17:36:45.995Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T17:36:45.996Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T17:36:45.997Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T17:36:45.998Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T17:36:45.998Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T18:32:38.363Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:32:38.412Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:32:38.412Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:32:38.413Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:32:38.413Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:32:38.413Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T18:33:12.724Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:33:12.760Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:33:12.760Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:33:12.761Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:33:12.761Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:33:12.762Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T18:33:50.610Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:33:50.643Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:33:50.644Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:33:50.644Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:33:50.645Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:33:50.645Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T18:34:30.849Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:34:30.887Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:34:30.887Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:34:30.888Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:34:30.889Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:34:30.889Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T18:35:08.562Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:35:08.600Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:35:08.600Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:35:08.601Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:35:08.602Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:35:08.602Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T18:35:45.502Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:35:45.540Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:35:45.540Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:35:45.541Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:35:45.541Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:35:45.542Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T18:37:02.077Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:37:02.115Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:37:02.115Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:37:02.115Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:37:02.116Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:37:02.117Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T18:37:44.212Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:37:44.247Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:37:44.247Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:37:44.247Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:37:44.248Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:37:44.248Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T18:37:47.422Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:37:47.454Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:37:47.454Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:37:47.454Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:37:47.455Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:37:47.455Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T18:38:16.329Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:38:16.361Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:38:16.362Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:38:16.362Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:38:16.363Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:38:16.363Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T18:38:29.220Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:38:29.255Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:38:29.255Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:38:29.256Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:38:29.256Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:38:29.256Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T18:47:12.476Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:47:12.509Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:47:12.509Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:47:12.509Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:47:12.510Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:47:12.510Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T18:47:28.837Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:47:28.869Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:47:28.870Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:47:28.870Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:47:28.871Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:47:28.871Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T18:51:04.486Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:51:04.519Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:51:04.519Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:51:04.519Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:51:04.520Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:51:04.520Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T18:52:51.816Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:52:51.850Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:52:51.850Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:52:51.851Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:52:51.851Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:52:51.852Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T18:53:59.237Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:53:59.270Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:53:59.270Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:53:59.270Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:53:59.271Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:53:59.271Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T18:54:49.938Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:54:49.974Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:54:49.974Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:54:49.975Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:54:49.975Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:54:49.976Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T18:55:55.611Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:55:55.648Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:55:55.648Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:55:55.649Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:55:55.649Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:55:55.650Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T18:56:40.097Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:56:40.132Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:56:40.133Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:56:40.133Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:56:40.134Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:56:40.134Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T18:56:44.709Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:56:44.744Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:56:44.744Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:56:44.744Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:56:44.745Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:56:44.745Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T18:57:25.718Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:57:25.752Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:57:25.753Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:57:25.753Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:57:25.754Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:57:25.754Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T18:57:58.901Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:57:58.934Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:57:58.934Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:57:58.935Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:57:58.935Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:57:58.936Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T18:59:47.627Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:59:47.662Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:59:47.663Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:59:47.663Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:59:47.664Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:59:47.664Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T18:59:59.289Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:59:59.326Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:59:59.327Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:59:59.327Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:59:59.328Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:59:59.328Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-05T21:03:29.888Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T21:03:29.945Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-05T21:03:29.945Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T21:03:29.946Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T21:03:29.947Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-05T21:03:29.947Z"}

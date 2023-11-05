@@ -13,6 +13,14 @@ export const create = async(req, res) =>{
 }
 export const getById = async(req,res) =>{
     const uid= req.body
-    const user = await UsersService.get(uid)
+    const user = await UserService.get(uid)
+    res.json({user})
+}
+
+export const ModificarUser = async(req,res) =>{
+    const uid= req.body
+    const data = "modificado"
+    console.log("hola3")
+   const user = await UserService.ModificarUser(uid,data)
     res.json({user})
 }

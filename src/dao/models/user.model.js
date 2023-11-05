@@ -12,6 +12,15 @@ const userSchema = new mongoose.Schema({
     age:{type:String},
     email:{type:String},
     password: {type:String},
+    documents:{
+        type:[
+            {
+                name: String,
+                document:{
+            type:mongoose.Schema.Types.ObjectId,
+            ref:'documento'}
+            }]
+    },
     tickets:{
         type:[
             {

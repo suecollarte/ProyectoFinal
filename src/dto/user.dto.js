@@ -4,5 +4,6 @@ export default class UserDTO {
         this.name=user.name
         this.email=user.email
         this.ticket=user.tickets||[]
+        this.documents= user.documents||[]
     }
 }
