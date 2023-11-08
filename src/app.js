@@ -28,6 +28,8 @@ import loginRoute from './routers/login.router.js'
 import {run} from "./run.js"
 import dotenv from 'dotenv'
 
+import paymentsRouter from "./routers/payment.router.js"
+
 //const MONGOURI = 'mongodb+srv://admin:admin@cluster0.hjgxmmk.mongodb.net/?retryWrites=true&w=majority';
 //const MONGOURI='mongodb://0.0.0.0:27017'
 
@@ -136,6 +138,7 @@ app.use('/session', sessionRoute)
 app.use('/mockingproducts', mockRouter)
 app.use('/api/users', userRouter)
 app.use('/api/ticket',ticketRouter)
+app.use('/payments', paymentsRouter)
 //single solo un archivo
 // en el form debe llamarse file
 

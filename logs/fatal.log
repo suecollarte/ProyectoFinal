@@ -263,3 +263,74 @@
 [34minfo[39m: [18:13:13] /docs/swagger-ui-standalone-preset.js - GET {"timestamp":"2023-11-08T21:13:13.196Z"}
 [34minfo[39m: [18:13:13] /docs/swagger-ui-init.js - GET {"timestamp":"2023-11-08T21:13:13.198Z"}
 [34minfo[39m: [18:13:13] /docs/favicon-32x32.png - GET {"timestamp":"2023-11-08T21:13:13.570Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T22:18:31.757Z"}
+[37mdebug[39m: debug {"timestamp":"2023-11-08T22:18:31.803Z"}
+[36merror[39m: error {"timestamp":"2023-11-08T22:18:31.803Z"}
+[33mwarning[39m: warning {"timestamp":"2023-11-08T22:18:31.804Z"}
+[32mhttp[39m: http {"timestamp":"2023-11-08T22:18:31.804Z"}
+[34minfo[39m: info {"timestamp":"2023-11-08T22:18:31.804Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T22:36:09.422Z"}
+[37mdebug[39m: debug {"timestamp":"2023-11-08T22:36:09.454Z"}
+[36merror[39m: error {"timestamp":"2023-11-08T22:36:09.454Z"}
+[33mwarning[39m: warning {"timestamp":"2023-11-08T22:36:09.454Z"}
+[32mhttp[39m: http {"timestamp":"2023-11-08T22:36:09.455Z"}
+[34minfo[39m: info {"timestamp":"2023-11-08T22:36:09.455Z"}
+[34minfo[39m: [19:36:24] / - GET {"timestamp":"2023-11-08T22:36:24.666Z"}
+[34minfo[39m: [19:36:24] /js/index.js - GET {"timestamp":"2023-11-08T22:36:24.683Z"}
+[34minfo[39m: New client connected {"timestamp":"2023-11-08T22:36:24.725Z"}
+[34minfo[39m: [19:36:37] /payments - GET {"timestamp":"2023-11-08T22:36:37.123Z"}
+[34minfo[39m: [19:36:37] /favicon.ico - GET {"timestamp":"2023-11-08T22:36:37.217Z"}
+[34minfo[39m: [19:37:00] /payments/exito - GET {"timestamp":"2023-11-08T22:37:00.276Z"}
+[34minfo[39m: [19:37:00] /favicon.ico - GET {"timestamp":"2023-11-08T22:37:00.297Z"}
+[34minfo[39m: [19:37:27] /payments/cancel - GET {"timestamp":"2023-11-08T22:37:27.013Z"}
+[34minfo[39m: [19:37:27] /favicon.ico - GET {"timestamp":"2023-11-08T22:37:27.040Z"}
+[34minfo[39m: [19:37:52] /payments/cancel - GET {"timestamp":"2023-11-08T22:37:52.328Z"}
+[34minfo[39m: [19:37:52] /favicon.ico - GET {"timestamp":"2023-11-08T22:37:52.343Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T22:38:13.480Z"}
+[37mdebug[39m: debug {"timestamp":"2023-11-08T22:38:13.515Z"}
+[36merror[39m: error {"timestamp":"2023-11-08T22:38:13.515Z"}
+[33mwarning[39m: warning {"timestamp":"2023-11-08T22:38:13.516Z"}
+[32mhttp[39m: http {"timestamp":"2023-11-08T22:38:13.516Z"}
+[34minfo[39m: info {"timestamp":"2023-11-08T22:38:13.516Z"}
+[34minfo[39m: [19:38:13] /payments/cancel - GET {"timestamp":"2023-11-08T22:38:13.825Z"}
+[34minfo[39m: [19:38:13] /favicon.ico - GET {"timestamp":"2023-11-08T22:38:13.854Z"}
+[34minfo[39m: [19:39:00] /payments/create-checkout-session - GET {"timestamp":"2023-11-08T22:39:00.197Z"}
+[34minfo[39m: [19:39:00] /favicon.ico - GET {"timestamp":"2023-11-08T22:39:00.224Z"}
+[34minfo[39m: [19:39:13] /payments/create-checkout-sesion - GET {"timestamp":"2023-11-08T22:39:13.996Z"}
+[34minfo[39m: [19:39:14] /favicon.ico - GET {"timestamp":"2023-11-08T22:39:14.028Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T23:08:01.912Z"}
+[37mdebug[39m: debug {"timestamp":"2023-11-08T23:08:01.945Z"}
+[36merror[39m: error {"timestamp":"2023-11-08T23:08:01.945Z"}
+[33mwarning[39m: warning {"timestamp":"2023-11-08T23:08:01.945Z"}
+[32mhttp[39m: http {"timestamp":"2023-11-08T23:08:01.946Z"}
+[34minfo[39m: info {"timestamp":"2023-11-08T23:08:01.946Z"}
+[34minfo[39m: [20:10:46] / - GET {"timestamp":"2023-11-08T23:10:46.752Z"}
+[34minfo[39m: [20:10:46] /js/index.js - GET {"timestamp":"2023-11-08T23:10:46.783Z"}
+[34minfo[39m: [20:10:46] /favicon.ico - GET {"timestamp":"2023-11-08T23:10:46.822Z"}
+[34minfo[39m: New client connected {"timestamp":"2023-11-08T23:10:46.847Z"}
+[34minfo[39m: [20:15:01] / - GET {"timestamp":"2023-11-08T23:15:01.652Z"}
+[34minfo[39m: [20:15:01] /js/index.js - GET {"timestamp":"2023-11-08T23:15:01.670Z"}
+[34minfo[39m: [20:15:01] /favicon.ico - GET {"timestamp":"2023-11-08T23:15:01.687Z"}
+[34minfo[39m: New client connected {"timestamp":"2023-11-08T23:15:01.691Z"}
+[34minfo[39m: [20:15:02] / - GET {"timestamp":"2023-11-08T23:15:02.493Z"}
+[34minfo[39m: [20:15:02] /js/index.js - GET {"timestamp":"2023-11-08T23:15:02.506Z"}
+[34minfo[39m: New client connected {"timestamp":"2023-11-08T23:15:02.515Z"}
+[34minfo[39m: [20:15:02] /favicon.ico - GET {"timestamp":"2023-11-08T23:15:02.519Z"}
+[34minfo[39m: [20:17:03] / - GET {"timestamp":"2023-11-08T23:17:03.647Z"}
+[34minfo[39m: [20:17:03] /favicon.ico - GET {"timestamp":"2023-11-08T23:17:03.676Z"}
+[34minfo[39m: [20:17:04] / - GET {"timestamp":"2023-11-08T23:17:04.800Z"}
+[34minfo[39m: [20:17:04] /favicon.ico - GET {"timestamp":"2023-11-08T23:17:04.827Z"}
+[34minfo[39m: [20:17:27] / - GET {"timestamp":"2023-11-08T23:17:27.032Z"}
+[34minfo[39m: [20:17:27] /favicon.ico - GET {"timestamp":"2023-11-08T23:17:27.056Z"}
+[34minfo[39m: [20:17:28] /payments/create-checkout-sesion - GET {"timestamp":"2023-11-08T23:17:28.606Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T23:23:01.547Z"}
+[37mdebug[39m: debug {"timestamp":"2023-11-08T23:23:01.581Z"}
+[36merror[39m: error {"timestamp":"2023-11-08T23:23:01.582Z"}
+[33mwarning[39m: warning {"timestamp":"2023-11-08T23:23:01.582Z"}
+[32mhttp[39m: http {"timestamp":"2023-11-08T23:23:01.582Z"}
+[34minfo[39m: info {"timestamp":"2023-11-08T23:23:01.583Z"}
+[34minfo[39m: [20:23:03] / - GET {"timestamp":"2023-11-08T23:23:03.974Z"}
+[34minfo[39m: [20:23:04] /favicon.ico - GET {"timestamp":"2023-11-08T23:23:04.001Z"}
+[34minfo[39m: [20:23:05] /payments/create-checkout-sesion - GET {"timestamp":"2023-11-08T23:23:05.419Z"}
+[34minfo[39m: [20:23:59] /payments/cancel - GET {"timestamp":"2023-11-08T23:23:59.853Z"}
+[34minfo[39m: [20:24:00] /favicon.ico - GET {"timestamp":"2023-11-08T23:24:00.052Z"}

@@ -32,7 +32,6 @@ router.post('/:uid/upload',uploader.single('file'), (req,res) =>{
     if (!req.file){
         return res.status(400).json({status:"error",error:" no hay archivo"})
     }
-  
     controllerUser.ModificarUser.bind(controllerUser)(req,{documento: true})
   })
 export default router

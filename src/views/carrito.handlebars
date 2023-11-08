@@ -54,7 +54,16 @@
    
 </div>
 
-      
+          <button id="checkout">Pagar</button>
+    <script>
+        const button=document.getElementById('checkout')
+        button.addEventListener('click', async() =>{
+            const res= await fetch('/payments/create-checkout-sesion')
+            const data =await res.json()
+            window.location.href =data.url
+
+        })
+    </script>
     
 </div>
    
