@@ -10,3 +10,216 @@
 [37mdebug[39m: Server Up! {"timestamp":"2023-09-15T00:10:16.360Z"}
 [32mhttp[39m: Server Up! {"timestamp":"2023-09-15T00:10:16.361Z"}
 [34minfo[39m: Server Up! {"timestamp":"2023-09-15T00:10:16.362Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-08T14:15:22.479Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T14:15:22.515Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T14:15:22.516Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T14:15:22.517Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-08T14:15:45.450Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T14:15:45.483Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T14:15:45.485Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T14:15:45.485Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-08T14:22:46.919Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T14:22:46.953Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T14:22:46.955Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T14:22:46.955Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-08T14:23:39.428Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T14:23:39.461Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T14:23:39.463Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T14:23:39.463Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-08T14:24:07.068Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-08T14:24:17.204Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T14:24:17.239Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T14:24:17.240Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T14:24:17.241Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T14:34:09.800Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T14:34:09.834Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T14:34:09.836Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T14:34:09.836Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T14:34:17.093Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T14:35:43.547Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T14:35:43.581Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T14:35:43.582Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T14:35:43.583Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:35:59.189Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T14:36:05.977Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:36:29.392Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:37:33.431Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T14:37:37.691Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T14:38:13.914Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:38:21.382Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T14:38:26.035Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:38:39.520Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T14:38:42.810Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T14:39:53.395Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T14:39:53.988Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T14:39:54.208Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T14:39:54.414Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T14:39:54.636Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T14:39:54.851Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:40:16.172Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T14:40:20.187Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T14:41:35.648Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T14:41:35.679Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T14:41:35.681Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T14:41:35.681Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:41:41.025Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:41:42.801Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:41:43.052Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:41:43.264Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:41:43.496Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:41:43.707Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T14:42:47.909Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T14:42:47.941Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T14:42:47.942Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T14:42:47.943Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:42:49.579Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:42:51.713Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:42:52.154Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:42:52.383Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:42:52.609Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:42:52.918Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:42:53.214Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:42:53.455Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:42:53.682Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T14:43:28.717Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T14:45:08.262Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T14:45:08.292Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T14:45:08.294Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T14:45:08.294Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T14:45:29.047Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T14:46:07.092Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T14:46:07.122Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T14:46:07.124Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T14:46:07.124Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T14:46:10.341Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T15:03:46.495Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T15:03:46.527Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T15:03:46.529Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T15:03:46.529Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T15:03:50.803Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T15:04:10.760Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T15:05:14.400Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T15:05:14.430Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T15:05:14.432Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T15:05:14.432Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T15:06:04.547Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T15:06:04.577Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T15:06:04.578Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T15:06:04.578Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T15:06:10.650Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T15:06:35.810Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T15:06:35.842Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T15:06:35.843Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T15:06:35.844Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T15:06:39.837Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T15:07:23.189Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T15:07:23.221Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T15:07:23.222Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T15:07:23.223Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T15:07:25.942Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T15:07:37.718Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T15:07:37.748Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T15:07:37.749Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T15:07:37.750Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T15:08:20.988Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T15:10:38.171Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T15:10:38.204Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T15:10:38.206Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T15:10:38.207Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T15:10:46.772Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T15:10:46.805Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T15:10:46.806Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T15:10:46.807Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T15:11:04.127Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T15:13:03.712Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T15:13:03.743Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T15:13:03.745Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T15:13:03.745Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T15:13:22.695Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T15:17:51.543Z"}
+[37mdebug[39m: debug {"timestamp":"2023-11-08T15:17:51.577Z"}
+[32mhttp[39m: http {"timestamp":"2023-11-08T15:17:51.578Z"}
+[34minfo[39m: info {"timestamp":"2023-11-08T15:17:51.578Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T15:18:19.326Z"}
+[37mdebug[39m: debug {"timestamp":"2023-11-08T15:18:19.359Z"}
+[32mhttp[39m: http {"timestamp":"2023-11-08T15:18:19.361Z"}
+[34minfo[39m: info {"timestamp":"2023-11-08T15:18:19.361Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T15:18:23.604Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T20:00:59.146Z"}
+[37mdebug[39m: debug {"timestamp":"2023-11-08T20:00:59.194Z"}
+[32mhttp[39m: http {"timestamp":"2023-11-08T20:00:59.196Z"}
+[34minfo[39m: info {"timestamp":"2023-11-08T20:00:59.197Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T20:01:07.679Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T20:07:25.435Z"}
+[37mdebug[39m: debug {"timestamp":"2023-11-08T20:07:25.466Z"}
+[32mhttp[39m: http {"timestamp":"2023-11-08T20:07:25.467Z"}
+[34minfo[39m: info {"timestamp":"2023-11-08T20:07:25.467Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T20:07:31.985Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T20:08:39.939Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T20:08:46.189Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T20:08:46.759Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T20:08:47.421Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T20:09:31.665Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T20:09:37.778Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T20:09:39.845Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T20:09:40.076Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T20:09:40.285Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T20:09:40.514Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T20:10:35.974Z"}
+[37mdebug[39m: debug {"timestamp":"2023-11-08T20:10:36.006Z"}
+[32mhttp[39m: http {"timestamp":"2023-11-08T20:10:36.007Z"}
+[34minfo[39m: info {"timestamp":"2023-11-08T20:10:36.008Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T20:10:40.706Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T20:11:42.305Z"}
+[37mdebug[39m: debug {"timestamp":"2023-11-08T20:11:42.337Z"}
+[32mhttp[39m: http {"timestamp":"2023-11-08T20:11:42.338Z"}
+[34minfo[39m: info {"timestamp":"2023-11-08T20:11:42.338Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T20:11:43.233Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T20:14:41.448Z"}
+[37mdebug[39m: debug {"timestamp":"2023-11-08T20:14:41.480Z"}
+[32mhttp[39m: http {"timestamp":"2023-11-08T20:14:41.481Z"}
+[34minfo[39m: info {"timestamp":"2023-11-08T20:14:41.482Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T20:14:42.897Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T20:15:02.381Z"}
+[37mdebug[39m: debug {"timestamp":"2023-11-08T20:15:02.411Z"}
+[32mhttp[39m: http {"timestamp":"2023-11-08T20:15:02.413Z"}
+[34minfo[39m: info {"timestamp":"2023-11-08T20:15:02.413Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T20:15:16.224Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T20:15:18.801Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T20:15:39.716Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T20:15:40.804Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T20:15:41.059Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T20:15:41.325Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T20:15:58.562Z"}
+[37mdebug[39m: debug {"timestamp":"2023-11-08T20:15:58.595Z"}
+[32mhttp[39m: http {"timestamp":"2023-11-08T20:15:58.596Z"}
+[34minfo[39m: info {"timestamp":"2023-11-08T20:15:58.596Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T20:16:00.231Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T21:00:18.584Z"}
+[37mdebug[39m: debug {"timestamp":"2023-11-08T21:00:18.617Z"}
+[32mhttp[39m: http {"timestamp":"2023-11-08T21:00:18.618Z"}
+[34minfo[39m: info {"timestamp":"2023-11-08T21:00:18.618Z"}
+[34minfo[39m: [18:00:22] /api/users/ - POST {"timestamp":"2023-11-08T21:00:22.981Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T21:01:18.838Z"}
+[37mdebug[39m: debug {"timestamp":"2023-11-08T21:01:18.871Z"}
+[32mhttp[39m: http {"timestamp":"2023-11-08T21:01:18.872Z"}
+[34minfo[39m: info {"timestamp":"2023-11-08T21:01:18.872Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T21:04:42.701Z"}
+[37mdebug[39m: debug {"timestamp":"2023-11-08T21:04:42.732Z"}
+[32mhttp[39m: http {"timestamp":"2023-11-08T21:04:42.733Z"}
+[34minfo[39m: info {"timestamp":"2023-11-08T21:04:42.734Z"}
+[34minfo[39m: [18:05:02] /api/users/ - POST {"timestamp":"2023-11-08T21:05:02.741Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T21:08:41.441Z"}
+[37mdebug[39m: debug {"timestamp":"2023-11-08T21:08:41.478Z"}
+[32mhttp[39m: http {"timestamp":"2023-11-08T21:08:41.479Z"}
+[34minfo[39m: info {"timestamp":"2023-11-08T21:08:41.479Z"}
+[34minfo[39m: [18:13:04] / - GET {"timestamp":"2023-11-08T21:13:04.605Z"}
+[34minfo[39m: [18:13:04] /js/index.js - GET {"timestamp":"2023-11-08T21:13:04.632Z"}
+[34minfo[39m: New client connected {"timestamp":"2023-11-08T21:13:04.665Z"}
+[34minfo[39m: [18:13:06] /favicon.ico - GET {"timestamp":"2023-11-08T21:13:06.562Z"}
+[34minfo[39m: [18:13:13] /docs/ - GET {"timestamp":"2023-11-08T21:13:13.164Z"}
+[34minfo[39m: [18:13:13] /docs/swagger-ui.css - GET {"timestamp":"2023-11-08T21:13:13.185Z"}
+[34minfo[39m: [18:13:13] /docs/swagger-ui-bundle.js - GET {"timestamp":"2023-11-08T21:13:13.187Z"}
+[34minfo[39m: [18:13:13] /docs/swagger-ui-standalone-preset.js - GET {"timestamp":"2023-11-08T21:13:13.196Z"}
+[34minfo[39m: [18:13:13] /docs/swagger-ui-init.js - GET {"timestamp":"2023-11-08T21:13:13.198Z"}
+[34minfo[39m: [18:13:13] /docs/favicon-32x32.png - GET {"timestamp":"2023-11-08T21:13:13.570Z"}

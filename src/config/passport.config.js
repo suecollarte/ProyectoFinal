@@ -4,7 +4,7 @@ import passport_jwt from "passport-jwt";
 import userService from '../dao/models/user.model.js'
 import CartModel from '../dao/models/cart.model.js'
 import {createHash, extractCookie, generateToken, isValidPassword, JWT_PRIVATE_KEY} from '../utils.js'
-import logger from '../utils/logger.js'
+import {logger} from '../utils/logger.js'
 
 const LocalStrategy = local.Strategy;
 const JWTStrategy = passport_jwt.Strategy

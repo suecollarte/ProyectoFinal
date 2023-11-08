@@ -1,878 +1,169 @@
-[37mdebug[39m: Server Up! {"timestamp":"2023-09-14T23:46:22.528Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-09-14T23:46:22.528Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-09-14T23:46:22.529Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-09-14T23:46:22.530Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-09-14T23:46:22.530Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-09-14T23:49:20.149Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-09-14T23:49:20.149Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-09-14T23:49:20.150Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-09-14T23:49:20.152Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-09-14T23:49:20.152Z"}
-[34minfo[39m: BD {"timestamp":"2023-09-15T00:11:52.782Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-09-15T00:11:52.812Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-09-15T00:11:52.812Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-09-15T00:11:52.813Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-09-15T00:11:52.813Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-09-15T00:11:52.814Z"}
-[34minfo[39m: BD {"timestamp":"2023-09-15T00:12:41.953Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-09-15T00:12:41.982Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-09-15T00:12:41.983Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-09-15T00:12:41.983Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-09-15T00:12:41.984Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-09-15T00:12:41.984Z"}
-[34minfo[39m: BD {"timestamp":"2023-09-28T20:09:50.916Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-09-28T20:09:50.929Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-09-28T20:09:50.929Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-09-28T20:09:50.929Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-09-28T20:09:50.930Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-09-28T20:09:50.930Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-09-28T20:10:40.036Z"}
-[34minfo[39m: BD {"timestamp":"2023-09-28T20:14:06.811Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-09-28T20:14:06.824Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-09-28T20:14:06.824Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-09-28T20:14:06.825Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-09-28T20:14:06.825Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-09-28T20:14:06.825Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-09-28T20:14:09.889Z"}
-[34minfo[39m: BD {"timestamp":"2023-09-28T20:16:01.494Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-09-28T20:16:01.506Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-09-28T20:16:01.507Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-09-28T20:16:01.507Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-09-28T20:16:01.508Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-09-28T20:16:01.508Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-09-28T20:16:01.876Z"}
-[34minfo[39m: BD {"timestamp":"2023-09-28T20:16:58.153Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-09-28T20:16:58.165Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-09-28T20:16:58.165Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-09-28T20:16:58.166Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-09-28T20:16:58.167Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-09-28T20:16:58.167Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-09-28T20:17:00.198Z"}
-[34minfo[39m: BD {"timestamp":"2023-09-28T20:17:04.207Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-09-28T20:17:04.220Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-09-28T20:17:04.220Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-09-28T20:17:04.220Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-09-28T20:17:04.221Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-09-28T20:17:04.221Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-09-28T20:17:04.374Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-01T18:38:48.949Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-01T18:39:11.993Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-01T18:39:12.009Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-01T18:39:12.010Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-01T18:39:12.011Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-01T18:39:12.011Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-01T18:39:12.012Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-01T18:39:28.281Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-01T18:42:20.723Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-01T18:42:20.743Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-01T18:42:20.743Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-01T18:42:20.743Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-01T18:42:20.744Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-01T18:42:20.744Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-01T18:44:11.128Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-01T18:44:20.699Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-01T18:44:28.922Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-01T18:46:56.517Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-01T18:46:57.256Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-01T18:46:57.497Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-01T18:47:48.661Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-01T18:49:15.840Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-01T18:52:42.367Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-01T18:52:42.394Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-01T18:52:42.394Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-01T18:52:42.395Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-01T18:52:42.395Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-01T18:52:42.396Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-01T18:53:15.277Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-01T18:53:15.304Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-01T18:53:15.304Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-01T18:53:15.305Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-01T18:53:15.305Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-01T18:53:15.306Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-01T18:54:20.308Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-01T18:54:20.335Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-01T18:54:20.335Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-01T18:54:20.336Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-01T18:54:20.336Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-01T18:54:20.336Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-01T18:54:43.101Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-01T18:54:43.132Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-01T18:54:43.132Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-01T18:54:43.133Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-01T18:54:43.133Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-01T18:54:43.134Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-01T18:55:22.422Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-01T18:55:22.447Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-01T18:55:22.448Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-01T18:55:22.448Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-01T18:55:22.449Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-01T18:55:22.449Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-01T19:02:07.084Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-01T19:02:07.114Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-01T19:02:07.114Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-01T19:02:07.114Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-01T19:02:07.115Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-01T19:02:07.115Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-01T19:03:10.368Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-01T19:03:10.398Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-01T19:03:10.398Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-01T19:03:10.399Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-01T19:03:10.399Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-01T19:03:10.400Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-01T19:03:34.151Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-01T19:03:34.179Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-01T19:03:34.179Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-01T19:03:34.180Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-01T19:03:34.180Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-01T19:03:34.180Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-01T19:04:00.612Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-01T19:04:00.641Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-01T19:04:00.641Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-01T19:04:00.642Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-01T19:04:00.643Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-01T19:04:00.643Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-01T19:05:36.673Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-01T19:05:36.701Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-01T19:05:36.702Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-01T19:05:36.702Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-01T19:05:36.703Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-01T19:05:36.703Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-01T19:06:17.285Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-01T19:06:17.313Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-01T19:06:17.314Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-01T19:06:17.314Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-01T19:06:17.315Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-01T19:06:17.315Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-01T19:07:40.639Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-01T19:07:40.669Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-01T19:07:40.670Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-01T19:07:40.670Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-01T19:07:40.671Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-01T19:07:40.672Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-02T14:25:06.999Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-02T14:25:07.028Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-02T14:25:07.028Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-02T14:25:07.028Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-02T14:25:07.029Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-02T14:25:07.029Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-04T00:52:19.321Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-04T00:52:19.361Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-04T00:52:19.361Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-04T00:52:19.362Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-04T00:52:19.364Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-04T00:52:19.365Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-04T00:54:50.090Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-04T00:54:50.120Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-04T00:54:50.120Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-04T00:54:50.120Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-04T00:54:50.121Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-04T00:54:50.121Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-04T00:55:39.220Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-04T00:55:39.251Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-04T00:55:39.251Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-04T00:55:39.252Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-04T00:55:39.252Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-04T00:55:39.253Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-04T00:55:57.330Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-04T00:55:57.361Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-04T00:55:57.361Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-04T00:55:57.362Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-04T00:55:57.363Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-04T00:55:57.363Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-04T00:56:52.077Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-04T00:56:52.115Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-04T00:56:52.115Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-04T00:56:52.116Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-04T00:56:52.116Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-04T00:56:52.117Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-04T00:57:16.907Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-04T00:57:16.937Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-04T00:57:16.938Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-04T00:57:16.938Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-04T00:57:16.939Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-04T00:57:16.939Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-04T00:59:31.846Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-04T00:59:31.876Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-04T00:59:31.877Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-04T00:59:31.877Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-04T00:59:31.878Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-04T00:59:31.878Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-04T01:03:03.511Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-04T01:03:03.542Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-04T01:03:03.542Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-04T01:03:03.542Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-04T01:03:03.543Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-04T01:03:03.543Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-04T01:03:26.316Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-04T01:03:26.344Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-04T01:03:26.345Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-04T01:03:26.345Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-04T01:03:26.346Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-04T01:03:26.346Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-04T01:04:05.002Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-04T01:04:05.031Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-04T01:04:05.031Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-04T01:04:05.032Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-04T01:04:05.033Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-04T01:04:05.033Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-04T01:12:43.085Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-04T01:12:43.113Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-04T01:12:43.114Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-04T01:12:43.114Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-04T01:12:43.115Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-04T01:12:43.115Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-04T01:14:27.771Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-04T01:14:27.799Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-04T01:14:27.799Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-04T01:14:27.799Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-04T01:14:27.800Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-04T01:14:27.800Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-04T01:25:25.214Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-04T01:25:25.242Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-04T01:25:25.243Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-04T01:25:25.243Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-04T01:25:25.244Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-04T01:25:25.244Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-04T01:27:01.905Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-04T01:27:01.935Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-04T01:27:01.935Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-04T01:27:01.936Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-04T01:27:01.937Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-04T01:27:01.937Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-13T19:39:14.194Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-13T19:39:14.240Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-13T19:39:14.241Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-13T19:39:14.242Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-13T19:39:14.243Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-13T19:39:14.244Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-13T19:39:25.504Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-13T20:06:52.138Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-13T20:06:52.172Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-13T20:06:52.172Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-13T20:06:52.173Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-13T20:06:52.173Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-13T20:06:52.174Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-13T20:07:55.036Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-13T20:07:55.071Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-13T20:07:55.071Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-13T20:07:55.071Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-13T20:07:55.072Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-13T20:07:55.072Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-13T20:11:15.804Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-13T20:11:15.838Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-13T20:11:15.838Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-13T20:11:15.839Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-13T20:11:15.840Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-13T20:11:15.840Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-13T20:11:38.325Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-13T20:11:38.359Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-13T20:11:38.360Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-13T20:11:38.360Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-13T20:11:38.361Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-13T20:11:38.361Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-13T20:11:47.443Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-13T20:11:47.476Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-13T20:11:47.477Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-13T20:11:47.477Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-13T20:11:47.478Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-13T20:11:47.478Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-13T20:12:11.882Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-13T20:12:11.917Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-13T20:12:11.917Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-13T20:12:11.918Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-13T20:12:11.919Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-13T20:12:11.919Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-13T20:12:28.612Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-13T20:12:28.648Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-13T20:12:28.648Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-13T20:12:28.649Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-13T20:12:28.649Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-13T20:12:28.650Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-13T20:12:33.104Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-13T20:12:33.138Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-13T20:12:33.138Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-13T20:12:33.139Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-13T20:12:33.139Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-13T20:12:33.139Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-13T20:19:53.215Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-13T20:19:53.249Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-13T20:19:53.249Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-13T20:19:53.250Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-13T20:19:53.250Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-13T20:19:53.251Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-13T20:20:28.497Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-13T20:20:28.534Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-13T20:20:28.534Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-13T20:20:28.534Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-13T20:20:28.535Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-13T20:20:28.535Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-13T20:23:16.748Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-13T20:23:48.858Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-13T20:23:48.893Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-13T20:23:48.894Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-13T20:23:48.894Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-13T20:23:48.895Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-13T20:23:48.895Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-13T20:32:13.258Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-13T20:32:13.294Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-13T20:32:13.294Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-13T20:32:13.294Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-13T20:32:13.295Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-13T20:32:13.295Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-13T20:32:47.520Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-13T20:32:47.554Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-13T20:32:47.555Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-13T20:32:47.555Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-13T20:32:47.556Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-13T20:32:47.556Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-13T20:33:03.061Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-13T20:33:03.095Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-13T20:33:03.095Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-13T20:33:03.096Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-13T20:33:03.096Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-13T20:33:03.097Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-13T20:34:11.540Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-13T20:37:27.265Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-13T20:37:27.306Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-13T20:37:27.306Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-13T20:37:27.307Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-13T20:37:27.307Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-13T20:37:27.307Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-13T20:37:42.200Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-13T20:37:42.231Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-13T20:37:42.231Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-13T20:37:42.231Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-13T20:37:42.232Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-13T20:37:42.232Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-13T20:37:46.666Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-13T20:37:46.700Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-13T20:37:46.701Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-13T20:37:46.701Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-13T20:37:46.702Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-13T20:37:46.702Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-13T20:38:44.487Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-13T20:38:44.521Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-13T20:38:44.521Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-13T20:38:44.522Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-13T20:38:44.522Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-13T20:38:44.522Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-13T20:39:39.701Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-13T20:39:39.733Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-13T20:39:39.733Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-13T20:39:39.734Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-13T20:39:39.734Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-13T20:39:39.735Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-16T20:04:24.771Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-16T20:04:24.805Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-16T20:04:24.805Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-16T20:04:24.805Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-16T20:04:24.806Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-16T20:04:24.806Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-18T23:48:35.599Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-18T23:48:35.637Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-18T23:48:35.638Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-18T23:48:35.638Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-18T23:48:35.639Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-18T23:48:35.639Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-18T23:52:05.779Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-18T23:52:05.811Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-18T23:52:05.812Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-18T23:52:05.812Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-18T23:52:05.813Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-18T23:52:05.813Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-18T23:52:08.342Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-18T23:53:01.195Z"}
-[34minfo[39m: passport {"timestamp":"2023-10-18T23:53:24.468Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-18T23:54:54.634Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-18T23:57:04.434Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-18T23:57:04.467Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-18T23:57:04.467Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-18T23:57:04.468Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-18T23:57:04.469Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-18T23:57:04.469Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-18T23:58:15.024Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-18T23:58:15.058Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-18T23:58:15.059Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-18T23:58:15.059Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-18T23:58:15.060Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-18T23:58:15.060Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-18T23:59:41.467Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-18T23:59:41.499Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-18T23:59:41.499Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-18T23:59:41.500Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-18T23:59:41.500Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-18T23:59:41.501Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-19T00:01:04.604Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T00:01:04.639Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-19T00:01:04.639Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T00:01:04.640Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:01:04.640Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:01:04.641Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-19T00:01:16.962Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T00:01:16.998Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-19T00:01:16.998Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T00:01:16.999Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:01:16.999Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:01:17.000Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-19T00:01:27.948Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T00:01:27.981Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-19T00:01:27.981Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T00:01:27.981Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:01:27.982Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:01:27.982Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-19T00:03:46.649Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T00:03:46.681Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-19T00:03:46.681Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T00:03:46.681Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:03:46.682Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:03:46.682Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:03:51.214Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-19T00:04:47.465Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T00:04:47.495Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-19T00:04:47.496Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T00:04:47.496Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:04:47.497Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:04:47.497Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:04:47.663Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-19T00:05:01.848Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T00:05:01.889Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-19T00:05:01.889Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T00:05:01.890Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:05:01.890Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:05:01.891Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:05:01.963Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:05:06.671Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-19T00:07:32.117Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T00:07:32.147Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-19T00:07:32.148Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T00:07:32.148Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:07:32.149Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:07:32.149Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:07:39.496Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:07:54.024Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-19T00:11:59.986Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T00:12:00.023Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-19T00:12:00.024Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T00:12:00.025Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:12:00.026Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:12:00.026Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:12:00.469Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:12:07.868Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:12:21.942Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-19T00:21:45.786Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T00:21:45.820Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-19T00:21:45.820Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T00:21:45.821Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:21:45.821Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:21:45.822Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:21:45.973Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-19T00:24:26.350Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T00:24:26.385Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-19T00:24:26.385Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T00:24:26.386Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:24:26.386Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:24:26.387Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:24:30.865Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-19T00:24:33.678Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T00:24:33.709Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-19T00:24:33.709Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T00:24:33.710Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:24:33.711Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:24:33.711Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:24:33.750Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-19T00:26:27.386Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T00:26:27.419Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-19T00:26:27.419Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T00:26:27.419Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:26:27.420Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:26:27.420Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:26:31.452Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-19T00:29:04.787Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T00:29:04.821Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-19T00:29:04.822Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T00:29:04.822Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:29:04.823Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:29:04.823Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:29:05.001Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-19T00:30:53.323Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T00:30:53.357Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-19T00:30:53.357Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T00:30:53.358Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:30:53.358Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:30:53.359Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:30:57.404Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-19T00:32:51.294Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T00:32:51.326Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-19T00:32:51.326Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T00:32:51.326Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:32:51.327Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:32:51.327Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:32:51.436Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-19T00:34:42.339Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T00:34:42.373Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-19T00:34:42.373Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T00:34:42.373Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:34:42.374Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:34:42.374Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:34:42.532Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-19T00:34:56.809Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T00:34:56.842Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-19T00:34:56.842Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T00:34:56.843Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:34:56.843Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:34:56.844Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:34:57.046Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-19T00:42:27.063Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T00:42:27.107Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-19T00:42:27.107Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T00:42:27.107Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:42:27.109Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:42:27.109Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:42:27.172Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-19T00:42:53.077Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T00:42:53.113Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-19T00:42:53.113Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T00:42:53.114Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:42:53.115Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:42:53.115Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:42:57.276Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-19T00:47:04.853Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T00:47:04.885Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-19T00:47:04.885Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T00:47:04.886Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:47:04.886Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:47:04.887Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:47:05.903Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-19T00:47:28.548Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T00:47:28.582Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-19T00:47:28.583Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T00:47:28.583Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:47:28.584Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:47:28.584Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:47:28.634Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-19T00:52:00.670Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T00:52:00.704Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-19T00:52:00.704Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T00:52:00.705Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:52:00.705Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:52:00.706Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:52:03.918Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-19T00:52:52.232Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T00:52:52.266Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-19T00:52:52.266Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T00:52:52.267Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:52:52.268Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:52:52.268Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:52:53.056Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-19T00:54:56.696Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T00:54:56.730Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-19T00:54:56.730Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T00:54:56.730Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:54:56.731Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:54:56.731Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:54:56.935Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-19T00:55:08.723Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T00:55:08.757Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-19T00:55:08.758Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T00:55:08.758Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:55:08.759Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:55:08.759Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:55:08.905Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-19T00:56:37.042Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T00:56:37.074Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-19T00:56:37.074Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T00:56:37.075Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:56:37.076Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:56:37.076Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:56:38.232Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-19T00:56:58.315Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T00:56:58.346Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-19T00:56:58.347Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T00:56:58.347Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:56:58.348Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:56:58.349Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:56:58.449Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-19T00:57:05.447Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T00:57:05.488Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-19T00:57:05.489Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T00:57:05.489Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T00:57:05.490Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-19T00:57:05.490Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-19T00:57:05.538Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-19T23:21:32.366Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T23:21:32.412Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-19T23:21:32.412Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T23:21:32.412Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T23:21:32.413Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-19T23:21:32.413Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-19T23:21:37.269Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-19T23:22:21.694Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T23:22:21.727Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-19T23:22:21.727Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T23:22:21.728Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T23:22:21.729Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-19T23:22:21.729Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-19T23:22:21.770Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-19T23:23:04.785Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T23:23:04.816Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-19T23:23:04.817Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T23:23:04.817Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T23:23:04.818Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-19T23:23:04.818Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-19T23:23:05.260Z"}
-[34minfo[39m: BD {"timestamp":"2023-10-19T23:23:38.513Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-10-19T23:23:38.544Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-10-19T23:23:38.544Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-10-19T23:23:38.544Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-10-19T23:23:38.545Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-10-19T23:23:38.545Z"}
-[34minfo[39m: New client connected {"timestamp":"2023-10-19T23:23:38.562Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T17:15:46.449Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T17:15:46.484Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T17:15:46.484Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T17:15:46.485Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T17:15:46.486Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T17:15:46.486Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T17:20:41.439Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T17:20:41.477Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T17:20:41.478Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T17:20:41.478Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T17:20:41.479Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T17:20:41.479Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T17:21:23.048Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T17:21:23.084Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T17:21:23.085Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T17:21:23.085Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T17:21:23.086Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T17:21:23.086Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T17:22:36.103Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T17:22:36.137Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T17:22:36.138Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T17:22:36.138Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T17:22:36.139Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T17:22:36.139Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T17:23:36.344Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T17:23:55.545Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T17:24:16.578Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T17:25:09.278Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T17:25:09.314Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T17:25:09.314Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T17:25:09.314Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T17:25:09.315Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T17:25:09.315Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T17:25:46.334Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T17:25:46.367Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T17:25:46.368Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T17:25:46.368Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T17:25:46.368Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T17:25:46.369Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T17:26:54.198Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T17:26:54.231Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T17:26:54.231Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T17:26:54.232Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T17:26:54.233Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T17:26:54.233Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T17:29:03.018Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T17:29:03.054Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T17:29:03.055Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T17:29:03.055Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T17:29:03.056Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T17:29:03.056Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T17:30:07.241Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T17:30:07.274Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T17:30:07.274Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T17:30:07.275Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T17:30:07.276Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T17:30:07.276Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T17:30:43.473Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T17:30:43.507Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T17:30:43.508Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T17:30:43.508Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T17:30:43.508Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T17:30:43.509Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T17:32:57.389Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T17:32:57.421Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T17:32:57.422Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T17:32:57.422Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T17:32:57.423Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T17:32:57.423Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T17:33:16.640Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T17:33:16.675Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T17:33:16.676Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T17:33:16.676Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T17:33:16.677Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T17:33:16.677Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T17:34:00.379Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T17:34:00.414Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T17:34:00.414Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T17:34:00.414Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T17:34:00.415Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T17:34:00.415Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T17:34:34.424Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T17:34:34.465Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T17:34:34.465Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T17:34:34.465Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T17:34:34.466Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T17:34:34.466Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T17:35:39.730Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T17:35:39.766Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T17:35:39.767Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T17:35:39.767Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T17:35:39.768Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T17:35:39.768Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T17:36:45.949Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T17:36:45.995Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T17:36:45.996Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T17:36:45.997Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T17:36:45.998Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T17:36:45.998Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T18:32:38.363Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:32:38.412Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:32:38.412Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:32:38.413Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:32:38.413Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:32:38.413Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T18:33:12.724Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:33:12.760Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:33:12.760Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:33:12.761Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:33:12.761Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:33:12.762Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T18:33:50.610Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:33:50.643Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:33:50.644Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:33:50.644Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:33:50.645Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:33:50.645Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T18:34:30.849Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:34:30.887Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:34:30.887Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:34:30.888Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:34:30.889Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:34:30.889Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T18:35:08.562Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:35:08.600Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:35:08.600Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:35:08.601Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:35:08.602Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:35:08.602Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T18:35:45.502Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:35:45.540Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:35:45.540Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:35:45.541Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:35:45.541Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:35:45.542Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T18:37:02.077Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:37:02.115Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:37:02.115Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:37:02.115Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:37:02.116Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:37:02.117Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T18:37:44.212Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:37:44.247Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:37:44.247Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:37:44.247Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:37:44.248Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:37:44.248Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T18:37:47.422Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:37:47.454Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:37:47.454Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:37:47.454Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:37:47.455Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:37:47.455Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T18:38:16.329Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:38:16.361Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:38:16.362Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:38:16.362Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:38:16.363Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:38:16.363Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T18:38:29.220Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:38:29.255Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:38:29.255Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:38:29.256Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:38:29.256Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:38:29.256Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T18:47:12.476Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:47:12.509Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:47:12.509Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:47:12.509Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:47:12.510Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:47:12.510Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T18:47:28.837Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:47:28.869Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:47:28.870Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:47:28.870Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:47:28.871Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:47:28.871Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T18:51:04.486Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:51:04.519Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:51:04.519Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:51:04.519Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:51:04.520Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:51:04.520Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T18:52:51.816Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:52:51.850Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:52:51.850Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:52:51.851Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:52:51.851Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:52:51.852Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T18:53:59.237Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:53:59.270Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:53:59.270Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:53:59.270Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:53:59.271Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:53:59.271Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T18:54:49.938Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:54:49.974Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:54:49.974Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:54:49.975Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:54:49.975Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:54:49.976Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T18:55:55.611Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:55:55.648Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:55:55.648Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:55:55.649Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:55:55.649Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:55:55.650Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T18:56:40.097Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:56:40.132Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:56:40.133Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:56:40.133Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:56:40.134Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:56:40.134Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T18:56:44.709Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:56:44.744Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:56:44.744Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:56:44.744Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:56:44.745Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:56:44.745Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T18:57:25.718Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:57:25.752Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:57:25.753Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:57:25.753Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:57:25.754Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:57:25.754Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T18:57:58.901Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:57:58.934Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:57:58.934Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:57:58.935Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:57:58.935Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:57:58.936Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T18:59:47.627Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:59:47.662Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:59:47.663Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:59:47.663Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:59:47.664Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:59:47.664Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T18:59:59.289Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T18:59:59.326Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T18:59:59.327Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T18:59:59.327Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T18:59:59.328Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T18:59:59.328Z"}
-[34minfo[39m: BD {"timestamp":"2023-11-05T21:03:29.888Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-11-05T21:03:29.945Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-11-05T21:03:29.945Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-11-05T21:03:29.946Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-11-05T21:03:29.947Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-11-05T21:03:29.947Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-08T14:15:45.450Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T14:15:45.483Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-08T14:15:45.484Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-08T14:15:45.484Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T14:15:45.485Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T14:15:45.485Z"}
+[36merror[39m: debe tener un nombre {"timestamp":"2023-11-08T14:16:28.759Z"}
+[36merror[39m: debe tener un nombre {"timestamp":"2023-11-08T14:17:23.738Z"}
+[36merror[39m: debe tener un nombre {"timestamp":"2023-11-08T14:17:28.930Z"}
+[36merror[39m: debe tener un nombre {"timestamp":"2023-11-08T14:17:29.437Z"}
+[36merror[39m: debe tener un nombre {"timestamp":"2023-11-08T14:17:29.663Z"}
+[36merror[39m: debe tener un nombre {"timestamp":"2023-11-08T14:17:29.907Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-08T14:22:46.920Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T14:22:46.953Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-08T14:22:46.954Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-08T14:22:46.954Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T14:22:46.955Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T14:22:46.955Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-08T14:23:39.428Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T14:23:39.461Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-08T14:23:39.462Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-08T14:23:39.462Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T14:23:39.463Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T14:23:39.463Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-08T14:24:07.069Z"}
+[34minfo[39m: BD {"timestamp":"2023-11-08T14:24:17.205Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T14:24:17.239Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-08T14:24:17.240Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-08T14:24:17.240Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T14:24:17.241Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T14:24:17.241Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T14:34:09.800Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T14:34:09.834Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-08T14:34:09.835Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-08T14:34:09.835Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T14:34:09.836Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T14:34:09.836Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T14:34:17.093Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T14:35:43.548Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T14:35:43.581Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-08T14:35:43.582Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-08T14:35:43.582Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T14:35:43.583Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T14:35:43.583Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:35:59.189Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T14:36:05.977Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:36:29.392Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:37:33.431Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T14:37:37.691Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T14:38:13.914Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:38:21.383Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T14:38:26.035Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:38:39.521Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T14:38:42.810Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T14:39:53.395Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T14:39:53.988Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T14:39:54.208Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T14:39:54.414Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T14:39:54.637Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T14:39:54.851Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:40:16.172Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T14:40:20.187Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T14:41:35.648Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T14:41:35.679Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-08T14:41:35.680Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-08T14:41:35.680Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T14:41:35.681Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T14:41:35.681Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:41:41.025Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:41:42.801Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:41:43.052Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:41:43.264Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:41:43.496Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:41:43.707Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T14:42:47.909Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T14:42:47.941Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-08T14:42:47.942Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-08T14:42:47.942Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T14:42:47.943Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T14:42:47.943Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:42:49.579Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:42:51.713Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:42:52.155Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:42:52.383Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:42:52.609Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:42:52.918Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:42:53.214Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:42:53.455Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:42:53.682Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T14:43:28.717Z"}
+[36merror[39m: debe tener un nombre {"timestamp":"2023-11-08T14:43:28.725Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T14:45:08.262Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T14:45:08.293Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-08T14:45:08.293Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-08T14:45:08.293Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T14:45:08.294Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T14:45:08.294Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T14:45:29.047Z"}
+[36merror[39m: debe tener un nombre {"timestamp":"2023-11-08T14:45:29.060Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T14:46:07.092Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T14:46:07.123Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-08T14:46:07.123Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-08T14:46:07.123Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T14:46:07.124Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T14:46:07.124Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T14:46:10.341Z"}
+[36merror[39m: debe tener un nombre {"timestamp":"2023-11-08T14:46:10.351Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T15:03:46.495Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T15:03:46.527Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-08T15:03:46.528Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-08T15:03:46.528Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T15:03:46.529Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T15:03:46.529Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T15:03:50.803Z"}
+[36merror[39m: debe tener un nombre {"timestamp":"2023-11-08T15:03:50.810Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T15:04:10.760Z"}
+[36merror[39m: debe tener un nombre {"timestamp":"2023-11-08T15:04:10.763Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T15:05:14.400Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T15:05:14.430Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-08T15:05:14.430Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-08T15:05:14.431Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T15:05:14.432Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T15:05:14.432Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T15:06:04.547Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T15:06:04.577Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-08T15:06:04.577Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-08T15:06:04.578Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T15:06:04.578Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T15:06:04.579Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T15:06:10.650Z"}
+[36merror[39m: debe tener un nombre {"timestamp":"2023-11-08T15:06:10.662Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T15:06:35.810Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T15:06:35.842Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-08T15:06:35.842Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-08T15:06:35.843Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T15:06:35.844Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T15:06:35.844Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T15:06:39.837Z"}
+[36merror[39m: debe tener un nombre {"timestamp":"2023-11-08T15:06:39.844Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T15:07:23.189Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T15:07:23.221Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-08T15:07:23.221Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-08T15:07:23.222Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T15:07:23.222Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T15:07:23.223Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T15:07:25.942Z"}
+[36merror[39m: debe tener un nombre {"timestamp":"2023-11-08T15:07:25.951Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T15:07:37.718Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T15:07:37.748Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-08T15:07:37.749Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-08T15:07:37.749Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T15:07:37.750Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T15:07:37.750Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T15:08:20.988Z"}
+[36merror[39m: debe tener un nombre {"timestamp":"2023-11-08T15:08:20.996Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T15:10:38.172Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T15:10:38.205Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-08T15:10:38.205Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-08T15:10:38.206Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T15:10:38.206Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T15:10:38.207Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T15:10:46.772Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T15:10:46.805Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-08T15:10:46.806Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-08T15:10:46.806Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T15:10:46.807Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T15:10:46.807Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T15:11:04.128Z"}
+[36merror[39m: debe tener un mail {"timestamp":"2023-11-08T15:11:04.137Z"}

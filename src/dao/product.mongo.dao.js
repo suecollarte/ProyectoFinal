@@ -2,9 +2,17 @@ import productModel from './models/product.model.js'
 
 export default class ProductMongoDAO{
 
-    traeTodo = async() => await productModel.find().lean().exec()
+    traeTodo = async() => {
+     const result = await productModel.find().lean().exec()
+     return result
+    }
     
-    traeProductsId = async(_id) => await productModel.findById(_id).lean().exec();
+    traeProductsBy = async(id) => {
+      console.log("parte 2",id)
+      const producto =await productModel.findById(id).lean().exec();
+      console.log("result",producto)
+      return { statusCode:200,producto}
+    }
     getAllProducto = async(req,res)=> {
 
         let page= parseInt(req.query.page) || 1

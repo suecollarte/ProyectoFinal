@@ -39,8 +39,9 @@ const  addManyProducto = async(data)=>{
   return result
   }
 
- const  traeProductsBy = async(_id) => {
-  const result = await ProductServiceInst.traeProductsBy(_id)
+ const  traeProductsBy = async(id) => {
+  const result = await ProductServiceInst.traeProductsBy(id)
+  console.log("controller", result)
   //res.json(result) 
   return result
  }

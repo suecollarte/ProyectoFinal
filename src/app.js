@@ -10,7 +10,7 @@ import session from 'express-session'
 
 import inializePassport from './config/passport.config.js'
 import __dirname from "./utils.js"
-import logger from './utils/logger.js'
+import {logger,loggerHttp} from './utils/logger.js'
 
 import productoRoute from './routers/producto.router.js'
 import cartRoute from './routers/cart.router.js'
@@ -26,20 +26,23 @@ import swaggerUiExpress from "swagger-ui-express"
 import sessionRoute from './routers/session.router.js'
 import loginRoute from './routers/login.router.js'
 import {run} from "./run.js"
- 
-import multer from "multer"
+import dotenv from 'dotenv'
 
 //const MONGOURI = 'mongodb+srv://admin:admin@cluster0.hjgxmmk.mongodb.net/?retryWrites=true&w=majority';
 //const MONGOURI='mongodb://0.0.0.0:27017'
 
 //export const PORT = process.env.PORT
-const MONGOURI='mongodb://0.0.0.0:27017'
+//const MONGOURI='mongodb://0.0.0.0:27017'
+//const MONGOURI="mongodb://localhost:27017"
+
 //'mongodb://localhost:27017'
 
-const MONGODB = 'ecommerce';
+//const MONGODB = 'ecommerce';
 //export const MONGODB=process.env.MONGODB
 //export const MONGOURI=process.env.MONGO_URI
- logger.info("BD",MONGODB)
+
+
+
 const app= express();
 
 //app.use(cookieParser('hola'))
@@ -55,11 +58,30 @@ app.use(express.urlencoded({extended:true}))
 // parse application/x-www-form-urlencoded
 // parse application/json
 
-
-
+app.use(loggerHttp)
+logger.info("BDatos",process.env.MONGODB)
 
 //para la interfaz
 app.use(express.static(__dirname+'/public'))
+
+
+app.use(session({
+  store: MongoStore.create({ 
+    mongoUrl: process.env.MONGO_URI, 
+    dbName: process.env.MONGODB,
+    mongoOptions:{
+      //useNewUrlParse:true,
+      useUnifiedTopology:true
+      }
+    }),
+    secret:'hola',
+    resave: true,
+    saveUninitialized:true
+  
+ /*  store: new fileStore({
+    path:"./sessions"}) */
+}))
+
 
 app.engine('handlebars', handlebars.engine({
     defaultLayout:'main',
@@ -97,22 +119,8 @@ app.get('/loggerTest ', (request,response) =>{
   app.get('/ ', (request,response) =>{
     response.render('session/login')
     })
-  app.use(session({
-    store: MongoStore.create({ 
-      mongoUrl: MONGOURI, 
-      dbName: MONGODB,
-      mongoOptions:{
-        //useNewUrlParse:true,
-        useUnifiedTopology:true
-        }
-      }),
-      secret:'hola',
-      resave: true,
-      saveUninitialized:true
-    
-   /*  store: new fileStore({
-      path:"./sessions"}) */
-  }))
+
+
 
 inializePassport();
 app.use(passport.initialize())
@@ -138,19 +146,19 @@ mongoose.set('strictQuery',false);
 try{
     //await mongoose.connect(MONGOURI+MONGODB,{
       //  useUnifiedTopology:true})
-      mongoose.connect('mongodb://0.0.0.0:27017', { dbName: 'ecommerce' })
+      //mongoose.connect('mongodb://0.0.0.0:27017', { dbName: 'ecommerce' })
   
-
+      //mongoose.connect(MONGOURI, {dbName:MONGODB})
      const httpServer= app.listen(8080, () => {
-      logger.debug("Server Up!")
-      logger.error("Server Up!")
-      logger.warning("Server Up!")
-      logger.http("Server Up!")
-      logger.info("Server Up!")
+      logger.debug("debug")
+      logger.error("error")
+      logger.warning("warning")
+      logger.http("http")
+      logger.info("info")
       
     })
      const socketServer = new Server(httpServer)
-     httpServer.on("error", (e) => console.log("ERROR: " + e))
+     httpServer.on("error", (e) => logger.error(e) ) //console.log("ERROR: " + e))
      const io = socketServer
      
      run(socketServer, app)

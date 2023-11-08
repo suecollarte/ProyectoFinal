@@ -1,6 +1,8 @@
 import {Router} from "express"
 import multer from "multer"
-import {get, create,getById, ModificarUser} from '../controllers/user.controller.js'
+import UserController from '../controllers/user.controller.js'
+const controllerUser = new UserController
+
 
 const router = Router()
 
@@ -15,9 +17,11 @@ const storage =multer.diskStorage({
 
 const uploader = multer({storage})
 
-router.get('/',get)
-router.post('/',create)
-router.get('/premium/:uid',getById)
+router.get('/',controllerUser.get.bind(controllerUser))
+router.post('/',controllerUser.create.bind(controllerUser))
+//faltaba esto
+router.put('/:id', controllerUser.ModificarUser.bind(controllerUser))
+router.get('/premium/:uid',controllerUser.getById.bind(controllerUser))
 //single solo un archivo
 // en el form debe llamarse file
 
@@ -28,7 +32,7 @@ router.post('/:uid/upload',uploader.single('file'), (req,res) =>{
     if (!req.file){
         return res.status(400).json({status:"error",error:" no hay archivo"})
     }
-    const responde=  ModificarUser(req.params.uid,"modificado")
-    res.json({status:"success",message:" archivo subido"})
+  
+    controllerUser.ModificarUser.bind(controllerUser)(req,{documento: true})
   })
 export default router

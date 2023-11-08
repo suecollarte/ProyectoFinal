@@ -22,7 +22,8 @@ const logger= winston.createLogger({
     
     transports:[
         new winston.transports.Console({
-            level:'http',
+           
+            level:'debug',
             format: winston.format.combine(
                 winston.format.timestamp(),
                 winston.format.colorize(),
@@ -31,8 +32,8 @@ const logger= winston.createLogger({
         //debug, http, info, warning, error, fatal
 //silly debug verbose http info wam error
         , new winston.transports.File({
-            filename:'./debug.log',
-            level:'debug',
+            filename:'./logs/debug.log',
+            level:'error',
             format: winston.format.combine(
                 winston.format.timestamp(),
                 winston.format.colorize(),
@@ -40,7 +41,7 @@ const logger= winston.createLogger({
             )
         })
         ,new winston.transports.File({
-            filename:'./fatal.log',
+            filename:'./logs/fatal.log',
             level:'fatal',
             format: winston.format.combine(
                 winston.format.timestamp(),
@@ -49,7 +50,7 @@ const logger= winston.createLogger({
             )
         })
         ,new winston.transports.File({
-            filename:'./info.log',
+            filename:'./logs/info.log',
             level:'info',
             format: winston.format.combine(
                 winston.format.timestamp(),
@@ -57,26 +58,14 @@ const logger= winston.createLogger({
                 winston.format.simple()
             )
         })
-        ,new winston.transports.File({
-            filename:'./warn.log',
-            level:'warning',
-            format: winston.format.combine(
-                winston.format.timestamp(),
-                winston.format.colorize(),
-                winston.format.simple()
-            )
-        })
-        ,new winston.transports.File({
-            filename:'./error.log',
-            level:'error',
-            format: winston.format.combine(
-                winston.format.timestamp(),
-                winston.format.colorize(),
-                winston.format.simple()
-            )
-        })
+  
+        
     ]
 })
 
- 
-export default logger
+
+ const loggerHttp = (req,res,next) =>{
+    logger.info(`[${new Date().toLocaleTimeString()}] ${req.url} - ${req.method}`)
+    next()
+} 
+export { logger,loggerHttp }

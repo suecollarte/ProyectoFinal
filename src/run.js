@@ -5,7 +5,7 @@ import messagesModel from "./dao/models/message.model.js";
 import productViewsRouter from './routers/view.router.js'
 import sessionRouter from './routers/session.router.js'
 import {passportCall, handlePolicies} from "./utils.js"
-import logger from './utils/logger.js'
+import {logger} from './utils/logger.js'
 export const run = (socketServer, app) => {
     app.use((req, res, next) => {
         req.io = socketServer

@@ -1,26 +1,34 @@
-import { UserService } from "../repositories/index.js";
+import  UserService from "../services/user.service.js";
 
-export const get =async(req,user) =>{
-    const users =await UserService.get()
-    res.json({users})
+export default class UserController {
+    constructor(){
+        this.services = new UserService()
+    }
 
-}
-export const create = async(req, res) =>{
+
+get =async(req,res) =>res.json(await this.services.get())
+
+
+create = async(req, res) =>{
 
     const user = req.body
-    const userNew = await UserService.create(user)
-    res.json({user:userNew})
+   const xx= await this.services.create(user)
+    res.json(await this.services.create(xx))
 }
-export const getById = async(req,res) =>{
-    const uid= req.body
-    const user = await UserService.get(uid)
-    res.json({user})
+getById = async(req,res) =>{
+    const {id}= req.params
+    res.json(await this.services.get(id))
 }
 
-export const ModificarUser = async(req,res) =>{
-    const uid= req.body
-    const data = "modificado"
-    console.log("hola3")
-   const user = await UserService.ModificarUser(uid,data)
-    res.json({user})
+ModificarUser = async(req,res) =>{
+    const {id}= req.params
+    const data = req.body
+    console.log("modifica controller",data)
+    res.json(await this.services.ModificarUser(id,data))
+
+}  
+delete = async(req,res) =>{
+    const id= req.params.id
+    res.json(await this.services.delete(id))
+}
 }

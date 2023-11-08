@@ -12,30 +12,6 @@ const userSchema = new mongoose.Schema({
     age:{type:String},
     email:{type:String},
     password: {type:String},
-    documents:{
-        type:[
-            {
-                name: String,
-                document:{
-            type:mongoose.Schema.Types.ObjectId,
-            ref:'documento'}
-            }]
-    },
-    tickets:{
-        type:[
-            {
-            type:mongoose.Schema.Types.ObjectId,
-        ref:'tickets'
-            }]
-    },
-    cart: {
-        type:[{
-        _id:false,
-            cart: {
-                type:mongoose.Schema.Types.ObjectId,
-            ref:"carts"
-            }
-        }]},
     role:{type:String, default:'user'}
 })
 mongoose.set("strictQuery",false)

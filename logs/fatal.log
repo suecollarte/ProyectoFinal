@@ -1,18 +1,265 @@
-[34minfo[39m: BD {"timestamp":"2023-09-15T00:08:30.245Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-09-15T00:08:30.277Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-09-15T00:08:30.277Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-09-15T00:08:30.278Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-09-15T00:08:30.278Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-09-15T00:08:30.279Z"}
-[34minfo[39m: BD {"timestamp":"2023-09-15T00:09:21.832Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-09-15T00:09:21.867Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-09-15T00:09:21.867Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-09-15T00:09:21.867Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-09-15T00:09:21.868Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-09-15T00:09:21.868Z"}
-[34minfo[39m: BD {"timestamp":"2023-09-15T00:10:16.323Z"}
-[37mdebug[39m: Server Up! {"timestamp":"2023-09-15T00:10:16.359Z"}
-[36merror[39m: Server Up! {"timestamp":"2023-09-15T00:10:16.360Z"}
-[33mwarning[39m: Server Up! {"timestamp":"2023-09-15T00:10:16.360Z"}
-[32mhttp[39m: Server Up! {"timestamp":"2023-09-15T00:10:16.361Z"}
-[34minfo[39m: Server Up! {"timestamp":"2023-09-15T00:10:16.361Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T14:39:53.394Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T14:39:53.988Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T14:39:54.208Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T14:39:54.414Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T14:39:54.636Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T14:39:54.851Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:40:16.172Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T14:40:20.187Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T14:41:35.647Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T14:41:35.679Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-08T14:41:35.680Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-08T14:41:35.680Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T14:41:35.680Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T14:41:35.681Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:41:41.025Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:41:42.801Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:41:43.052Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:41:43.264Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:41:43.496Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:41:43.707Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T14:42:47.908Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T14:42:47.941Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-08T14:42:47.942Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-08T14:42:47.942Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T14:42:47.942Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T14:42:47.943Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:42:49.579Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:42:51.713Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:42:52.154Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:42:52.383Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:42:52.609Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:42:52.918Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:42:53.214Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:42:53.455Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - PUT {"timestamp":"2023-11-08T14:42:53.682Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T14:43:28.717Z"}
+[36merror[39m: debe tener un nombre {"timestamp":"2023-11-08T14:43:28.725Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T14:45:08.261Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T14:45:08.292Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-08T14:45:08.293Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-08T14:45:08.293Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T14:45:08.294Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T14:45:08.294Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T14:45:29.046Z"}
+[36merror[39m: debe tener un nombre {"timestamp":"2023-11-08T14:45:29.060Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T14:46:07.091Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T14:46:07.122Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-08T14:46:07.123Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-08T14:46:07.123Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T14:46:07.124Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T14:46:07.124Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T14:46:10.341Z"}
+[36merror[39m: debe tener un nombre {"timestamp":"2023-11-08T14:46:10.351Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T15:03:46.494Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T15:03:46.527Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-08T15:03:46.528Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-08T15:03:46.528Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T15:03:46.529Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T15:03:46.529Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T15:03:50.803Z"}
+[36merror[39m: debe tener un nombre {"timestamp":"2023-11-08T15:03:50.810Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T15:04:10.760Z"}
+[36merror[39m: debe tener un nombre {"timestamp":"2023-11-08T15:04:10.763Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T15:05:14.399Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T15:05:14.430Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-08T15:05:14.430Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-08T15:05:14.431Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T15:05:14.431Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T15:05:14.432Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T15:06:04.546Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T15:06:04.577Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-08T15:06:04.577Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-08T15:06:04.577Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T15:06:04.578Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T15:06:04.578Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T15:06:10.650Z"}
+[36merror[39m: debe tener un nombre {"timestamp":"2023-11-08T15:06:10.662Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T15:06:35.809Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T15:06:35.842Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-08T15:06:35.842Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-08T15:06:35.843Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T15:06:35.843Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T15:06:35.844Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T15:06:39.837Z"}
+[36merror[39m: debe tener un nombre {"timestamp":"2023-11-08T15:06:39.844Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T15:07:23.188Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T15:07:23.221Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-08T15:07:23.221Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-08T15:07:23.221Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T15:07:23.222Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T15:07:23.222Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T15:07:25.942Z"}
+[36merror[39m: debe tener un nombre {"timestamp":"2023-11-08T15:07:25.951Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T15:07:37.717Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T15:07:37.748Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-08T15:07:37.749Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-08T15:07:37.749Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T15:07:37.749Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T15:07:37.750Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T15:08:20.987Z"}
+[36merror[39m: debe tener un nombre {"timestamp":"2023-11-08T15:08:20.995Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T15:10:38.170Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T15:10:38.204Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-08T15:10:38.205Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-08T15:10:38.205Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T15:10:38.206Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T15:10:38.207Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T15:10:46.770Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T15:10:46.805Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-08T15:10:46.806Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-08T15:10:46.806Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T15:10:46.806Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T15:10:46.807Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T15:11:04.127Z"}
+[36merror[39m: debe tener un mail {"timestamp":"2023-11-08T15:11:04.137Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T15:13:03.712Z"}
+[37mdebug[39m: Server Up! {"timestamp":"2023-11-08T15:13:03.743Z"}
+[36merror[39m: Server Up! {"timestamp":"2023-11-08T15:13:03.744Z"}
+[33mwarning[39m: Server Up! {"timestamp":"2023-11-08T15:13:03.744Z"}
+[32mhttp[39m: Server Up! {"timestamp":"2023-11-08T15:13:03.744Z"}
+[34minfo[39m: Server Up! {"timestamp":"2023-11-08T15:13:03.745Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T15:13:22.694Z"}
+[36merror[39m: debe tener un mail {"timestamp":"2023-11-08T15:13:22.701Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T15:17:51.543Z"}
+[37mdebug[39m: debug {"timestamp":"2023-11-08T15:17:51.576Z"}
+[36merror[39m: error {"timestamp":"2023-11-08T15:17:51.577Z"}
+[33mwarning[39m: warning {"timestamp":"2023-11-08T15:17:51.577Z"}
+[32mhttp[39m: http {"timestamp":"2023-11-08T15:17:51.578Z"}
+[34minfo[39m: info {"timestamp":"2023-11-08T15:17:51.578Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T15:18:19.326Z"}
+[37mdebug[39m: debug {"timestamp":"2023-11-08T15:18:19.359Z"}
+[36merror[39m: error {"timestamp":"2023-11-08T15:18:19.360Z"}
+[33mwarning[39m: warning {"timestamp":"2023-11-08T15:18:19.361Z"}
+[32mhttp[39m: http {"timestamp":"2023-11-08T15:18:19.361Z"}
+[34minfo[39m: info {"timestamp":"2023-11-08T15:18:19.361Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T15:18:23.604Z"}
+[36merror[39m: debe tener un mail {"timestamp":"2023-11-08T15:18:23.614Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T20:00:59.146Z"}
+[37mdebug[39m: debug {"timestamp":"2023-11-08T20:00:59.194Z"}
+[36merror[39m: error {"timestamp":"2023-11-08T20:00:59.195Z"}
+[33mwarning[39m: warning {"timestamp":"2023-11-08T20:00:59.196Z"}
+[32mhttp[39m: http {"timestamp":"2023-11-08T20:00:59.196Z"}
+[34minfo[39m: info {"timestamp":"2023-11-08T20:00:59.197Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T20:01:07.679Z"}
+[36merror[39m: debe tener un mail {"timestamp":"2023-11-08T20:01:07.721Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T20:07:25.435Z"}
+[37mdebug[39m: debug {"timestamp":"2023-11-08T20:07:25.466Z"}
+[36merror[39m: error {"timestamp":"2023-11-08T20:07:25.466Z"}
+[33mwarning[39m: warning {"timestamp":"2023-11-08T20:07:25.466Z"}
+[32mhttp[39m: http {"timestamp":"2023-11-08T20:07:25.467Z"}
+[34minfo[39m: info {"timestamp":"2023-11-08T20:07:25.467Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T20:07:31.985Z"}
+[36merror[39m: debe tener un mail {"timestamp":"2023-11-08T20:07:31.998Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T20:08:39.939Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T20:08:46.189Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T20:08:46.759Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - GET {"timestamp":"2023-11-08T20:08:47.421Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T20:09:31.665Z"}
+[36merror[39m: debe tener un mail {"timestamp":"2023-11-08T20:09:31.668Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T20:09:37.778Z"}
+[36merror[39m: debe tener un mail {"timestamp":"2023-11-08T20:09:37.782Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T20:09:39.845Z"}
+[36merror[39m: debe tener un mail {"timestamp":"2023-11-08T20:09:39.848Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T20:09:40.076Z"}
+[36merror[39m: debe tener un mail {"timestamp":"2023-11-08T20:09:40.079Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T20:09:40.285Z"}
+[36merror[39m: debe tener un mail {"timestamp":"2023-11-08T20:09:40.287Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T20:09:40.514Z"}
+[36merror[39m: debe tener un mail {"timestamp":"2023-11-08T20:09:40.517Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T20:10:35.974Z"}
+[37mdebug[39m: debug {"timestamp":"2023-11-08T20:10:36.006Z"}
+[36merror[39m: error {"timestamp":"2023-11-08T20:10:36.007Z"}
+[33mwarning[39m: warning {"timestamp":"2023-11-08T20:10:36.007Z"}
+[32mhttp[39m: http {"timestamp":"2023-11-08T20:10:36.007Z"}
+[34minfo[39m: info {"timestamp":"2023-11-08T20:10:36.008Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T20:10:40.706Z"}
+[36merror[39m: debe tener un mail {"timestamp":"2023-11-08T20:10:40.717Z"}
+[36merror[39m: debe tener un mail {"timestamp":"2023-11-08T20:10:40.718Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T20:11:42.305Z"}
+[37mdebug[39m: debug {"timestamp":"2023-11-08T20:11:42.337Z"}
+[36merror[39m: error {"timestamp":"2023-11-08T20:11:42.337Z"}
+[33mwarning[39m: warning {"timestamp":"2023-11-08T20:11:42.337Z"}
+[32mhttp[39m: http {"timestamp":"2023-11-08T20:11:42.338Z"}
+[34minfo[39m: info {"timestamp":"2023-11-08T20:11:42.338Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T20:11:43.233Z"}
+[36merror[39m: debe tener un mail {"timestamp":"2023-11-08T20:11:43.243Z"}
+[36merror[39m: debe tener un mail {"timestamp":"2023-11-08T20:11:43.243Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T20:14:41.448Z"}
+[37mdebug[39m: debug {"timestamp":"2023-11-08T20:14:41.480Z"}
+[36merror[39m: error {"timestamp":"2023-11-08T20:14:41.481Z"}
+[33mwarning[39m: warning {"timestamp":"2023-11-08T20:14:41.481Z"}
+[32mhttp[39m: http {"timestamp":"2023-11-08T20:14:41.481Z"}
+[34minfo[39m: info {"timestamp":"2023-11-08T20:14:41.482Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T20:14:42.897Z"}
+[36merror[39m: debe tener un mail {"timestamp":"2023-11-08T20:14:42.909Z"}
+[36merror[39m: debe tener un mail {"timestamp":"2023-11-08T20:14:42.910Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T20:15:02.381Z"}
+[37mdebug[39m: debug {"timestamp":"2023-11-08T20:15:02.411Z"}
+[36merror[39m: error {"timestamp":"2023-11-08T20:15:02.412Z"}
+[33mwarning[39m: warning {"timestamp":"2023-11-08T20:15:02.412Z"}
+[32mhttp[39m: http {"timestamp":"2023-11-08T20:15:02.413Z"}
+[34minfo[39m: info {"timestamp":"2023-11-08T20:15:02.413Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T20:15:16.224Z"}
+[36merror[39m: debe tener un mail {"timestamp":"2023-11-08T20:15:16.234Z"}
+[36merror[39m: debe tener un mail {"timestamp":"2023-11-08T20:15:16.235Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T20:15:18.801Z"}
+[36merror[39m: debe tener un mail {"timestamp":"2023-11-08T20:15:18.804Z"}
+[36merror[39m: debe tener un mail {"timestamp":"2023-11-08T20:15:18.804Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T20:15:39.716Z"}
+[36merror[39m: debe tener un mail {"timestamp":"2023-11-08T20:15:39.718Z"}
+[36merror[39m: debe tener un mail {"timestamp":"2023-11-08T20:15:39.718Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T20:15:40.804Z"}
+[36merror[39m: debe tener un mail {"timestamp":"2023-11-08T20:15:40.807Z"}
+[36merror[39m: debe tener un mail {"timestamp":"2023-11-08T20:15:40.807Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T20:15:41.059Z"}
+[36merror[39m: debe tener un mail {"timestamp":"2023-11-08T20:15:41.062Z"}
+[36merror[39m: debe tener un mail {"timestamp":"2023-11-08T20:15:41.064Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T20:15:41.325Z"}
+[36merror[39m: debe tener un mail {"timestamp":"2023-11-08T20:15:41.328Z"}
+[36merror[39m: debe tener un mail {"timestamp":"2023-11-08T20:15:41.329Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T20:15:58.562Z"}
+[37mdebug[39m: debug {"timestamp":"2023-11-08T20:15:58.595Z"}
+[36merror[39m: error {"timestamp":"2023-11-08T20:15:58.595Z"}
+[33mwarning[39m: warning {"timestamp":"2023-11-08T20:15:58.596Z"}
+[32mhttp[39m: http {"timestamp":"2023-11-08T20:15:58.596Z"}
+[34minfo[39m: info {"timestamp":"2023-11-08T20:15:58.596Z"}
+[34minfo[39m: [function toLocaleTimeString() { [native code] }] /api/users/ - POST {"timestamp":"2023-11-08T20:16:00.231Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T21:00:18.584Z"}
+[37mdebug[39m: debug {"timestamp":"2023-11-08T21:00:18.617Z"}
+[36merror[39m: error {"timestamp":"2023-11-08T21:00:18.617Z"}
+[33mwarning[39m: warning {"timestamp":"2023-11-08T21:00:18.617Z"}
+[32mhttp[39m: http {"timestamp":"2023-11-08T21:00:18.618Z"}
+[34minfo[39m: info {"timestamp":"2023-11-08T21:00:18.618Z"}
+[34minfo[39m: [18:00:22] /api/users/ - POST {"timestamp":"2023-11-08T21:00:22.980Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T21:01:18.838Z"}
+[37mdebug[39m: debug {"timestamp":"2023-11-08T21:01:18.871Z"}
+[36merror[39m: error {"timestamp":"2023-11-08T21:01:18.871Z"}
+[33mwarning[39m: warning {"timestamp":"2023-11-08T21:01:18.872Z"}
+[32mhttp[39m: http {"timestamp":"2023-11-08T21:01:18.872Z"}
+[34minfo[39m: info {"timestamp":"2023-11-08T21:01:18.872Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T21:04:42.700Z"}
+[37mdebug[39m: debug {"timestamp":"2023-11-08T21:04:42.732Z"}
+[36merror[39m: error {"timestamp":"2023-11-08T21:04:42.733Z"}
+[33mwarning[39m: warning {"timestamp":"2023-11-08T21:04:42.733Z"}
+[32mhttp[39m: http {"timestamp":"2023-11-08T21:04:42.733Z"}
+[34minfo[39m: info {"timestamp":"2023-11-08T21:04:42.733Z"}
+[34minfo[39m: [18:05:02] /api/users/ - POST {"timestamp":"2023-11-08T21:05:02.741Z"}
+[36merror[39m: debe tener un mail {"timestamp":"2023-11-08T21:05:02.749Z"}
+[36merror[39m: debe tener un mail {"timestamp":"2023-11-08T21:05:02.749Z"}
+[34minfo[39m: BDatos {"timestamp":"2023-11-08T21:08:41.441Z"}
+[37mdebug[39m: debug {"timestamp":"2023-11-08T21:08:41.478Z"}
+[36merror[39m: error {"timestamp":"2023-11-08T21:08:41.478Z"}
+[33mwarning[39m: warning {"timestamp":"2023-11-08T21:08:41.479Z"}
+[32mhttp[39m: http {"timestamp":"2023-11-08T21:08:41.479Z"}
+[34minfo[39m: info {"timestamp":"2023-11-08T21:08:41.479Z"}
+[34minfo[39m: [18:13:04] / - GET {"timestamp":"2023-11-08T21:13:04.605Z"}
+[34minfo[39m: [18:13:04] /js/index.js - GET {"timestamp":"2023-11-08T21:13:04.632Z"}
+[34minfo[39m: New client connected {"timestamp":"2023-11-08T21:13:04.665Z"}
+[34minfo[39m: [18:13:06] /favicon.ico - GET {"timestamp":"2023-11-08T21:13:06.562Z"}
+[34minfo[39m: [18:13:13] /docs/ - GET {"timestamp":"2023-11-08T21:13:13.164Z"}
+[34minfo[39m: [18:13:13] /docs/swagger-ui.css - GET {"timestamp":"2023-11-08T21:13:13.185Z"}
+[34minfo[39m: [18:13:13] /docs/swagger-ui-bundle.js - GET {"timestamp":"2023-11-08T21:13:13.187Z"}
+[34minfo[39m: [18:13:13] /docs/swagger-ui-standalone-preset.js - GET {"timestamp":"2023-11-08T21:13:13.196Z"}
+[34minfo[39m: [18:13:13] /docs/swagger-ui-init.js - GET {"timestamp":"2023-11-08T21:13:13.198Z"}
+[34minfo[39m: [18:13:13] /docs/favicon-32x32.png - GET {"timestamp":"2023-11-08T21:13:13.570Z"}

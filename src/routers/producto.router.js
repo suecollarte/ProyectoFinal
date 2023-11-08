@@ -7,7 +7,7 @@ import getAllProducto from "../controllers/productController.js"
 import traeTodo from "../controllers/productController.js"
  */
 import productController from "../controllers/productController.js"
-import logger from '../utils/logger.js'
+import { logger } from '../utils/logger.js'
 
 const router =Router(); 
 const auth = (req,res,next) =>{
@@ -35,9 +35,10 @@ router.get('/:pid', async (request, response) =>{
   const id= request.params.pid;
   try{
      const producto =  await productController.traeProductsBy(id);
+     console.log("router")
     if (producto.statusCode === 200){
      // console.log(producto.response.payload)
-      response.render('indexprod',{products: producto.response.payload} )
+      response.render('indexprod',{products: producto.response} )
     }
      if (!producto) return response.status(404).json({message: `${id} NO EXISTE `})
      // response.status(200).json({status: 'Producto',id})

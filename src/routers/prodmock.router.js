@@ -1,6 +1,6 @@
 import {Router} from 'express';
 import {mockProd} from '../utilsmock.js'
-import logger from '../utils/logger.js'
+import { logger } from '../utils/logger.js'
 import productController from "../controllers/productController.js"
 const router =Router(); 
 const auth = (req,res,next) =>{
